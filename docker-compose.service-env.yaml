@@ -1,25 +1,6 @@
 version: "3.9"
 
 services:
-  nginx:
-    container_name: nginx
-    image: nginx:1.20
-    restart: unless-stopped
-    logging:
-      driver: 'gelf'
-      options:
-        gelf-address: 'udp://localhost:12201'
-        tag: nginx
-    networks:
-      - ompnw
-    ports:
-      - 8080:8080
-    volumes:
-      - ./docker/nginx/conf.d:/etc/nginx/conf.d
-    depends_on:
-      - act-device-api
-      - swagger-ui
-
   postgres:
     container_name: postgres
     image: postgres:13
@@ -38,7 +19,7 @@ services:
       APP_DB_USER: docker
       APP_DB_PASS: docker
     networks:
-      - ompnw
+      - ompnw_1
     volumes:
       # - pgdata:/var/lib/postgresql/data
       - ./scripts/init-database.sh:/docker-entrypoint-initdb.d/init-database.sh
@@ -57,7 +38,7 @@ services:
       ZOOKEEPER_TICK_TIME: 2000
       ZOOKEEPER_SYNC_LIMIT: 2
     networks:
-      - ompnw
+      - ompnw_1
 
   kafka_1:
     container_name: kafka_1
@@ -78,63 +59,17 @@ services:
       KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 1
     command: sh -c "((sleep 15 && kafka-topics --create --zookeeper zookeeper:32181 --replication-factor 1 --partitions 1 --topic templates)&) && /etc/confluent/docker/run"
     networks:
-      - ompnw
+      - ompnw_1
 
-#  jaeger:
-#    container_name: jaeger
-#    image: jaegertracing/all-in-one:1.32
-#    restart: unless-stopped
-#    ports:
-#      - 6831:6831/udp
-#      - 16686:16686
-#    networks:
-#      - ompnw
-
-  act-device-api:
-    container_name: act-device-api
-    build:
-      context: .
-      dockerfile: Dockerfile
-    restart: unless-stopped
-    networks:
-      - ompnw
-    depends_on:
-      - postgres
-      - kafka_1
-    links:
-      - postgres
-      - kafka_1
-    ports:
-      - 8083:8080 # REST
-      - 8082:8082 # gRPC
-      - 9100:9100 # Metrics prometheus
-      - 8000:8000 # Status prometheus
-      - 40000:40000 # Debug port
-    healthcheck:
-      test: [ 'CMD', 'curl', '-v', 'http://localhost:8000/live' ]
-      interval: 10s
-      timeout: 10s
-      retries: 2
-      start_period: 20s
-    volumes:
-      - ./migrations:/root/migrations
-      - ./config.yml:/root/config.yml
-
-  swagger-ui:
-    container_name: swagger-ui
-    image: swaggerapi/swagger-ui:v4.10.3
-#    ports:
-#      # не открываем порт для доступа из вне композа. ходи через nginx http://localhost:8080/swagger/
-#      - 8081:8080
-    restart: always
-    volumes:
-      - ./swagger:/swagger
-    environment:
-      SWAGGER_JSON: /swagger/ozonmp/act_device_api/v1/act_device_api.swagger.json
-    depends_on:
-      - act-device-api
-    networks:
-      - ompnw
+  # jaeger:
+  #   container_name: jaeger
+  #   image: jaegertracing/all-in-one:1.32
+  #   restart: unless-stopped
+  #   ports:
+  #     - 6831:6831/udp
+  #     - 16686:16686
+  #   networks:
+  #     - ompnw
 
   kafka-ui:
     container_name: kafka-ui
@@ -152,12 +87,12 @@ services:
     volumes:
       - ./api/kafka:/var/protobuf_desc
     networks:
-      - ompnw
+      - ompnw_1
 
 volumes:
-  pgdata:
+  pgdata_1:
     driver: local
 
 networks:
-  ompnw:
+  ompnw_1:
     driver: bridge
