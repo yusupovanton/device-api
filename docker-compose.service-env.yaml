@@ -1,6 +1,7 @@
 version: "3.9"
 
 services:
+
   postgres:
     container_name: postgres
     image: postgres:13
@@ -19,7 +20,7 @@ services:
       APP_DB_USER: docker
       APP_DB_PASS: docker
     networks:
-      - ompnw_1
+      - ompnw
     volumes:
       # - pgdata:/var/lib/postgresql/data
       - ./scripts/init-database.sh:/docker-entrypoint-initdb.d/init-database.sh
@@ -38,7 +39,7 @@ services:
       ZOOKEEPER_TICK_TIME: 2000
       ZOOKEEPER_SYNC_LIMIT: 2
     networks:
-      - ompnw_1
+      - ompnw
 
   kafka_1:
     container_name: kafka_1
@@ -59,17 +60,17 @@ services:
       KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 1
     command: sh -c "((sleep 15 && kafka-topics --create --zookeeper zookeeper:32181 --replication-factor 1 --partitions 1 --topic templates)&) && /etc/confluent/docker/run"
     networks:
-      - ompnw_1
+      - ompnw
 
-  # jaeger:
-  #   container_name: jaeger
-  #   image: jaegertracing/all-in-one:1.32
-  #   restart: unless-stopped
-  #   ports:
-  #     - 6831:6831/udp
-  #     - 16686:16686
-  #   networks:
-  #     - ompnw
+#  jaeger:
+#    container_name: jaeger
+#    image: jaegertracing/all-in-one:1.32
+#    restart: unless-stopped
+#    ports:
+#      - 6831:6831/udp
+#      - 16686:16686
+#    networks:
+#      - ompnw
 
   kafka-ui:
     container_name: kafka-ui
@@ -87,12 +88,12 @@ services:
     volumes:
       - ./api/kafka:/var/protobuf_desc
     networks:
-      - ompnw_1
+      - ompnw
 
 volumes:
-  pgdata_1:
+  pgdata:
     driver: local
 
 networks:
-  ompnw_1:
+  ompnw:
     driver: bridge

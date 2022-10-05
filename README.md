@@ -17,15 +17,18 @@ $ make build # Build project
 ### For local development
  - up
    ```zsh
-   make dc-up
+   make dc-serv-up
+   make dc-serv-env-up
    ```
  - down
    ```zsh
-   make dc-down
+   make dc-serv-down
+   make dc-serv-env-down
    ```
  - rebuild app image and reUp compose
    ```shell
-   make dc-rebuild-reup
+   make dc-serv-rebuild-reup
+   make dc-serv-env-rebuild-reup
    ```
 ---
 
