@@ -96,47 +96,39 @@ build-go: generate-go .build
 # ----------------------------------------------------------------
 .PHONY: docker-build
 docker-build:
-	docker-compose -p ozon_route256 build act-device-api
+	docker-compose build act-device-api
 
 .PHONY: dc-serv-up
 dc-serv-up:
-	docker-compose -p ozon_route256 -f docker-compose.service.yaml up -d
+	docker-compose -f docker-compose.service.yaml up -d
 
 .PHONY: dc-serv-down
 dc-serv-down:
-	docker-compose -p ozon_route256 -f docker-compose.service.yaml down -v
+	docker-compose -f docker-compose.service.yaml down -v
 
 .PHONY: dc-serv-env-up
 dc-serv-env-up:
-	docker-compose -p ozon_route256 -f docker-compose.service-env.yaml up -d
+	docker-compose -f docker-compose.service-env.yaml up -d
 
 .PHONY: dc-serv-env-down
 dc-serv-env-down:
-	docker-compose -p ozon_route256 -f docker-compose.service-env.yaml down -v -t0
+	docker-compose -f docker-compose.service-env.yaml down -v -t0
 
 .PHONY: dc-serv-stop
 dc-serv-stop:
-	docker-compose -p ozon_route256 -f docker-compose.service.yaml stop
+	docker-compose -f docker-compose.service.yaml stop
 
 .PHONY: dc-serv-env-stop
 dc-serv-env-stop:
-	docker-compose -p ozon_route256 -f docker-compose.service-env.yaml stop
+	docker-compose -f docker-compose.service-env.yaml stop
 
 .PHONY: dc-serv-rebuild-reup
 dc-serv-rebuild-reup: dc-serv-down
-	docker-compose -p ozon_route256 -f docker-compose.service.yaml up --build --force-recreate -V -d
+	docker-compose -f docker-compose.service.yaml up --build --force-recreate -V -d
 
 .PHONY: dc-serv-env-rebuild-reup
 dc-serv-env-rebuild-reup: dc-serv-env-down
-	docker-compose -p ozon_route256 -f docker-compose.service-env.yaml up --build --force-recreate -V -d
-
-.PHONY: dc-serv-ps
-dc-serv-ps: 
-	docker-compose -p ozon_route256 -f docker-compose.service.yaml ps
-
-.PHONY: dc-serv-env-ps
-dc-serv-env-ps: 
-	docker-compose -p ozon_route256 -f docker-compose.service-env.yaml ps
+	docker-compose -f docker-compose.service-env.yaml up --build --force-recreate -V -d
 
 .PHONY: tools-version
 tools-version:
