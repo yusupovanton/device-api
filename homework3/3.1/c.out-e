@@ -1,0 +1,8 @@
+mode: set
+./greeter.go:8.42,11.28 2 1
+./greeter.go:19.2,20.68 2 1
+./greeter.go:11.28,13.3 1 1
+./greeter.go:13.8,13.36 1 1
+./greeter.go:13.36,16.3 1 1
+./greeter.go:16.8,16.36 1 1
+./greeter.go:16.36,18.3 1 1

@@ -6,6 +6,7 @@ require (
 	github.com/gammazero/workerpool v1.1.2
 	github.com/golang/mock v1.6.0
 	github.com/google/uuid v1.3.0
+	github.com/stretchr/testify v1.7.0
 )
 
 require (
@@ -38,6 +39,7 @@ require (
 	github.com/matttproud/golang_protobuf_extensions v1.0.1 // indirect
 	github.com/pierrec/lz4 v2.6.1+incompatible // indirect
 	github.com/pkg/errors v0.9.1 // indirect
+	github.com/pmezard/go-difflib v1.0.0 // indirect
 	github.com/prometheus/client_model v0.2.0 // indirect
 	github.com/prometheus/common v0.26.0 // indirect
 	github.com/prometheus/procfs v0.6.0 // indirect
@@ -46,11 +48,11 @@ require (
 	go.uber.org/multierr v1.5.0 // indirect
 	golang.org/x/crypto v0.0.0-20210921155107-089bfa567519 // indirect
 	golang.org/x/lint v0.0.0-20210508222113-6edffad5e616 // indirect
-	golang.org/x/net v0.0.0-20211015210444-4f30a5c0130f // indirect
+	golang.org/x/net v0.0.0-20220624214902-1bab6f366d9e // indirect
 	golang.org/x/sys v0.0.0-20220811171246-fbc7d0a398ab // indirect
 	golang.org/x/text v0.3.7 // indirect
 	golang.org/x/tools v0.1.11 // indirect
-	google.golang.org/genproto v0.0.0-20211029142109-e255c875f7c7 // indirect
+	google.golang.org/genproto v0.0.0-20220822174746-9e6da59bd2fc // indirect
 )
 
 require (
@@ -59,7 +61,7 @@ require (
 	github.com/Shopify/sarama v1.30.0
 	github.com/grpc-ecosystem/go-grpc-middleware v1.3.0
 	github.com/grpc-ecosystem/go-grpc-prometheus v1.2.0
-	github.com/grpc-ecosystem/grpc-gateway/v2 v2.6.0
+	github.com/grpc-ecosystem/grpc-gateway/v2 v2.11.3
 	github.com/jackc/pgx/v4 v4.13.0
 	github.com/jmoiron/sqlx v1.3.4
 	github.com/lib/pq v1.10.3
@@ -71,9 +73,9 @@ require (
 	github.com/uber/jaeger-lib v2.4.1+incompatible // indirect
 	gitlab.ozon.dev/qa/classroom-4/act-device-api/pkg/act-device-api v0.0.0-00010101000000-000000000000
 	go.uber.org/zap v1.13.0
-	google.golang.org/grpc v1.41.0
-	google.golang.org/protobuf v1.27.1
-	gopkg.in/yaml.v3 v3.0.0-20210107192922-496545a6307b
+	google.golang.org/grpc v1.48.0
+	google.golang.org/protobuf v1.28.1
+	gopkg.in/yaml.v3 v3.0.1
 )
 
 replace gitlab.ozon.dev/qa/classroom-4/act-device-api/pkg/act-device-api => ./pkg/act-device-api

@@ -30,6 +30,15 @@ $ make build # Build project
    make dc-serv-rebuild-reup
    make dc-serv-env-rebuild-reup
    ```
+ - grpc and html tests
+   ```zsh
+   make grpc-tests
+   make http-tests
+   ```
+  
+
+
+
 ---
 
 ## Services

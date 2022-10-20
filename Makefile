@@ -130,6 +130,15 @@ dc-serv-rebuild-reup: dc-serv-down
 dc-serv-env-rebuild-reup: dc-serv-env-down
 	docker-compose -f docker-compose.service-env.yaml up --build --force-recreate -V -d
 
+.PHONY: grpc-tests
+grpc-tests: 
+	go test ./homework3/3.2/tests -v -run Test_All_gRPC
+
+.PHONY: http-tests
+http-tests: 
+	go test ./homework3/3.2/tests -v -run Test_All_HTTP
+
+	
 .PHONY: tools-version
 tools-version:
 	@ curl --version
