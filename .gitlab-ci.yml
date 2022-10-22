@@ -32,8 +32,14 @@ linter:
     - golangci-lint-run --new-from-rev 09cb7872e296d9e9fa8d4f816bb73cf25706b44a -v
   
 unit:
-  stage: test
+  stage: build
   script:
     - apk add --update make curl git protoc protobuf protobuf-dev build-base
     - go install gotest.tools/gotestsum@latest
     - make gotestsum
+  coverage: '/^total:\s+\(statements\)\s+\d+.\d+%$/'
+  artifacts: 
+    paths:
+      - json-report.txt
+    reports:
+      junit: unit-tests.xml
