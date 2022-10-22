@@ -81,7 +81,7 @@ e2e:
     - ./bin/grpc-server &
     - sleep 5
   script:
-    - go test -json -tags e2e_test ./test/... > out.json
+    - go test -json -tags e2e_test ./... > out.json
     - cat out.json
   needs:
     - build
