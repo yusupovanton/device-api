@@ -31,11 +31,11 @@ unit:
   script:
     - echo "Run unit tests"
 
-# linter:
-#   stage: build
-#   image: gitlab.ozon.dev/qa/classroom-4/students/dependency_proxy/containers/golangci/golangci-lint
-#   script:
-#     - echo "Run linters"
+linter:
+  stage: build
+  image: gitlab.ozon.dev/qa/classroom-4/students/dependency_proxy/containers/golangci/golangci-lint
+  script:
+    - echo "Run linters"
 
 pre-commit:
   stage: build
