@@ -33,7 +33,7 @@ linter:
   
 unit:
   stage: test
-  before script:
+  before-script:
     - apk add --update make curl git protoc protobuf protobuf-dev build-base
     - go install gotest.tools/gotestsum@latest
   script:
