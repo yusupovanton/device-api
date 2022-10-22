@@ -26,7 +26,7 @@ run:
 
 .PHONY: lint
 lint:
-	golangci-lint run ./...
+	golangci-lint run --new-from-rev 09cb7872e296d9e9fa8d4f816bb73cf25706b44a ./...
 
 
 .PHONY: test

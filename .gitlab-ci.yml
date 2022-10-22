@@ -25,4 +25,9 @@ build:
       - bin/
     expire_in: 1 days
 
-
+linter:
+  stage: build
+  image: gitlab.ozon.dev/qa/classroom-4/students/dependency_proxy/containers/golangci/golangci-lint
+  script:
+    - golangci-lint-run -v --new-from-rev
+  
