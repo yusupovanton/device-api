@@ -1,6 +1,3 @@
-//go:build e2e_test
-// +build e2e_test
-
 package tests
 
 import (
@@ -60,7 +57,7 @@ func Test_http_DescribeDeviceV1(t *testing.T) {
 }
 
 func Test_http_DeleteDeviceV1(t *testing.T) {
-	deviceId := "1"
+	deviceId := "4"
 	url := baseurl + "/api/v1/devices/" + deviceId
 	req, err := http.NewRequest("DELETE", url, nil)
 	assert.NoError(t, err)
@@ -81,7 +78,7 @@ func Test_http_UpdateDeviceV1(t *testing.T) {
 
 	assert.NoError(t, err)
 
-	deviceId := "1"
+	deviceId := "2"
 	url := baseurl + "/api/v1/devices/" + deviceId
 	req, err := http.NewRequest("PUT", url, bytes.NewBuffer(json_data))
 	assert.NoError(t, err)
@@ -138,29 +135,30 @@ func Test_http_AckNotifV1(t *testing.T) {
 			http.StatusOK, resp.StatusCode, respBody)
 	}
 }
-func Test_http_SubscribeNotifV1(t *testing.T) {
-	deviceId := "1"
-	url := baseurl + "/api/v1/notification/subscribe/" + deviceId
-	resp, err := http.Get(url)
-	assert.NoError(t, err)
 
-	if resp.StatusCode != http.StatusOK {
-		respBody, err := io.ReadAll(resp.Body)
-		assert.NoError(t, err)
-		t.Fatalf("Invalid status code. Expected %d, got %d for %s. Response: %s",
-			http.StatusOK, resp.StatusCode, deviceId, respBody)
-	}
-}
+// func Test_http_SubscribeNotifV1(t *testing.T) {
+// 	deviceId := "5"
+// 	url := baseurl + "/api/v1/notification/subscribe/" + deviceId
+// 	resp, err := http.Get(url)
+// 	assert.NoError(t, err)
 
-func Test_All_HTTP(t *testing.T) {
-	t.Run("Should list devices", Test_http_ListDevicesV1)
-	t.Run("Should create devices", Test_http_CreateDeviceV1)
-	t.Run("Should describe devices", Test_http_DescribeDeviceV1)
-	t.Run("Should update devices", Test_http_UpdateDeviceV1)
-	t.Run("Should delete devices", Test_http_DeleteDeviceV1)
-	t.Run("Should send out notifications for a given device", Test_http_SendNotifV1)
-	t.Run("Should show notifications for a given device", Test_http_GetNotifications)
-	t.Run("Should acknowledge delivery for a given notification", Test_http_AckNotifV1)
-	t.Run("Should subscribe for delivery for a given device", Test_http_AckNotifV1)
+// 	if resp.StatusCode != http.StatusOK {
+// 		respBody, err := io.ReadAll(resp.Body)
+// 		assert.NoError(t, err)
+// 		t.Fatalf("Invalid status code. Expected %d, got %d for %s. Response: %s",
+// 			http.StatusOK, resp.StatusCode, deviceId, respBody)
+// 	}
+// }
 
-}
+// func Test_All_HTTP(t *testing.T) {
+// 	t.Run("Should list devices", Test_http_ListDevicesV1)
+// 	t.Run("Should create devices", Test_http_CreateDeviceV1)
+// 	t.Run("Should describe devices", Test_http_DescribeDeviceV1)
+// 	t.Run("Should update devices", Test_http_UpdateDeviceV1)
+// 	t.Run("Should delete devices", Test_http_DeleteDeviceV1)
+// 	t.Run("Should send out notifications for a given device", Test_http_SendNotifV1)
+// 	t.Run("Should show notifications for a given device", Test_http_GetNotifications)
+// 	t.Run("Should acknowledge delivery for a given notification", Test_http_AckNotifV1)
+// 	// t.Run("Should subscribe for delivery for a given device", Test_http_SubscribeNotifV1)
+
+// }

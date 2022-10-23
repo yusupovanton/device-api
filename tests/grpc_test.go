@@ -1,6 +1,3 @@
-//go:build e2e_test
-// +build e2e_test
-
 package tests
 
 import (
@@ -216,14 +213,14 @@ func Test_grpc_SubscribeNotifV1(t *testing.T) {
 	log.Print(resNotif)
 }
 
-func Test_All_gRPC(t *testing.T) {
-	t.Run("Should properly provide a list of existing devices", Test_grpc_ListDevicesV1)
-	t.Run("Should properly create a given device", Test_grpc_CreateDeviceV1)
-	t.Run("Should properly describe a given device", Test_grpc_DescribeDeviceV1)
-	t.Run("Should properly delete a given device", Test_grpc_RemoveDeviceV1)
-	t.Run("Should properly update a given device", Test_grpc_UpdateDeviceV1)
-	t.Run("Should properly create a notification with given contents", Test_grpc_SendNotificationV1)
-	t.Run("Should properly get a notification with given DeviceID", Test_grpc_GetNotificationV1)
-	t.Run("Should properly acknowledge the notification delivery", Test_grpc_AckNotificationV1)
-	t.Run("Should properly subscribe for a given device", Test_grpc_SubscribeNotifV1)
-}
+// func Test_All_gRPC(t *testing.T) {
+// 	t.Run("Should properly provide a list of existing devices", Test_grpc_ListDevicesV1)
+// 	t.Run("Should properly create a given device", Test_grpc_CreateDeviceV1)
+// 	t.Run("Should properly describe a given device", Test_grpc_DescribeDeviceV1)
+// 	t.Run("Should properly delete a given device", Test_grpc_RemoveDeviceV1)
+// 	t.Run("Should properly update a given device", Test_grpc_UpdateDeviceV1)
+// 	t.Run("Should properly create a notification with given contents", Test_grpc_SendNotificationV1)
+// 	t.Run("Should properly get a notification with given DeviceID", Test_grpc_GetNotificationV1)
+// 	t.Run("Should properly acknowledge the notification delivery", Test_grpc_AckNotificationV1)
+// 	t.Run("Should properly subscribe for a given device", Test_grpc_SubscribeNotifV1)
+// }
