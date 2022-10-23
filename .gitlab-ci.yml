@@ -37,8 +37,8 @@ unit:
   before_script:
     - apk add --update make curl git protoc protobuf protobuf-dev build-base
     - go install gotest.tools/gotestsum@latest
-    - ./bin/grpc-server & # Может быть фигней
-    - sleep 5
+    # - ./bin/grpc-server & # Может быть фигней
+    # - sleep 5
   script:
     - make gotestsum
   coverage: '/^total:\s+\(statements\)\s+\d+.\d+%$/'
@@ -48,8 +48,7 @@ unit:
       - json-report.txt
     reports:
       junit: unit-tests.xml
-  needs:
-    - build
+
 
 e2e:
   stage: test
@@ -90,5 +89,6 @@ e2e:
     - cat out.json
   needs:
     - build
+    - unit
   
 
