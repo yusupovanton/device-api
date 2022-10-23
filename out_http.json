@@ -1,0 +1,88 @@
+{"Time":"2022-10-23T16:26:03.07612+03:00","Action":"output","Package":"gitlab.ozon.dev/qa/classroom-4/act-device-api/cmd/act-device-api","Output":"?   \tgitlab.ozon.dev/qa/classroom-4/act-device-api/cmd/act-device-api\t[no test files]\n"}
+{"Time":"2022-10-23T16:26:03.076617+03:00","Action":"skip","Package":"gitlab.ozon.dev/qa/classroom-4/act-device-api/cmd/act-device-api","Elapsed":0.001}
+{"Time":"2022-10-23T16:26:03.178361+03:00","Action":"run","Package":"gitlab.ozon.dev/qa/classroom-4/act-device-api/internal/app/retranslator","Test":"TestStart"}
+{"Time":"2022-10-23T16:26:03.178394+03:00","Action":"output","Package":"gitlab.ozon.dev/qa/classroom-4/act-device-api/internal/app/retranslator","Test":"TestStart","Output":"=== RUN   TestStart\n"}
+{"Time":"2022-10-23T16:26:03.178596+03:00","Action":"output","Package":"gitlab.ozon.dev/qa/classroom-4/act-device-api/internal/app/retranslator","Test":"TestStart","Output":"--- PASS: TestStart (1.00s)\n"}
+{"Time":"2022-10-23T16:26:03.178612+03:00","Action":"pass","Package":"gitlab.ozon.dev/qa/classroom-4/act-device-api/internal/app/retranslator","Test":"TestStart","Elapsed":1}
+{"Time":"2022-10-23T16:26:03.178622+03:00","Action":"run","Package":"gitlab.ozon.dev/qa/classroom-4/act-device-api/internal/app/retranslator","Test":"TestRemoveAfterSendSuccess"}
+{"Time":"2022-10-23T16:26:03.178638+03:00","Action":"output","Package":"gitlab.ozon.dev/qa/classroom-4/act-device-api/internal/app/retranslator","Test":"TestRemoveAfterSendSuccess","Output":"=== RUN   TestRemoveAfterSendSuccess\n"}
+{"Time":"2022-10-23T16:26:03.178649+03:00","Action":"output","Package":"gitlab.ozon.dev/qa/classroom-4/act-device-api/internal/app/retranslator","Test":"TestRemoveAfterSendSuccess","Output":"=== PAUSE TestRemoveAfterSendSuccess\n"}
+{"Time":"2022-10-23T16:26:03.178658+03:00","Action":"pause","Package":"gitlab.ozon.dev/qa/classroom-4/act-device-api/internal/app/retranslator","Test":"TestRemoveAfterSendSuccess"}
+{"Time":"2022-10-23T16:26:03.178671+03:00","Action":"run","Package":"gitlab.ozon.dev/qa/classroom-4/act-device-api/internal/app/retranslator","Test":"TestUnlockAfterSendError"}
+{"Time":"2022-10-23T16:26:03.178686+03:00","Action":"output","Package":"gitlab.ozon.dev/qa/classroom-4/act-device-api/internal/app/retranslator","Test":"TestUnlockAfterSendError","Output":"=== RUN   TestUnlockAfterSendError\n"}
+{"Time":"2022-10-23T16:26:03.178694+03:00","Action":"output","Package":"gitlab.ozon.dev/qa/classroom-4/act-device-api/internal/app/retranslator","Test":"TestUnlockAfterSendError","Output":"=== PAUSE TestUnlockAfterSendError\n"}
+{"Time":"2022-10-23T16:26:03.178702+03:00","Action":"pause","Package":"gitlab.ozon.dev/qa/classroom-4/act-device-api/internal/app/retranslator","Test":"TestUnlockAfterSendError"}
+{"Time":"2022-10-23T16:26:03.178711+03:00","Action":"cont","Package":"gitlab.ozon.dev/qa/classroom-4/act-device-api/internal/app/retranslator","Test":"TestRemoveAfterSendSuccess"}
+{"Time":"2022-10-23T16:26:03.178721+03:00","Action":"output","Package":"gitlab.ozon.dev/qa/classroom-4/act-device-api/internal/app/retranslator","Test":"TestRemoveAfterSendSuccess","Output":"=== CONT  TestRemoveAfterSendSuccess\n"}
+{"Time":"2022-10-23T16:26:03.178731+03:00","Action":"cont","Package":"gitlab.ozon.dev/qa/classroom-4/act-device-api/internal/app/retranslator","Test":"TestUnlockAfterSendError"}
+{"Time":"2022-10-23T16:26:03.17874+03:00","Action":"output","Package":"gitlab.ozon.dev/qa/classroom-4/act-device-api/internal/app/retranslator","Test":"TestUnlockAfterSendError","Output":"=== CONT  TestUnlockAfterSendError\n"}
+{"Time":"2022-10-23T16:26:03.17875+03:00","Action":"output","Package":"gitlab.ozon.dev/qa/classroom-4/act-device-api/internal/app/retranslator","Test":"TestRemoveAfterSendSuccess","Output":"--- PASS: TestRemoveAfterSendSuccess (1.00s)\n"}
+{"Time":"2022-10-23T16:26:03.178761+03:00","Action":"pass","Package":"gitlab.ozon.dev/qa/classroom-4/act-device-api/internal/app/retranslator","Test":"TestRemoveAfterSendSuccess","Elapsed":1}
+{"Time":"2022-10-23T16:26:03.17877+03:00","Action":"output","Package":"gitlab.ozon.dev/qa/classroom-4/act-device-api/internal/app/retranslator","Test":"TestUnlockAfterSendError","Output":"--- PASS: TestUnlockAfterSendError (1.00s)\n"}
+{"Time":"2022-10-23T16:26:03.178804+03:00","Action":"pass","Package":"gitlab.ozon.dev/qa/classroom-4/act-device-api/internal/app/retranslator","Test":"TestUnlockAfterSendError","Elapsed":1}
+{"Time":"2022-10-23T16:26:03.178811+03:00","Action":"output","Package":"gitlab.ozon.dev/qa/classroom-4/act-device-api/internal/app/retranslator","Output":"PASS\n"}
+{"Time":"2022-10-23T16:26:03.178817+03:00","Action":"output","Package":"gitlab.ozon.dev/qa/classroom-4/act-device-api/internal/app/retranslator","Output":"ok  \tgitlab.ozon.dev/qa/classroom-4/act-device-api/internal/app/retranslator\t(cached)\n"}
+{"Time":"2022-10-23T16:26:03.178829+03:00","Action":"pass","Package":"gitlab.ozon.dev/qa/classroom-4/act-device-api/internal/app/retranslator","Elapsed":0}
+{"Time":"2022-10-23T16:26:03.257449+03:00","Action":"run","Package":"gitlab.ozon.dev/qa/classroom-4/act-device-api/tests","Test":"Test_http_ListDevicesV1"}
+{"Time":"2022-10-23T16:26:03.257839+03:00","Action":"output","Package":"gitlab.ozon.dev/qa/classroom-4/act-device-api/tests","Test":"Test_http_ListDevicesV1","Output":"=== RUN   Test_http_ListDevicesV1\n"}
+{"Time":"2022-10-23T16:26:03.257854+03:00","Action":"output","Package":"gitlab.ozon.dev/qa/classroom-4/act-device-api/tests","Test":"Test_http_ListDevicesV1","Output":"--- PASS: Test_http_ListDevicesV1 (0.01s)\n"}
+{"Time":"2022-10-23T16:26:03.257865+03:00","Action":"pass","Package":"gitlab.ozon.dev/qa/classroom-4/act-device-api/tests","Test":"Test_http_ListDevicesV1","Elapsed":0.01}
+{"Time":"2022-10-23T16:26:03.257872+03:00","Action":"run","Package":"gitlab.ozon.dev/qa/classroom-4/act-device-api/tests","Test":"Test_http_CreateDeviceV1"}
+{"Time":"2022-10-23T16:26:03.257877+03:00","Action":"output","Package":"gitlab.ozon.dev/qa/classroom-4/act-device-api/tests","Test":"Test_http_CreateDeviceV1","Output":"=== RUN   Test_http_CreateDeviceV1\n"}
+{"Time":"2022-10-23T16:26:03.257883+03:00","Action":"output","Package":"gitlab.ozon.dev/qa/classroom-4/act-device-api/tests","Test":"Test_http_CreateDeviceV1","Output":"--- PASS: Test_http_CreateDeviceV1 (0.01s)\n"}
+{"Time":"2022-10-23T16:26:03.257889+03:00","Action":"pass","Package":"gitlab.ozon.dev/qa/classroom-4/act-device-api/tests","Test":"Test_http_CreateDeviceV1","Elapsed":0.01}
+{"Time":"2022-10-23T16:26:03.257894+03:00","Action":"run","Package":"gitlab.ozon.dev/qa/classroom-4/act-device-api/tests","Test":"Test_http_DescribeDeviceV1"}
+{"Time":"2022-10-23T16:26:03.257899+03:00","Action":"output","Package":"gitlab.ozon.dev/qa/classroom-4/act-device-api/tests","Test":"Test_http_DescribeDeviceV1","Output":"=== RUN   Test_http_DescribeDeviceV1\n"}
+{"Time":"2022-10-23T16:26:03.257905+03:00","Action":"output","Package":"gitlab.ozon.dev/qa/classroom-4/act-device-api/tests","Test":"Test_http_DescribeDeviceV1","Output":"--- PASS: Test_http_DescribeDeviceV1 (0.01s)\n"}
+{"Time":"2022-10-23T16:26:03.257911+03:00","Action":"pass","Package":"gitlab.ozon.dev/qa/classroom-4/act-device-api/tests","Test":"Test_http_DescribeDeviceV1","Elapsed":0.01}
+{"Time":"2022-10-23T16:26:03.257916+03:00","Action":"run","Package":"gitlab.ozon.dev/qa/classroom-4/act-device-api/tests","Test":"Test_http_DeleteDeviceV1"}
+{"Time":"2022-10-23T16:26:03.257921+03:00","Action":"output","Package":"gitlab.ozon.dev/qa/classroom-4/act-device-api/tests","Test":"Test_http_DeleteDeviceV1","Output":"=== RUN   Test_http_DeleteDeviceV1\n"}
+{"Time":"2022-10-23T16:26:03.257927+03:00","Action":"output","Package":"gitlab.ozon.dev/qa/classroom-4/act-device-api/tests","Test":"Test_http_DeleteDeviceV1","Output":"--- PASS: Test_http_DeleteDeviceV1 (0.02s)\n"}
+{"Time":"2022-10-23T16:26:03.257932+03:00","Action":"pass","Package":"gitlab.ozon.dev/qa/classroom-4/act-device-api/tests","Test":"Test_http_DeleteDeviceV1","Elapsed":0.02}
+{"Time":"2022-10-23T16:26:03.257937+03:00","Action":"run","Package":"gitlab.ozon.dev/qa/classroom-4/act-device-api/tests","Test":"Test_http_UpdateDeviceV1"}
+{"Time":"2022-10-23T16:26:03.257942+03:00","Action":"output","Package":"gitlab.ozon.dev/qa/classroom-4/act-device-api/tests","Test":"Test_http_UpdateDeviceV1","Output":"=== RUN   Test_http_UpdateDeviceV1\n"}
+{"Time":"2022-10-23T16:26:03.257962+03:00","Action":"output","Package":"gitlab.ozon.dev/qa/classroom-4/act-device-api/tests","Test":"Test_http_UpdateDeviceV1","Output":"--- PASS: Test_http_UpdateDeviceV1 (0.01s)\n"}
+{"Time":"2022-10-23T16:26:03.257968+03:00","Action":"pass","Package":"gitlab.ozon.dev/qa/classroom-4/act-device-api/tests","Test":"Test_http_UpdateDeviceV1","Elapsed":0.01}
+{"Time":"2022-10-23T16:26:03.257974+03:00","Action":"run","Package":"gitlab.ozon.dev/qa/classroom-4/act-device-api/tests","Test":"Test_http_GetNotifications"}
+{"Time":"2022-10-23T16:26:03.257978+03:00","Action":"output","Package":"gitlab.ozon.dev/qa/classroom-4/act-device-api/tests","Test":"Test_http_GetNotifications","Output":"=== RUN   Test_http_GetNotifications\n"}
+{"Time":"2022-10-23T16:26:03.257984+03:00","Action":"output","Package":"gitlab.ozon.dev/qa/classroom-4/act-device-api/tests","Test":"Test_http_GetNotifications","Output":"--- PASS: Test_http_GetNotifications (0.01s)\n"}
+{"Time":"2022-10-23T16:26:03.25799+03:00","Action":"pass","Package":"gitlab.ozon.dev/qa/classroom-4/act-device-api/tests","Test":"Test_http_GetNotifications","Elapsed":0.01}
+{"Time":"2022-10-23T16:26:03.257995+03:00","Action":"run","Package":"gitlab.ozon.dev/qa/classroom-4/act-device-api/tests","Test":"Test_http_SendNotifV1"}
+{"Time":"2022-10-23T16:26:03.258+03:00","Action":"output","Package":"gitlab.ozon.dev/qa/classroom-4/act-device-api/tests","Test":"Test_http_SendNotifV1","Output":"=== RUN   Test_http_SendNotifV1\n"}
+{"Time":"2022-10-23T16:26:03.258005+03:00","Action":"output","Package":"gitlab.ozon.dev/qa/classroom-4/act-device-api/tests","Test":"Test_http_SendNotifV1","Output":"--- PASS: Test_http_SendNotifV1 (0.01s)\n"}
+{"Time":"2022-10-23T16:26:03.258011+03:00","Action":"pass","Package":"gitlab.ozon.dev/qa/classroom-4/act-device-api/tests","Test":"Test_http_SendNotifV1","Elapsed":0.01}
+{"Time":"2022-10-23T16:26:03.258016+03:00","Action":"run","Package":"gitlab.ozon.dev/qa/classroom-4/act-device-api/tests","Test":"Test_http_AckNotifV1"}
+{"Time":"2022-10-23T16:26:03.258021+03:00","Action":"output","Package":"gitlab.ozon.dev/qa/classroom-4/act-device-api/tests","Test":"Test_http_AckNotifV1","Output":"=== RUN   Test_http_AckNotifV1\n"}
+{"Time":"2022-10-23T16:26:03.258027+03:00","Action":"output","Package":"gitlab.ozon.dev/qa/classroom-4/act-device-api/tests","Test":"Test_http_AckNotifV1","Output":"--- PASS: Test_http_AckNotifV1 (0.01s)\n"}
+{"Time":"2022-10-23T16:26:03.258032+03:00","Action":"pass","Package":"gitlab.ozon.dev/qa/classroom-4/act-device-api/tests","Test":"Test_http_AckNotifV1","Elapsed":0.01}
+{"Time":"2022-10-23T16:26:03.25804+03:00","Action":"output","Package":"gitlab.ozon.dev/qa/classroom-4/act-device-api/tests","Output":"PASS\n"}
+{"Time":"2022-10-23T16:26:03.258048+03:00","Action":"output","Package":"gitlab.ozon.dev/qa/classroom-4/act-device-api/tests","Output":"ok  \tgitlab.ozon.dev/qa/classroom-4/act-device-api/tests\t(cached)\n"}
+{"Time":"2022-10-23T16:26:03.258062+03:00","Action":"pass","Package":"gitlab.ozon.dev/qa/classroom-4/act-device-api/tests","Elapsed":0.001}
+{"Time":"2022-10-23T16:26:03.393955+03:00","Action":"output","Package":"gitlab.ozon.dev/qa/classroom-4/act-device-api/cmd/grpc-server","Output":"?   \tgitlab.ozon.dev/qa/classroom-4/act-device-api/cmd/grpc-server\t[no test files]\n"}
+{"Time":"2022-10-23T16:26:03.394181+03:00","Action":"skip","Package":"gitlab.ozon.dev/qa/classroom-4/act-device-api/cmd/grpc-server","Elapsed":0}
+{"Time":"2022-10-23T16:26:03.394216+03:00","Action":"output","Package":"gitlab.ozon.dev/qa/classroom-4/act-device-api/internal","Output":"?   \tgitlab.ozon.dev/qa/classroom-4/act-device-api/internal\t[no test files]\n"}
+{"Time":"2022-10-23T16:26:03.394232+03:00","Action":"skip","Package":"gitlab.ozon.dev/qa/classroom-4/act-device-api/internal","Elapsed":0}
+{"Time":"2022-10-23T16:26:03.394271+03:00","Action":"output","Package":"gitlab.ozon.dev/qa/classroom-4/act-device-api/internal/api","Output":"?   \tgitlab.ozon.dev/qa/classroom-4/act-device-api/internal/api\t[no test files]\n"}
+{"Time":"2022-10-23T16:26:03.394295+03:00","Action":"skip","Package":"gitlab.ozon.dev/qa/classroom-4/act-device-api/internal/api","Elapsed":0}
+{"Time":"2022-10-23T16:26:03.394314+03:00","Action":"output","Package":"gitlab.ozon.dev/qa/classroom-4/act-device-api/internal/app/consumer","Output":"?   \tgitlab.ozon.dev/qa/classroom-4/act-device-api/internal/app/consumer\t[no test files]\n"}
+{"Time":"2022-10-23T16:26:03.394325+03:00","Action":"skip","Package":"gitlab.ozon.dev/qa/classroom-4/act-device-api/internal/app/consumer","Elapsed":0}
+{"Time":"2022-10-23T16:26:03.394337+03:00","Action":"output","Package":"gitlab.ozon.dev/qa/classroom-4/act-device-api/internal/app/producer","Output":"?   \tgitlab.ozon.dev/qa/classroom-4/act-device-api/internal/app/producer\t[no test files]\n"}
+{"Time":"2022-10-23T16:26:03.394344+03:00","Action":"skip","Package":"gitlab.ozon.dev/qa/classroom-4/act-device-api/internal/app/producer","Elapsed":0}
+{"Time":"2022-10-23T16:26:03.39436+03:00","Action":"output","Package":"gitlab.ozon.dev/qa/classroom-4/act-device-api/internal/app/repo","Output":"?   \tgitlab.ozon.dev/qa/classroom-4/act-device-api/internal/app/repo\t[no test files]\n"}
+{"Time":"2022-10-23T16:26:03.394367+03:00","Action":"skip","Package":"gitlab.ozon.dev/qa/classroom-4/act-device-api/internal/app/repo","Elapsed":0}
+{"Time":"2022-10-23T16:26:03.394392+03:00","Action":"output","Package":"gitlab.ozon.dev/qa/classroom-4/act-device-api/internal/app/sender","Output":"?   \tgitlab.ozon.dev/qa/classroom-4/act-device-api/internal/app/sender\t[no test files]\n"}
+{"Time":"2022-10-23T16:26:03.394399+03:00","Action":"skip","Package":"gitlab.ozon.dev/qa/classroom-4/act-device-api/internal/app/sender","Elapsed":0}
+{"Time":"2022-10-23T16:26:03.394412+03:00","Action":"output","Package":"gitlab.ozon.dev/qa/classroom-4/act-device-api/internal/config","Output":"?   \tgitlab.ozon.dev/qa/classroom-4/act-device-api/internal/config\t[no test files]\n"}
+{"Time":"2022-10-23T16:26:03.39442+03:00","Action":"skip","Package":"gitlab.ozon.dev/qa/classroom-4/act-device-api/internal/config","Elapsed":0}
+{"Time":"2022-10-23T16:26:03.394437+03:00","Action":"output","Package":"gitlab.ozon.dev/qa/classroom-4/act-device-api/internal/database","Output":"?   \tgitlab.ozon.dev/qa/classroom-4/act-device-api/internal/database\t[no test files]\n"}
+{"Time":"2022-10-23T16:26:03.394443+03:00","Action":"skip","Package":"gitlab.ozon.dev/qa/classroom-4/act-device-api/internal/database","Elapsed":0}
+{"Time":"2022-10-23T16:26:03.394466+03:00","Action":"output","Package":"gitlab.ozon.dev/qa/classroom-4/act-device-api/internal/mocks","Output":"?   \tgitlab.ozon.dev/qa/classroom-4/act-device-api/internal/mocks\t[no test files]\n"}
+{"Time":"2022-10-23T16:26:03.394476+03:00","Action":"skip","Package":"gitlab.ozon.dev/qa/classroom-4/act-device-api/internal/mocks","Elapsed":0}
+{"Time":"2022-10-23T16:26:03.394488+03:00","Action":"output","Package":"gitlab.ozon.dev/qa/classroom-4/act-device-api/internal/model","Output":"?   \tgitlab.ozon.dev/qa/classroom-4/act-device-api/internal/model\t[no test files]\n"}
+{"Time":"2022-10-23T16:26:03.394495+03:00","Action":"skip","Package":"gitlab.ozon.dev/qa/classroom-4/act-device-api/internal/model","Elapsed":0}
+{"Time":"2022-10-23T16:26:03.39451+03:00","Action":"output","Package":"gitlab.ozon.dev/qa/classroom-4/act-device-api/internal/pkg/logger","Output":"?   \tgitlab.ozon.dev/qa/classroom-4/act-device-api/internal/pkg/logger\t[no test files]\n"}
+{"Time":"2022-10-23T16:26:03.39452+03:00","Action":"skip","Package":"gitlab.ozon.dev/qa/classroom-4/act-device-api/internal/pkg/logger","Elapsed":0}
+{"Time":"2022-10-23T16:26:03.394532+03:00","Action":"output","Package":"gitlab.ozon.dev/qa/classroom-4/act-device-api/internal/server","Output":"?   \tgitlab.ozon.dev/qa/classroom-4/act-device-api/internal/server\t[no test files]\n"}
+{"Time":"2022-10-23T16:26:03.394544+03:00","Action":"skip","Package":"gitlab.ozon.dev/qa/classroom-4/act-device-api/internal/server","Elapsed":0}
+{"Time":"2022-10-23T16:26:03.394568+03:00","Action":"output","Package":"gitlab.ozon.dev/qa/classroom-4/act-device-api/internal/tracer","Output":"?   \tgitlab.ozon.dev/qa/classroom-4/act-device-api/internal/tracer\t[no test files]\n"}
+{"Time":"2022-10-23T16:26:03.394577+03:00","Action":"skip","Package":"gitlab.ozon.dev/qa/classroom-4/act-device-api/internal/tracer","Elapsed":0}

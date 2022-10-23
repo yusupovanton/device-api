@@ -7,6 +7,7 @@ variables:
 stages:
   - build
   - e2e
+  - close
 
 pre-commit:
   stage: build
@@ -85,8 +86,8 @@ grpc-test:
     - ./bin/grpc-server &
     - sleep 5
   script:
-    - go test -json -tags grpc_test ./... > out.json
-    - cat out.json
+    - go test -json -tags grpc_test ./... > out_grpc.json
+    - cat out_grpc.json
   needs:
     - build
     - unit
@@ -128,8 +129,25 @@ http-test:
     - ./bin/grpc-server &
     - sleep 5
   script:
-    - go test -json -tags http_test ./... > out.json
-    - cat out.json
+    - go test -json -tags http_test ./... > out_http.json
+    - cat out_http.json
   needs:
     - build
     - unit
+
+ready to prod:
+  stage: close
+  when: manual
+  script:
+    - echo "Ready to prod"
+  needs: 
+    - http-test
+    - grpc-test
+
+close release:
+  stage: close
+  when: manual
+  script:
+    - echo "Ready to prod"
+
+
