@@ -100,6 +100,8 @@ http-test:
       alias: zookeeper
     - name: gitlab.ozon.dev/qa/classroom-4/students/dependency_proxy/containers/confluentinc/cp-kafka:7.1.0
       alias: kafka_1
+    - name: gitlab.ozon.dev/qa/classroom-4/students/dependency_proxy/containers/jaegertracing/all-in-one:1.32
+      alias: jaeger
   variables:
     # enable network
     FF_NETWORK_PER_BUILD: 1
