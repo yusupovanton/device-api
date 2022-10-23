@@ -1,5 +1,5 @@
-//go:build e2e_test
-// +build e2e_test
+//go:build http_test
+// +build http_test
 
 package tests
 

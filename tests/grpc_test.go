@@ -1,5 +1,5 @@
-//go:build e2e_test
-// +build e2e_test
+//go:build grpc_test
+// +build grpc_test
 
 package tests
 
