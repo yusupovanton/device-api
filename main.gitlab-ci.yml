@@ -7,7 +7,6 @@ variables:
 stages:
   - build
   - e2e
-  - close
 
 pre-commit:
   stage: build
@@ -134,3 +133,9 @@ http-test:
   needs:
     - build
     - unit
+
+
+trigger_job:
+  trigger:
+    include: prod.gitlab-ci.yml
+    strategy: depend
