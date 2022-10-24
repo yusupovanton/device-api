@@ -19,7 +19,16 @@ repos:
           - '--server'
           - 'https://gitlab.ozon.dev'
           - '--filename'
-          - '.gitlab-ci.yml'
+          - 'main.gitlab-ci.yml'
+          - '--insecure'
+          - '--private-token'
+          - 'glpat-Vpsum3hfazuGYxBbmWXp'
+      - id: gitlab-ci-linter
+        args:
+          - '--server'
+          - 'https://gitlab.ozon.dev'
+          - '--filename'
+          - 'prod.gitlab-ci.yml'
           - '--insecure'
           - '--private-token'
           - 'glpat-Vpsum3hfazuGYxBbmWXp'
