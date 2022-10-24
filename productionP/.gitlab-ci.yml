@@ -1,13 +1,26 @@
 stages:
   - prod
 
+release image:
+  stage: prod
+  when: always
+  script:
+    - echo "Making image for prod"
+
+release image:
+  stage: prod
+  when: always
+  script:
+    - echo "Deploying image for prod"
+
 ready to prod:
   stage: prod
+  when: manual
   script:
     - echo "Ready to prod"
 
 close release:
   stage: prod
-
+  when: manual
   script:
     - echo "Ready to prod"
