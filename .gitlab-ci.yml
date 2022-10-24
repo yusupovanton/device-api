@@ -5,17 +5,17 @@ variables:
   DOCKER_AUTH_CONFIG: '{"auths":{"gitlab.ozon.dev":{"username":"$CI_DEPENDENCY_PROXY_USER","password":"$CI_DEPENDENCY_PROXY_PASSWORD"}}}'
 
 stages:
-  # - release
+  - release
   - build
   - e2e
   - prod
 
-# release-detect:
-#   stage: release
-#   rules:
-#     - if: '$CI_COMMIT_TAG =~ /release\/\d+$/'
-#   script:
-#     - echo "This is a release prod"
+release-detect:
+  stage: release
+  rules:
+    - if: '$CI_COMMIT_TAG =~ /release\/.*\d\.\d$/'
+  script:
+    - echo "This is a release prod"
 
 pre-commit:
   stage: build
@@ -46,8 +46,8 @@ unit:
   before_script:
     - apk add --update make curl git protoc protobuf protobuf-dev build-base
     - go install gotest.tools/gotestsum@latest
-  # needs:
-  #   - release-detect
+  needs:
+    - release-detect
 
   script:
     - make gotestsum
@@ -148,7 +148,7 @@ http-test:
 trigger_job:
   stage: prod
   rules:
-    - if: '$CI_COMMIT_TAG =~ /release\/\d\.\d$/'
+    - if: '$CI_COMMIT_TAG =~ /release\/.*\d\.\d$/'
   trigger:
     include: productionP/.gitlab-ci.yml
     strategy: depend
