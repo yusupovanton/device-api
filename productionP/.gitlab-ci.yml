@@ -1,9 +1,3 @@
-image: gitlab.ozon.dev/qa/classroom-4/students/dependency_proxy/containers/golang:1.19-alpine
-
-variables:
-  ADD_DATA: 'data from vars.yml'
-  DOCKER_AUTH_CONFIG: '{"auths":{"gitlab.ozon.dev":{"username":"$CI_DEPENDENCY_PROXY_USER","password":"$CI_DEPENDENCY_PROXY_PASSWORD"}}}'
-
 stages:
   - prod
 
