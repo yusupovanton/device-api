@@ -1,5 +1,38 @@
 stages:
+  - canary
   - close
+
+.canary:
+  stage: canary
+  variables:
+    - CANARY: 0
+  when: manual
+
+canary_0:
+  extends: .canary
+  script:
+    - echo "Canary $CANARY%"
+
+canary_10:
+  extends: .canary
+  variables:
+    - CANARY: 10
+  script:
+    - echo "Canary $CANARY%"
+
+canary_50:
+  extends: .canary
+  variables:
+    - CANARY: 50
+  script:
+    - echo "Canary $CANARY%"
+
+canary_100:
+  extends: .canary
+  variables:
+    - CANARY: 100
+  script:
+    - echo "Canary $CANARY%"
 
 release image:
   stage: close
@@ -11,16 +44,10 @@ production:
   stage: close
   when: always
   script:
-    - echo "Deploying image for prod"
-
-ready to prod:
-  stage: close
-  when: manual
-  script:
-    - echo "Ready to prod"
+    - echo "Deploying image on prod"
 
 close release:
   stage: close
   when: manual
   script:
-    - echo "Ready to prod"
+    - echo "Closing release"
