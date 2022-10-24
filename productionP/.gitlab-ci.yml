@@ -2,6 +2,7 @@ stages:
   - canary
   - close
 
+# Canary is only triggered when canary is in the release tag
 .canary:
   stage: canary
   rules:
