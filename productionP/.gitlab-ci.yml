@@ -7,7 +7,7 @@ release image:
   script:
     - echo "Making image for prod"
 
-release image:
+production:
   stage: prod
   when: always
   script:
