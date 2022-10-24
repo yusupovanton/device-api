@@ -7,7 +7,7 @@ stages:
   rules:
     - if: '$CI_COMMIT_TAG =~ /release\/canary\/\d\.\d$/'
   variables:
-    - CANARY: 0
+    CANARY: 0
   when: manual
 
 canary_0:
@@ -18,21 +18,21 @@ canary_0:
 canary_10:
   extends: .canary
   variables:
-    - CANARY: 10
+    CANARY: 10
   script:
     - echo "Canary $CANARY%"
 
 canary_50:
   extends: .canary
   variables:
-    - CANARY: 50
+    CANARY: 50
   script:
     - echo "Canary $CANARY%"
 
 canary_100:
   extends: .canary
   variables:
-    - CANARY: 100
+    CANARY: 100
   script:
     - echo "Canary $CANARY%"
 
