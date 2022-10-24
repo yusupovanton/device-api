@@ -138,6 +138,9 @@ http-test:
 
 trigger_job:
   stage: prod
+  rules:
+    changes:
+      productionP
   trigger:
-    include: prod.gitlab-ci.yml
+    include: productionP/.gitlab-ci.yml
     strategy: depend
