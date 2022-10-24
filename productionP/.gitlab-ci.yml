@@ -4,6 +4,8 @@ stages:
 
 .canary:
   stage: canary
+  rules:
+    - if: '$CI_COMMIT_TAG =~ /release\/canary\/\d\.\d$/'
   variables:
     - CANARY: 0
   when: manual
