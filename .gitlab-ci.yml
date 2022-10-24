@@ -139,7 +139,7 @@ http-test:
 trigger_job:
   stage: prod
   rules:
-    - if: '$CI_COMMIT_TAG == "PROD_RELEASE"'
+    - if: '$CI_COMMIT_TAG == "PROD"'
   trigger:
     include: productionP/.gitlab-ci.yml
-    strategy: depend
+    strategy: depends
