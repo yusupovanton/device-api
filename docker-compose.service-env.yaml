@@ -1,6 +1,58 @@
 version: "3.9"
 
 services:
+  node-exporter:
+    image: prom/node-exporter:latest
+    container_name: node-exporter
+    restart: unless-stopped
+    expose:
+      - 9100
+    networks:
+      - ompnw
+
+  grafana:
+    image: grafana/grafana:latest
+    container_name: grafana
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./docker/grafana/provisioning:/etc/grafana/provisioning/
+      - ./docker/grafana/data:/var/lib/grafana/
+    environment:
+      GF_SECURITY_ADMIN_USER: admin
+      GF_SECURITY_ADMIN_PASSWORD: admin
+      GF_INSTALL_PLUGINS: "grafana-clock-panel,briangann-gauge-panel,natel-plotly-panel,grafana-simple-json-datasource"
+      GF_AUTH_ANONYMOUS_ENABLED: "true"
+    networks:
+      - ompnw
+
+  victoria:
+    container_name: victoria-metrics
+    # - Используем образ victoria-metrics вместо обычного prometheus
+    # - Потому что он может притворяться influxDB и TSDB - что очень удобно для НТ
+    image: victoriametrics/victoria-metrics
+    restart: unless-stopped
+    # - Открываем порты виктории для HTTP метрик
+    ports:
+      - "8428:8428"
+      - "4242:4242"
+      - "8089:8089/tcp"
+      - "8089:8089/udp"
+    volumes:
+    # - Локальная директория для мониторинга
+      - ./docker/victoria:/victoria-metrics-data
+    # - Подключаем файл с конфигурацией прометеуса -именно в нем мы будем настраивать таргеты
+      - ./prometheus.yml:/prometheus.yml
+    command:
+    # - Включаем opentsdb
+      - -opentsdbHTTPListenAddr=:4242
+    # - Включаем influx
+      - -influxListenAddr=:8089
+    # - Подключаем Прометеус конфиг файл
+      - -promscrape.config=/prometheus.yml
+    # - Подключаем к сети наших контейнеров
+    networks:
+      - ompnw
 
   postgres:
     container_name: postgres
@@ -97,3 +149,4 @@ volumes:
 networks:
   ompnw:
     driver: bridge
+

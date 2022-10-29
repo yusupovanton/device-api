@@ -1,0 +1,11 @@
+2022-10-29 09:48:53,328	Seems like pandora result file not specified... adding defaults
+2022-10-29 09:51:33,470	Interrupting
+2022-10-29 09:51:33,472	Test interrupted:
+<class 'KeyboardInterrupt'>: 
+  File "/usr/local/lib/python3.8/dist-packages/yandextank/core/tankworker.py", line 79, in run
+    self.retcode = self.core.wait_for_finish()
+
+  File "/usr/local/lib/python3.8/dist-packages/yandextank/core/tankcore.py", line 326, in wait_for_finish
+    time.sleep(0.5 - diff)
+
+2022-10-29 09:51:33,506	Terminating worker process with PID 29

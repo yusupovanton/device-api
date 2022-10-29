@@ -1,0 +1,116 @@
+autostop:
+  autostop: []
+  enabled: true
+  package: yandextank.plugins.Autostop
+  report_file: autostop_report.txt
+bfg:
+  enabled: false
+  package: yandextank.plugins.Bfg
+console:
+  cases_max_spark: 120
+  cases_sort_by: count
+  disable_all_colors: false
+  disable_colors: ''
+  enabled: true
+  info_panel_width: 33
+  max_case_len: 32
+  package: yandextank.plugins.Console
+  short_only: false
+  sizes_max_spark: 120
+  times_max_spark: 120
+core:
+  affinity: ''
+  aggregator_max_wait: 31
+  api_jobno: 2022-10-29_09-48-52.479676
+  artifacts_base_dir: ./logs
+  cmdline: /usr/local/bin/yandex-tank -f load.yaml
+  debug: false
+  ignore_lock: false
+  lock_dir: /var/lock/
+  pid: 1
+  taskset_path: taskset
+  uuid: 7cbe3655-1fdb-42f0-96b6-dab9369a5b33
+influx:
+  enabled: false
+  package: yandextank.plugins.InfluxUploader
+jmeter:
+  enabled: false
+  package: yandextank.plugins.JMeter
+json_report:
+  enabled: true
+  monitoring_log: monitoring.log
+  package: yandextank.plugins.JsonReport
+  test_data_log: test_data.log
+metaconf:
+  enabled: false
+  package: yandextank.plugins.MetaConf
+offline_report:
+  enabled: false
+  package: yandextank.plugins.OfflineReport
+opentsdb:
+  enabled: false
+  package: yandextank.plugins.OpenTSDBUploader
+overload:
+  enabled: false
+  package: yandextank.plugins.DataUploader
+pandora:
+  affinity: ''
+  buffered_seconds: 2
+  config_content:
+    pools:
+    - ammo:
+        file: device-api-jsonline.ammo
+        type: http/json
+      gun:
+        dial:
+          timeout: 2s
+        ssl: false
+        target: act-device-api:8080
+        type: http
+      id: HTTP pool
+      rps:
+      - duration: 1m30s
+        from: 1
+        to: 50
+        type: line
+      - duration: 2m
+        ops: 50
+        type: const
+      startup:
+        times: 50
+        type: once
+  config_file: ''
+  enabled: true
+  expvar: false
+  package: yandextank.plugins.Pandora
+  pandora_cmd: /usr/local/bin/pandora
+  report_file: null
+  resources: []
+phantom:
+  ammofile: load.yaml
+  enabled: false
+  package: yandextank.plugins.Phantom
+  use_caching: false
+rcassert:
+  enabled: true
+  fail_code: 10
+  package: yandextank.plugins.RCAssert
+  pass: ''
+rcheck:
+  disk_limit: 2048
+  enabled: true
+  interval: 10s
+  mem_limit: 512
+  package: yandextank.plugins.ResourceCheck
+shellexec:
+  catch_out: false
+  enabled: true
+  end: ''
+  package: yandextank.plugins.ShellExec
+  poll: ''
+  post_process: ''
+  prepare: ''
+  start: ''
+telegraf:
+  enabled: false
+  package: yandextank.plugins.Telegraf

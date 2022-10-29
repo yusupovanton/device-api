@@ -1,0 +1,1 @@
+{"tag":"req1", "uri": "/api/v1/devices?page=1&perPage=100", "method": "GET", "headers": {"Accept": "application/json"},"body": "", "host": "act-device-api"}

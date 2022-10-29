@@ -1,0 +1,48 @@
+phantom:
+  enabled: false # - Phantom плагин - надо отключить - так как он включен по умолчанию
+pandora:
+  enabled: true # - Pandora - плагин - надо включить 
+  package: yandextank.plugins.Pandora 
+  pandora_cmd: /usr/local/bin/pandora # Адрес бинарника пандоры - Когда сделаете свою пушку - тут поменяйте на свой
+  config_content: # - содержиме этой секции надо настриавать по исходникам Pandora - в зависимости от Типа используемой пушк и патронов. (Содержимое этой секции - это содержимое файла с конфигом пандоры.;
+    pools: # - Пуллов потоков может быть много в рамках одной пандоры.
+      - id: HTTP pool 
+        ammo:
+          type: http/json
+          file: device-api-jsonline.ammo
+        gun:
+          target: act-device-api:8080
+          type: http
+          ssl: false
+          dial:
+            timeout: 2s
+        rps:
+          - duration: 1m30s
+            from: 1
+            to: 50
+            type: line
+          - type: const
+            duration: 2m
+            ops: 50
+        startup:
+          type: once
+          times: 50 # - количество выделенных горутин для теста. На запрос-ответ - в 1 момент времени - расходуется 1 горутина. Формула для вычисления необходимых горутин: RPS * <max response time in Milliseconds> / 1000 Для примера - максимальное время отклика вашего сервиса - 2.5 секунды и целевой РПС - 1230, вам необходимо будет: 1230 * 2500 / 1000 = 3075 Горутин..
+console:
+  enabled: true # Включим вывод Информации в консоль.
+telegraf:
+  enabled: false
+
+opentsdbuploader:
+  enabled: true
+  package: yandextank.plugins.OpenTSDBUploader
+  tank_tag: "local" # - Можем добавить к танку дополнительный тег
+  address: victoria-metrics
+  port: 4242
+  username: ""
+  password: ""
+  ssl: false
+  histograms: true
+  verify_ssl: false
+  labeled: true
+  custom_tags:
+
