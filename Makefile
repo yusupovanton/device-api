@@ -110,6 +110,16 @@ dc-serv-down:
 dc-serv-env-up:
 	docker-compose -f docker-compose.service-env.yaml up -d
 
+.PHONY: dc-up
+dc-up: 
+	make dc-serv-up 
+	make dc-serv-env-up
+
+.PHONY: dc-down
+dc-down: 
+	make dc-serv-down
+	make dc-serv-env-down
+	
 .PHONY: dc-serv-env-down
 dc-serv-env-down:
 	docker-compose -f docker-compose.service-env.yaml down -v -t0
@@ -141,3 +151,15 @@ tools-version:
 	@ protoc --version
 	@ docker --version
 	@ docker-compose --version
+
+.PHONY: prom-refresh
+prom-refresh:
+	curl 'http://localhost:8428/-/reload'
+
+.PHONY: prom-config
+prom-config:
+	curl 'http://localhost:8428/config'
+
+.PHONY: prom-status
+prom-status:
+	 curl 'http://localhost:8428/api/v1/targets'|jq '.data.activeTargets| .[] | {pool:.scrapePool, status:.health}'
