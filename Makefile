@@ -162,4 +162,11 @@ prom-config:
 
 .PHONY: prom-status
 prom-status:
-	 curl 'http://localhost:8428/api/v1/targets'|jq '.data.activeTargets| .[] | {pool:.scrapePool, status:.health}'
+	curl 'http://localhost:8428/api/v1/targets'|jq '.data.activeTargets| .[] | {pool:.scrapePool, status:.health}'
+
+.PHONY: allure-prep
+allure-prep:
+	rm -rf ./tests/allure-results
+	make grpc-http-tests
+
+
