@@ -16,6 +16,8 @@ import (
 func Test_grpc_ListDevicesV1(t *testing.T) {
 	ctx := context.Background()
 	runner.Run(t, "Test_grpc_ListDevicesV1", func(t provider.T) {
+		t.Title("GRPC test for listing devices")
+		t.Description("Dials the service, gets the lists of devices")
 
 		t.WithNewStep("Testing ListDevicesV1", func(sCtx provider.StepCtx) {
 
@@ -41,6 +43,9 @@ func Test_grpc_CreateDeviceV1(t *testing.T) {
 	ctx := context.Background()
 	addr := "localhost:8082"
 	runner.Run(t, "Test_grpc_CreateDeviceV1", func(t provider.T) {
+		t.Title("GRPC test for creating devices")
+		t.Description("Dials the service, creates the device, then checks the contents of the device")
+
 		t.WithNewStep("Testing ListDevicesV1", func(sCtx provider.StepCtx) {
 
 			sCtx.NewStep("Dialing the service")
@@ -51,7 +56,7 @@ func Test_grpc_CreateDeviceV1(t *testing.T) {
 			sCtx.NewStep("Creating the device")
 			client := act_device_api.NewActDeviceApiServiceClient(conn)
 			platformEx := "Ios"
-			const userIdEx uint64 = 131313
+			const userIdEx uint64 = 199283
 			req := &act_device_api.CreateDeviceV1Request{Platform: platformEx, UserId: userIdEx}
 			res, err := client.CreateDeviceV1(ctx, req)
 			sCtx.Require().NoError(err)
@@ -62,7 +67,7 @@ func Test_grpc_CreateDeviceV1(t *testing.T) {
 			reqCheck := &act_device_api.DescribeDeviceV1Request{DeviceId: res.DeviceId}
 			resCheck, err := client.DescribeDeviceV1(ctx, reqCheck)
 			sCtx.Require().NoError(err)
-			sCtx.Require().Nil(resCheck.Value)
+			sCtx.Require().NotNil(resCheck.Value)
 			sCtx.Require().Equal(platformEx, resCheck.Value.Platform)
 			sCtx.Require().Equal(userIdEx, resCheck.Value.UserId)
 		})
@@ -73,6 +78,10 @@ func Test_grpc_DescribeDeviceV1(t *testing.T) {
 	ctx := context.Background()
 	addr := "localhost:8082"
 	runner.Run(t, "Test_grpc_DescribeDeviceV1", func(t provider.T) {
+
+		t.Title("GRPC test for describing devices")
+		t.Description("Dials the service, creates the device, then checks the contents of the device")
+
 		t.WithNewStep("Testing DescribeDeviceV1", func(sCtx provider.StepCtx) {
 
 			sCtx.NewStep("Dialing the service")
@@ -83,7 +92,7 @@ func Test_grpc_DescribeDeviceV1(t *testing.T) {
 			sCtx.NewStep("Creating the device")
 			client := act_device_api.NewActDeviceApiServiceClient(conn)
 			platformEx := "Ios"
-			const userIdEx uint64 = 131313
+			const userIdEx uint64 = 515379
 			req := &act_device_api.CreateDeviceV1Request{Platform: platformEx, UserId: userIdEx}
 			res, err := client.CreateDeviceV1(ctx, req)
 			sCtx.Require().NoError(err)
@@ -104,6 +113,9 @@ func Test_grpc_RemoveDeviceV1(t *testing.T) {
 	ctx := context.Background()
 	addr := "localhost:8082"
 	runner.Run(t, "Test_grpc_RemoveDeviceV1", func(t provider.T) {
+		t.Title("GRPC test for removing devices")
+		t.Description("Dials the service, creates the device, then deletes it")
+
 		t.WithNewStep("Testing RemoveDeviceV1", func(sCtx provider.StepCtx) {
 
 			sCtx.NewStep("Dialing the service")
@@ -134,6 +146,9 @@ func Test_grpc_UpdateDeviceV1(t *testing.T) {
 	ctx := context.Background()
 	addr := "localhost:8082"
 	runner.Run(t, "Test_grpc_UpdateDeviceV1", func(t provider.T) {
+		t.Title("GRPC test for updating devices")
+		t.Description("Dials the service, creates the device, updates it and then checks the contents of the updated device")
+
 		t.WithNewStep("Testing UpdateDeviceV1", func(sCtx provider.StepCtx) {
 
 			sCtx.NewStep("Dialing the service")
@@ -171,6 +186,10 @@ func Test_grpc_SendNotificationV1(t *testing.T) {
 	ctx := context.Background()
 	addr := "localhost:8082"
 	runner.Run(t, "Test_grpc_SendNotificationV1", func(t provider.T) {
+
+		t.Title("GRPC test for sending a notification")
+		t.Description("Dials the service, creates the device, then sends a notification to it")
+
 		t.WithNewStep("Testing SendNotificationV1", func(sCtx provider.StepCtx) {
 
 			sCtx.NewStep("Dialing the service")
@@ -201,6 +220,9 @@ func Test_grpc_GetNotificationV1(t *testing.T) {
 	ctx := context.Background()
 	addr := "localhost:8082"
 	runner.Run(t, "Test_grpc_GetNotificationV1", func(t provider.T) {
+		t.Title("GRPC test for sending a notification")
+		t.Description("Dials the service, creates the device, then sends a notification to it and checks the notification")
+
 		t.WithNewStep("Testing GetNotificationV1", func(sCtx provider.StepCtx) {
 
 			sCtx.NewStep("Dialing the service")
@@ -238,6 +260,8 @@ func Test_grpc_AckNotificationV1(t *testing.T) {
 	ctx := context.Background()
 	addr := "localhost:8082"
 	runner.Run(t, "Test_grpc_AckNotificationV1", func(t provider.T) {
+		t.Title("GRPC test for sending a notification")
+		t.Description("Dials the service, creates the device, then sends a notification to it and acknowledges the delivery")
 		t.WithNewStep("Testing AckNotificationV1", func(sCtx provider.StepCtx) {
 
 			sCtx.NewStep("Dialing the service")
@@ -274,6 +298,8 @@ func Test_grpc_SubscribeNotifV1(t *testing.T) {
 	ctx := context.Background()
 	addr := "localhost:8082"
 	runner.Run(t, "Test_grpc_SubscribeNotifV1", func(t provider.T) {
+		t.Title("GRPC test for subscribing to notifications for a given device")
+		t.Description("Dials the service, creates the device, then subscribes for delivery")
 		t.WithNewStep("Testing SubscribeNotifV1", func(sCtx provider.StepCtx) {
 
 			sCtx.NewStep("Dialing the service")

@@ -40,6 +40,8 @@ type Notification struct {
 
 func Test_http_ListDevicesV1(t *testing.T) {
 	runner.Run(t, "Test_http_ListDevicesV1", func(t provider.T) {
+		t.Title("HTTP test for listing devices")
+		t.Description("Sends the request, gets the lists of devices")
 		t.WithNewStep("Testing ListDevicesV1", func(sCtx provider.StepCtx) {
 
 			sCtx.NewStep("Send the request")
@@ -52,8 +54,10 @@ func Test_http_ListDevicesV1(t *testing.T) {
 }
 
 func Test_http_CreateDeviceV1(t *testing.T) {
-	runner.Run(t, "Test_http_ListDevicesV1", func(t provider.T) {
-		t.WithNewStep("Testing ListDevicesV1", func(sCtx provider.StepCtx) {
+	runner.Run(t, "Test_http_CreateDeviceV1", func(t provider.T) {
+		t.Title("HTTP test for creating devices")
+		t.Description("Marshals the data, creates the device and then checks it")
+		t.WithNewStep("Testing CreateDeviceV1", func(sCtx provider.StepCtx) {
 
 			sCtx.NewStep("Preparing the data + Marshal")
 			values := map[string]string{"platform": "Ios", "userId": "123123"}
@@ -73,9 +77,10 @@ func Test_http_CreateDeviceV1(t *testing.T) {
 }
 
 func Test_http_DescribeDeviceV1(t *testing.T) {
-	runner.Run(t, "Test_http_ListDevicesV1", func(t provider.T) {
-		t.WithNewStep("Testing ListDevicesV1", func(sCtx provider.StepCtx) {
-
+	runner.Run(t, "Test_http_DescribeDeviceV1", func(t provider.T) {
+		t.WithNewStep("Testing DescribeDeviceV1", func(sCtx provider.StepCtx) {
+			t.Title("HTTP test for creating devices")
+			t.Description("Marshals the data, creates the device and then checks it")
 			sCtx.NewStep("Preparing the data + Marshal")
 			values := map[string]string{"platform": "TeslaOX", "userId": "145551"}
 			json_data, err := json.Marshal(values)
@@ -101,8 +106,10 @@ func Test_http_DescribeDeviceV1(t *testing.T) {
 }
 
 func Test_http_DeleteDeviceV1(t *testing.T) {
-	runner.Run(t, "Test_http_ListDevicesV1", func(t provider.T) {
-		t.WithNewStep("Testing ListDevicesV1", func(sCtx provider.StepCtx) {
+	runner.Run(t, "Test_http_DeleteDeviceV1", func(t provider.T) {
+		t.Title("HTTP test for creating devices")
+		t.Description("Marshals the data, creates the device and then deletes it")
+		t.WithNewStep("Testing DeleteDeviceV1", func(sCtx provider.StepCtx) {
 
 			sCtx.NewStep("Preparing the data + Marshal")
 			values := map[string]string{"platform": "SuperOS", "userId": "172636"}
@@ -129,8 +136,10 @@ func Test_http_DeleteDeviceV1(t *testing.T) {
 }
 
 func Test_http_UpdateDeviceV1(t *testing.T) {
-	runner.Run(t, "Test_http_ListDevicesV1", func(t provider.T) {
-		t.WithNewStep("Testing ListDevicesV1", func(sCtx provider.StepCtx) {
+	runner.Run(t, "Test_http_UpdateDeviceV1", func(t provider.T) {
+		t.Title("HTTP test for updating devices")
+		t.Description("Marshals the data, creates the device and then updates it to then check")
+		t.WithNewStep("Testing UpdateDevicesV1", func(sCtx provider.StepCtx) {
 
 			sCtx.NewStep("Preparing the data + Marshal (CREATE)")
 			valuesCreate := map[string]string{"platform": "OzonOS", "userId": "133841"}
@@ -163,6 +172,8 @@ func Test_http_UpdateDeviceV1(t *testing.T) {
 
 func Test_http_SendNotifV1(t *testing.T) {
 	runner.Run(t, "Test_http_SendNotifV1", func(t provider.T) {
+		t.Title("HTTP test for sending notifications")
+		t.Description("Marshals the data, creates the device and then sends a notification to it to then check")
 		t.WithNewStep("Testing SendNotifV1", func(sCtx provider.StepCtx) {
 
 			sCtx.NewStep("Preparing the data + Marshal (CREATE)")
@@ -194,6 +205,8 @@ func Test_http_SendNotifV1(t *testing.T) {
 
 func Test_http_GetNotifications(t *testing.T) {
 	runner.Run(t, "Test_http_GetNotifications", func(t provider.T) {
+		t.Title("HTTP test for sending notifications")
+		t.Description("Marshals the data, creates the device and then sends a notification, then gets it")
 		t.WithNewStep("Testing GetNotifications", func(sCtx provider.StepCtx) {
 
 			sCtx.NewStep("Preparing the data + Marshal (CREATE)")
@@ -231,6 +244,8 @@ func Test_http_GetNotifications(t *testing.T) {
 
 func Test_http_AckNotifV1(t *testing.T) {
 	runner.Run(t, "Test_http_AckNotifV1", func(t provider.T) {
+		t.Title("HTTP test for acknowledging notifications deliveries")
+		t.Description("Marshals the data, creates the device and sends a notification to it, then acknowledges the delivery")
 		t.WithNewStep("Testing AckNotifV1", func(sCtx provider.StepCtx) {
 
 			sCtx.NewStep("Preparing the data + Marshal (CREATE)")
