@@ -14,6 +14,7 @@ import (
 )
 
 func Test_grpc_ListDevicesV1(t *testing.T) {
+
 	ctx := context.Background()
 	addr := "localhost:8082"
 	conn, err := grpc.Dial(addr, grpc.WithInsecure())
