@@ -3,30 +3,67 @@ phantom:
 pandora:
   enabled: true # - Pandora - плагин - надо включить 
   package: yandextank.plugins.Pandora 
-  pandora_cmd: /usr/local/bin/pandora # Адрес бинарника пандоры - Когда сделаете свою пушку - тут поменяйте на свой
+  pandora_cmd: /Users/yustas/go/device-api/loadtest/custom_gun/my_custom_gun # Адрес бинарника пандоры - Когда сделаете свою пушку - тут поменяйте на свой
   config_content: # - содержиме этой секции надо настриавать по исходникам Pandora - в зависимости от Типа используемой пушк и патронов. (Содержимое этой секции - это содержимое файла с конфигом пандоры.;
     pools: # - Пуллов потоков может быть много в рамках одной пандоры.
-      - id: HTTP pool 
-        ammo:
-          type: http/json
-          file: device-api-jsonline.ammo
+      - id: grpc_pool 
         gun:
-          target: act-device-api:8080
-          type: http
-          ssl: false
-          dial:
-            timeout: 2s
-        rps:
-          - duration: 1m30s
-            from: 1
-            to: 50
+          type: My_custom_gun   # custom gun name specified
+          target: "localhost:8082"
+        ammo:
+          type: custom_provider
+          source:
+            type: file
+            path: ./custom_gun/json.ammo
+        result:
+          type: phout
+          destination: ./phout.log
+        rps: 
+          - duration: 30s
             type: line
-          - type: const
-            duration: 2m
-            ops: 50
+            from: 1
+            to: 2
         startup:
           type: once
-          times: 50 # - количество выделенных горутин для теста. На запрос-ответ - в 1 момент времени - расходуется 1 горутина. Формула для вычисления необходимых горутин: RPS * <max response time in Milliseconds> / 1000 Для примера - максимальное время отклика вашего сервиса - 2.5 секунды и целевой РПС - 1230, вам необходимо будет: 1230 * 2500 / 1000 = 3075 Горутин..
+          times: 10
+        log:
+          level: error
+      # - id: device pool 
+      #   ammo:
+      #     type: http/json
+      #     file: device.ammo
+      #   gun:
+      #     target: act-device-api:8080
+      #     type: http
+      #     ssl: false
+      #     dial:
+      #       timeout: 2s
+      #   rps:
+      #     - type: line
+      #       duration: 2m
+      #       from: 0
+      #       to: 75
+      #   startup:
+      #     type: once
+      #     times: 5000 # - количество выделенных горутин для теста. На запрос-ответ - в 1 момент времени - расходуется 1 горутина. Формула для вычисления необходимых горутин: RPS * <max response time in Milliseconds> / 1000 Для примера - максимальное время отклика вашего сервиса - 2.5 секунды и целевой РПС - 1230, вам необходимо будет: 1230 * 2500 / 1000 = 3075 Горутин..
+      # - id: notif pool 
+      #   ammo:
+      #     type: http/json
+      #     file: notif.ammo
+      #   gun:
+      #     target: act-device-api:8080
+      #     type: http
+      #     ssl: false
+      #     dial:
+      #       timeout: 2s
+      #   rps:
+      #     - type: line
+      #       duration: 2m
+      #       from: 0
+      #       to: 75
+      #   startup:
+      #     type: once
+      #     times: 5000 # - количество выделенных горутин для теста. На запрос-ответ - в 1 момент времени - расходуется 1 горутина. Формула для вычисления необходимых горутин: RPS * <max response time in Milliseconds> / 1000 Для примера - максимальное время отклика вашего сервиса - 2.5 секунды и целевой РПС - 1230, вам необходимо будет: 1230 * 2500 / 1000 = 3075 Горутин..
 console:
   enabled: true # Включим вывод Информации в консоль.
 telegraf:

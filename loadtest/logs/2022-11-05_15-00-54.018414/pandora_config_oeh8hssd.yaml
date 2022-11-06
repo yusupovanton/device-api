@@ -1,0 +1,28 @@
+monitoring:
+  expvar:
+    enabled: true
+pools:
+- ammo:
+    file: device-api-jsonline.ammo
+    type: http/json
+  gun:
+    dial:
+      timeout: 2s
+    ssl: false
+    target: act-device-api:8080
+    type: http
+  id: HTTP pool
+  result:
+    destination: 0_phout.log
+    type: phout
+  rps:
+  - duration: 1m30s
+    from: 1
+    to: 50
+    type: line
+  - duration: 2m
+    ops: 50
+    type: const
+  startup:
+    times: 50
+    type: once

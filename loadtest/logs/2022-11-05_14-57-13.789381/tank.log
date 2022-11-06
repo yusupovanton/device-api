@@ -1,0 +1,84 @@
+2022-11-05 14:57:13,846 [INFO] root tankworker.py:153	Log file created
+2022-11-05 14:57:13,847 [INFO] root tankworker.py:157	Logging handler <FileHandler /var/loadtest/tank_errors.log (WARNING)> added
+2022-11-05 14:57:13,848 [INFO] root tankworker.py:157	Logging handler <StreamHandler <stdout> (INFO)> added
+2022-11-05 14:57:13,849 [INFO] root tankworker.py:157	Logging handler <StreamHandler <stderr> (NOTSET)> added
+2022-11-05 14:57:13,885 [INFO] root tankworker.py:69	Created a folder for the test. /var/loadtest/logs/2022-11-05_14-57-13.789381
+2022-11-05 14:57:13,894 [INFO] yandextank.core.tankcore tankcore.py:254	Configuring plugins...
+2022-11-05 14:57:13,898 [INFO] yandextank.core.tankcore tankcore.py:205	Loading plugins...
+2022-11-05 14:57:13,902 [INFO] yandextank.core.tankcore tankcore.py:215	Trying to import module: autostop
+2022-11-05 14:57:13,905 [INFO] yandextank.core.tankcore tankcore.py:216	Path: yandextank.plugins.Autostop
+2022-11-05 14:57:13,909 [INFO] yandextank.core.tankcore tankcore.py:215	Trying to import module: console
+2022-11-05 14:57:13,912 [INFO] yandextank.core.tankcore tankcore.py:216	Path: yandextank.plugins.Console
+2022-11-05 14:57:13,920 [INFO] yandextank.core.tankcore tankcore.py:215	Trying to import module: json_report
+2022-11-05 14:57:13,929 [INFO] yandextank.core.tankcore tankcore.py:216	Path: yandextank.plugins.JsonReport
+2022-11-05 14:57:13,947 [INFO] yandextank.core.tankcore tankcore.py:215	Trying to import module: pandora
+2022-11-05 14:57:13,948 [INFO] yandextank.core.tankcore tankcore.py:216	Path: yandextank.plugins.Pandora
+2022-11-05 14:57:13,950 [INFO] yandextank.core.tankcore tankcore.py:215	Trying to import module: rcheck
+2022-11-05 14:57:13,954 [INFO] yandextank.core.tankcore tankcore.py:216	Path: yandextank.plugins.ResourceCheck
+2022-11-05 14:57:13,958 [INFO] yandextank.core.tankcore tankcore.py:215	Trying to import module: shellexec
+2022-11-05 14:57:13,960 [INFO] yandextank.core.tankcore tankcore.py:216	Path: yandextank.plugins.ShellExec
+2022-11-05 14:57:13,963 [INFO] yandextank.core.tankcore tankcore.py:215	Trying to import module: rcassert
+2022-11-05 14:57:13,965 [INFO] yandextank.core.tankcore tankcore.py:216	Path: yandextank.plugins.RCAssert
+2022-11-05 14:57:13,967 [INFO] yandextank.core.tankcore tankcore.py:215	Trying to import module: opentsdbuploader
+2022-11-05 14:57:13,970 [INFO] yandextank.core.tankcore tankcore.py:216	Path: yandextank.plugins.OpenTSDBUploader
+2022-11-05 14:57:14,042 [INFO] yandextank.plugins.Pandora.plugin plugin.py:79	Found config_content option configuration
+2022-11-05 14:57:14,044 [WARNING] yandextank.plugins.Pandora.plugin plugin.py:142	Seems like pandora result file not specified... adding defaults
+2022-11-05 14:57:14,069 [INFO] yandextank.core.tankcore tankcore.py:268	Preparing test...
+2022-11-05 14:57:14,074 [INFO] yandextank.common.interfaces plugin.py:38	Checking tank resources...
+2022-11-05 14:57:14,095 [INFO] yandextank.core.tankcore tankcore.py:278	Starting test...
+2022-11-05 14:57:14,103 [INFO] yandextank.aggregator.tank_aggregator tank_aggregator.py:65	using verbose histogram
+2022-11-05 14:57:14,116 [INFO] yandextank.core.tankcore tankcore.py:285	Plugin plugin_autostop required 0.000007 seconds to start
+2022-11-05 14:57:14,119 [INFO] yandextank.core.tankcore tankcore.py:285	Plugin plugin_console required 0.000010 seconds to start
+2022-11-05 14:57:14,123 [INFO] yandextank.core.tankcore tankcore.py:285	Plugin plugin_json_report required 0.000257 seconds to start
+2022-11-05 14:57:14,132 [INFO] yandextank.plugins.Pandora.plugin plugin.py:237	Starting: ['/usr/local/bin/pandora', '/var/loadtest/logs/2022-11-05_14-57-13.789381/pandora_config_6klb0f65.yaml']
+2022-11-05 14:57:14,158 [INFO] yandextank.core.tankcore tankcore.py:285	Plugin plugin_pandora required 0.026115 seconds to start
+2022-11-05 14:57:14,161 [INFO] yandextank.core.tankcore tankcore.py:285	Plugin plugin_rcheck required 0.000107 seconds to start
+2022-11-05 14:57:14,163 [INFO] yandextank.core.tankcore tankcore.py:285	Plugin plugin_shellexec required 0.000013 seconds to start
+2022-11-05 14:57:14,165 [INFO] yandextank.core.tankcore tankcore.py:285	Plugin plugin_rcassert required 0.000006 seconds to start
+2022-11-05 14:57:14,168 [INFO] yandextank.core.tankcore tankcore.py:285	Plugin plugin_opentsdbuploader required 0.000174 seconds to start
+2022-11-05 14:57:14,174 [INFO] yandextank.core.tankcore tankcore.py:294	Waiting for test to finish...
+2022-11-05 14:57:14,175 [INFO] yandextank.core.tankcore tankcore.py:295	Artifacts dir: /var/loadtest/logs/2022-11-05_14-57-13.789381
+2022-11-05 14:57:14,692 [INFO] yandextank.plugins.Pandora.plugin plugin.py:262	Pandora finished with non-zero retcode. Last 20 logs of Pandora log:
+2022-11-05 14:57:14,696 [WARNING] root util.py:652	Filepath=/var/loadtest/logs/2022-11-05_14-57-13.789381/pandora_de4bb21u.log, lines_num=20, buf_size=8192, fsize=7036
+2022-11-05 14:57:14,724 [INFO] yandextank.plugins.Pandora.plugin plugin.py:266	2022-11-05T14:57:14.234Z	INFO	engine/engine.go:66	Engine finished
+2022-11-05 14:57:14,734 [INFO] yandextank.plugins.Pandora.plugin plugin.py:266	2022-11-05T14:57:14.235Z	ERROR	cli/cli.go:173	Engine run failed. Awaiting started tasks.	{"error": "\"HTTP pool\" pool run failed: provider failed: failed to decode ammo at line: 5; data: \"{\\\"tag\\\": \\\"http_CreateNotif\\\", \\\"uri\\\": \\\"api/v1/notification\\\", \\\"method\\\": \\\"POST\\\", \\\"headers\\\": {\\\"Accept\\\": \\\"application/json\\\", \\\"Content-Type\\\": \\\"application/json\\\", \\\"Content-Length\\\": \\\"36\\\"}, \\\"body\\\": {\\\"notification\\\": {\\\"notificationId\\\": \\\"0\\\", \\\"deviceId\\\": \\\"1\\\", \\\"username\\\": \\\"0\\\", \\\"message\\\": \\\"Hello\\\", \\\"lang\\\": \\\"LANG_ENGLISH\\\", \\\"notificationStatus\\\": \\\"STATUS_CREATED\\\"}}, \\\"host\\\": \\\"act-device-api\\\"}\": ffjson error: (*errors.errorString)cannot unmarshal tok:left_bracket into Go value for string offset=188 line=1 char=188", "errorVerbose": "ffjson error: (*errors.errorString)cannot unmarshal tok:left_bracket into Go value for string offset=188 line=1 char=188\na.yandex-team.ru/load/projects/pandora/components/phttp/ammo/simple/jsonline.decodeAmmo\n\t/-S/load/projects/pandora/components/phttp/ammo/simple/jsonline/provider.go:94\na.yandex-team.ru/load/projects/pandora/components/phttp/ammo/simple/jsonline.(*Provider).start\n\t/-S/load/projects/pandora/components/phttp/ammo/simple/jsonline/provider.go:61\na.yandex-team.ru/load/projects/pandora/components/phttp/ammo/simple.(*Provider).Run\n\t/-S/load/projects/pandora/components/phttp/ammo/simple/provider.go:62\na.yandex-team.ru/load/projects/pandora/core/engine.(*instancePool).runAsync.func1\n\t/-S/load/projects/pandora/core/engine/engine.go:224\nruntime.goexit\n\t/-S/contrib/go/_std_1.18/src/runtime/asm_amd64.s:1571\nfailed to decode ammo at line: 5; data: \"{\\\"tag\\\": \\\"http_CreateNotif\\\", \\\"uri\\\": \\\"api/v1/notification\\\", \\\"method\\\": \\\"POST\\\", \\\"headers\\\": {\\\"Accept\\\": \\\"application/json\\\", \\\"Content-Type\\\": \\\"application/json\\\", \\\"Content-Length\\\": \\\"36\\\"}, \\\"body\\\": {\\\"notification\\\": {\\\"notificationId\\\": \\\"0\\\", \\\"deviceId\\\": \\\"1\\\", \\\"username\\\": \\\"0\\\", \\\"message\\\": \\\"Hello\\\", \\\"lang\\\": \\\"LANG_ENGLISH\\\", \\\"notificationStatus\\\": \\\"STATUS_CREATED\\\"}}, \\\"host\\\": \\\"act-device-api\\\"}\"\na.yandex-team.ru/load/projects/pandora/components/phttp/ammo/simple/jsonline.(*Provider).start\n\t/-S/load/projects/pandora/components/phttp/ammo/simple/jsonline/provider.go:66\na.yandex-team.ru/load/projects/pandora/components/phttp/ammo/simple.(*Provider).Run\n\t/-S/load/projects/pandora/components/phttp/ammo/simple/provider.go:62\na.yandex-team.ru/load/projects/pandora/core/engine.(*instancePool).runAsync.func1\n\t/-S/load/projects/pandora/core/engine/engine.go:224\nruntime.goexit\n\t/-S/contrib/go/_std_1.18/src/runtime/asm_amd64.s:1571\nprovider failed\n\"HTTP pool\" pool run failed", "timeout": "3s"}
+2022-11-05 14:57:14,741 [INFO] yandextank.plugins.Pandora.plugin plugin.py:266	a.yandex-team.ru/load/projects/pandora/cli.awaitPandoraTermination
+2022-11-05 14:57:14,760 [INFO] yandextank.plugins.Pandora.plugin plugin.py:266		/-S/load/projects/pandora/cli/cli.go:173
+2022-11-05 14:57:14,778 [INFO] yandextank.plugins.Pandora.plugin plugin.py:266	a.yandex-team.ru/load/projects/pandora/cli.Run
+2022-11-05 14:57:14,830 [INFO] yandextank.plugins.Pandora.plugin plugin.py:266		/-S/load/projects/pandora/cli/cli.go:133
+2022-11-05 14:57:14,831 [INFO] yandextank.plugins.Pandora.plugin plugin.py:266	main.main
+2022-11-05 14:57:14,833 [INFO] yandextank.plugins.Pandora.plugin plugin.py:266		/-S/load/projects/pandora/main.go:27
+2022-11-05 14:57:14,834 [INFO] yandextank.plugins.Pandora.plugin plugin.py:266	runtime.main
+2022-11-05 14:57:14,836 [INFO] yandextank.plugins.Pandora.plugin plugin.py:266		/-S/contrib/go/_std_1.18/src/runtime/proc.go:250
+2022-11-05 14:57:14,840 [INFO] yandextank.plugins.Pandora.plugin plugin.py:266	2022-11-05T14:57:14.238Z	INFO	engine/engine.go:353	All instances runs awaited.	{"pool": "HTTP pool", "awaited": 50}
+2022-11-05 14:57:14,842 [INFO] yandextank.plugins.Pandora.plugin plugin.py:266	2022-11-05T14:57:14.239Z	FATAL	cli/cli.go:179	Engine run failed. Pandora graceful shutdown successfully finished
+2022-11-05 14:57:14,846 [INFO] yandextank.plugins.Pandora.plugin plugin.py:266	a.yandex-team.ru/load/projects/pandora/cli.awaitPandoraTermination
+2022-11-05 14:57:14,858 [INFO] yandextank.plugins.Pandora.plugin plugin.py:266		/-S/load/projects/pandora/cli/cli.go:179
+2022-11-05 14:57:14,862 [INFO] yandextank.plugins.Pandora.plugin plugin.py:266	a.yandex-team.ru/load/projects/pandora/cli.Run
+2022-11-05 14:57:14,866 [INFO] yandextank.plugins.Pandora.plugin plugin.py:266		/-S/load/projects/pandora/cli/cli.go:133
+2022-11-05 14:57:14,874 [INFO] yandextank.plugins.Pandora.plugin plugin.py:266	main.main
+2022-11-05 14:57:14,876 [INFO] yandextank.plugins.Pandora.plugin plugin.py:266		/-S/load/projects/pandora/main.go:27
+2022-11-05 14:57:14,880 [INFO] yandextank.plugins.Pandora.plugin plugin.py:266	runtime.main
+2022-11-05 14:57:14,883 [INFO] yandextank.plugins.Pandora.plugin plugin.py:266		/-S/contrib/go/_std_1.18/src/runtime/proc.go:250
+2022-11-05 14:57:14,904 [INFO] yandextank.core.tankcore tankcore.py:331	Finishing test...
+2022-11-05 14:57:14,911 [INFO] yandextank.core.tankcore tankcore.py:334	Stopping load generator and aggregator
+2022-11-05 14:57:14,912 [INFO] yandextank.aggregator.tank_aggregator tank_aggregator.py:126	Closing stats reader
+2022-11-05 14:57:14,961 [INFO] yandextank.aggregator.tank_aggregator tank_aggregator.py:129	Waiting for gun drain to finish
+2022-11-05 14:57:15,125 [INFO] yandextank.aggregator.tank_aggregator tank_aggregator.py:131	Waiting for stats drain to finish
+2022-11-05 14:57:15,128 [INFO] yandextank.aggregator.tank_aggregator tank_aggregator.py:133	Collecting remaining data
+2022-11-05 14:57:15,131 [INFO] yandextank.core.tankcore tankcore.py:338	Stopping monitoring
+2022-11-05 14:57:15,134 [INFO] yandextank.core.tankcore tankcore.py:361	Post-processing test...
+2022-11-05 14:57:15,138 [INFO] yandextank.common.util util.py:816	Trying to clean up
+2022-11-05 14:57:15,139 [INFO] yandextank.core.tankcore tankcore.py:562	Cleaning up plugin plugin_autostop
+2022-11-05 14:57:15,143 [INFO] yandextank.core.tankcore tankcore.py:562	Cleaning up plugin plugin_console
+2022-11-05 14:57:15,145 [INFO] yandextank.core.tankcore tankcore.py:562	Cleaning up plugin plugin_json_report
+2022-11-05 14:57:15,148 [INFO] yandextank.core.tankcore tankcore.py:562	Cleaning up plugin plugin_pandora
+2022-11-05 14:57:15,150 [INFO] yandextank.core.tankcore tankcore.py:562	Cleaning up plugin plugin_rcheck
+2022-11-05 14:57:15,152 [INFO] yandextank.core.tankcore tankcore.py:562	Cleaning up plugin plugin_shellexec
+2022-11-05 14:57:15,154 [INFO] yandextank.core.tankcore tankcore.py:562	Cleaning up plugin plugin_rcassert
+2022-11-05 14:57:15,157 [INFO] yandextank.core.tankcore tankcore.py:562	Cleaning up plugin plugin_opentsdbuploader
+2022-11-05 14:57:15,159 [INFO] yandextank.core.tankcore tankcore.py:630	Releasing lock: /var/lock/lunapark_14ikla50.lock
+2022-11-05 14:57:15,182 [INFO] yandextank.core.tankcore tankcore.py:405	Artifacts dir: /var/loadtest/logs/2022-11-05_14-57-13.789381
+2022-11-05 14:57:15,189 [INFO] yandextank.core.tankcore tankcore.py:461	File not found to collect: validation_error.yaml
+2022-11-05 14:57:15,193 [INFO] yandextank.core.tankcore tankcore.py:466	File already exists: /var/loadtest/logs/2022-11-05_14-57-13.789381/pandora_config_6klb0f65.yaml
+2022-11-05 14:57:15,207 [INFO] yandextank.core.tankcore tankcore.py:466	File already exists: /var/loadtest/logs/2022-11-05_14-57-13.789381/pandora_de4bb21u.log

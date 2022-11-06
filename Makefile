@@ -162,4 +162,9 @@ prom-config:
 
 .PHONY: prom-status
 prom-status:
-	 curl 'http://localhost:8428/api/v1/targets'|jq '.data.activeTargets| .[] | {pool:.scrapePool, status:.health}'
+	curl 'http://localhost:8428/api/v1/targets'|jq '.data.activeTargets| .[] | {pool:.scrapePool, status:.health}'
+
+.PHONY: loadtest
+loadtest:
+	cd loadtest; \
+	docker run --network device-api_ompnw -v $(pwd):/var/loadtest --rm -it gitlab-registry.ozon.dev/qa/classroom-4/yandex-tank:latest 'yandex-tank -f load.yaml'

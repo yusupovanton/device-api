@@ -1,0 +1,46 @@
+monitoring:
+  expvar:
+    enabled: true
+pools:
+- ammo:
+    file: device.ammo
+    type: http/json
+  gun:
+    dial:
+      timeout: 2s
+    ssl: false
+    target: act-device-api:8080
+    type: http
+  id: device pool
+  result:
+    destination: 0_phout.log
+    type: phout
+  rps:
+  - duration: 2m
+    from: 125
+    to: 375
+    type: line
+  startup:
+    times: 5000
+    type: once
+- ammo:
+    file: notif.ammo
+    type: http/json
+  gun:
+    dial:
+      timeout: 2s
+    ssl: false
+    target: act-device-api:8080
+    type: http
+  id: notif pool
+  result:
+    destination: 1_phout.log
+    type: phout
+  rps:
+  - duration: 2m
+    from: 125
+    to: 375
+    type: line
+  startup:
+    times: 5000
+    type: once

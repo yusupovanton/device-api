@@ -1,0 +1,120 @@
+2022-11-05 15:53:55,771 [INFO] root tankworker.py:153	Log file created
+2022-11-05 15:53:55,772 [INFO] root tankworker.py:157	Logging handler <FileHandler /var/loadtest/tank_errors.log (WARNING)> added
+2022-11-05 15:53:55,773 [INFO] root tankworker.py:157	Logging handler <StreamHandler <stdout> (INFO)> added
+2022-11-05 15:53:55,774 [INFO] root tankworker.py:157	Logging handler <StreamHandler <stderr> (NOTSET)> added
+2022-11-05 15:53:55,795 [INFO] root tankworker.py:69	Created a folder for the test. /var/loadtest/logs/2022-11-05_15-53-55.711665
+2022-11-05 15:53:55,800 [INFO] yandextank.core.tankcore tankcore.py:254	Configuring plugins...
+2022-11-05 15:53:55,801 [INFO] yandextank.core.tankcore tankcore.py:205	Loading plugins...
+2022-11-05 15:53:55,803 [INFO] yandextank.core.tankcore tankcore.py:215	Trying to import module: autostop
+2022-11-05 15:53:55,804 [INFO] yandextank.core.tankcore tankcore.py:216	Path: yandextank.plugins.Autostop
+2022-11-05 15:53:55,806 [INFO] yandextank.core.tankcore tankcore.py:215	Trying to import module: console
+2022-11-05 15:53:55,807 [INFO] yandextank.core.tankcore tankcore.py:216	Path: yandextank.plugins.Console
+2022-11-05 15:53:55,809 [INFO] yandextank.core.tankcore tankcore.py:215	Trying to import module: json_report
+2022-11-05 15:53:55,811 [INFO] yandextank.core.tankcore tankcore.py:216	Path: yandextank.plugins.JsonReport
+2022-11-05 15:53:55,820 [INFO] yandextank.core.tankcore tankcore.py:215	Trying to import module: pandora
+2022-11-05 15:53:55,821 [INFO] yandextank.core.tankcore tankcore.py:216	Path: yandextank.plugins.Pandora
+2022-11-05 15:53:55,823 [INFO] yandextank.core.tankcore tankcore.py:215	Trying to import module: rcheck
+2022-11-05 15:53:55,825 [INFO] yandextank.core.tankcore tankcore.py:216	Path: yandextank.plugins.ResourceCheck
+2022-11-05 15:53:55,827 [INFO] yandextank.core.tankcore tankcore.py:215	Trying to import module: shellexec
+2022-11-05 15:53:55,829 [INFO] yandextank.core.tankcore tankcore.py:216	Path: yandextank.plugins.ShellExec
+2022-11-05 15:53:55,831 [INFO] yandextank.core.tankcore tankcore.py:215	Trying to import module: rcassert
+2022-11-05 15:53:55,833 [INFO] yandextank.core.tankcore tankcore.py:216	Path: yandextank.plugins.RCAssert
+2022-11-05 15:53:55,835 [INFO] yandextank.core.tankcore tankcore.py:215	Trying to import module: opentsdbuploader
+2022-11-05 15:53:55,839 [INFO] yandextank.core.tankcore tankcore.py:216	Path: yandextank.plugins.OpenTSDBUploader
+2022-11-05 15:53:55,899 [INFO] yandextank.plugins.Pandora.plugin plugin.py:79	Found config_content option configuration
+2022-11-05 15:53:55,900 [WARNING] yandextank.plugins.Pandora.plugin plugin.py:142	Seems like pandora result file not specified... adding defaults
+2022-11-05 15:53:55,903 [WARNING] yandextank.plugins.Pandora.plugin plugin.py:142	Seems like pandora result file not specified... adding defaults
+2022-11-05 15:53:55,940 [INFO] yandextank.core.tankcore tankcore.py:268	Preparing test...
+2022-11-05 15:53:55,943 [INFO] yandextank.common.interfaces plugin.py:38	Checking tank resources...
+2022-11-05 15:53:55,970 [INFO] yandextank.core.tankcore tankcore.py:278	Starting test...
+2022-11-05 15:53:55,976 [INFO] yandextank.aggregator.tank_aggregator tank_aggregator.py:65	using verbose histogram
+2022-11-05 15:53:55,983 [INFO] yandextank.core.tankcore tankcore.py:285	Plugin plugin_autostop required 0.000009 seconds to start
+2022-11-05 15:53:55,987 [INFO] yandextank.core.tankcore tankcore.py:285	Plugin plugin_console required 0.000197 seconds to start
+2022-11-05 15:53:55,989 [INFO] yandextank.core.tankcore tankcore.py:285	Plugin plugin_json_report required 0.000004 seconds to start
+2022-11-05 15:53:55,994 [INFO] yandextank.plugins.Pandora.plugin plugin.py:237	Starting: ['/usr/local/bin/pandora', '/var/loadtest/logs/2022-11-05_15-53-55.711665/pandora_config_j1p99k2h.yaml']
+2022-11-05 15:53:56,015 [INFO] yandextank.core.tankcore tankcore.py:285	Plugin plugin_pandora required 0.021094 seconds to start
+2022-11-05 15:53:56,018 [INFO] yandextank.core.tankcore tankcore.py:285	Plugin plugin_rcheck required 0.000014 seconds to start
+2022-11-05 15:53:56,022 [INFO] yandextank.core.tankcore tankcore.py:285	Plugin plugin_shellexec required 0.000017 seconds to start
+2022-11-05 15:53:56,024 [INFO] yandextank.core.tankcore tankcore.py:285	Plugin plugin_rcassert required 0.000008 seconds to start
+2022-11-05 15:53:56,026 [INFO] yandextank.core.tankcore tankcore.py:285	Plugin plugin_opentsdbuploader required 0.000077 seconds to start
+2022-11-05 15:53:56,030 [INFO] yandextank.core.tankcore tankcore.py:294	Waiting for test to finish...
+2022-11-05 15:53:56,034 [INFO] yandextank.core.tankcore tankcore.py:295	Artifacts dir: /var/loadtest/logs/2022-11-05_15-53-55.711665
+2022-11-05 15:59:19,757 [INFO] yandextank.plugins.Pandora.plugin plugin.py:257	Pandora subprocess done its work successfully and finished w/ retcode 0
+2022-11-05 15:59:19,790 [INFO] yandextank.core.tankcore tankcore.py:331	Finishing test...
+2022-11-05 15:59:19,813 [INFO] yandextank.core.tankcore tankcore.py:334	Stopping load generator and aggregator
+2022-11-05 15:59:19,823 [INFO] yandextank.aggregator.tank_aggregator tank_aggregator.py:126	Closing stats reader
+2022-11-05 15:59:19,897 [INFO] yandextank.aggregator.tank_aggregator tank_aggregator.py:129	Waiting for gun drain to finish
+2022-11-05 15:59:20,574 [INFO] yandextank.aggregator.tank_aggregator tank_aggregator.py:131	Waiting for stats drain to finish
+2022-11-05 15:59:20,578 [INFO] yandextank.aggregator.tank_aggregator tank_aggregator.py:133	Collecting remaining data
+2022-11-05 15:59:20,622 [INFO] yandextank.aggregator.tank_aggregator tank_aggregator.py:111	Timestamps without stats:
+2022-11-05 15:59:20,624 [INFO] yandextank.aggregator.tank_aggregator tank_aggregator.py:113	1667663672
+2022-11-05 15:59:20,626 [WARNING] yandextank.plugins.Console.screen screen.py:245	Sparkline got outdated second 1667663672, oldest in list 1667663779
+2022-11-05 15:59:20,634 [WARNING] yandextank.plugins.Console.screen screen.py:245	Sparkline got outdated second 1667663672, oldest in list 1667663839
+2022-11-05 15:59:20,637 [WARNING] yandextank.plugins.Console.screen screen.py:245	Sparkline got outdated second 1667663672, oldest in list 1667663839
+2022-11-05 15:59:20,642 [WARNING] yandextank.plugins.Console.screen screen.py:245	Sparkline got outdated second 1667663672, oldest in list 1667663839
+2022-11-05 15:59:20,645 [WARNING] yandextank.plugins.Console.screen screen.py:245	Sparkline got outdated second 1667663672, oldest in list 1667663839
+2022-11-05 15:59:20,648 [WARNING] yandextank.plugins.Console.screen screen.py:245	Sparkline got outdated second 1667663672, oldest in list 1667663839
+2022-11-05 15:59:20,650 [WARNING] yandextank.plugins.Console.screen screen.py:245	Sparkline got outdated second 1667663672, oldest in list 1667663839
+2022-11-05 15:59:20,701 [WARNING] yandextank.plugins.Console.screen screen.py:245	Sparkline got outdated second 1667663672, oldest in list 1667663839
+2022-11-05 15:59:20,712 [WARNING] yandextank.plugins.Console.screen screen.py:245	Sparkline got outdated second 1667663672, oldest in list 1667663839
+2022-11-05 15:59:20,720 [WARNING] yandextank.plugins.Console.screen screen.py:245	Sparkline got outdated second 1667663672, oldest in list 1667663839
+2022-11-05 15:59:20,728 [INFO] yandextank.aggregator.tank_aggregator tank_aggregator.py:113	1667663786
+2022-11-05 15:59:20,746 [WARNING] yandextank.plugins.Console.screen screen.py:245	Sparkline got outdated second 1667663786, oldest in list 1667663839
+2022-11-05 15:59:20,747 [WARNING] yandextank.plugins.Console.screen screen.py:245	Sparkline got outdated second 1667663786, oldest in list 1667663839
+2022-11-05 15:59:20,751 [WARNING] yandextank.plugins.Console.screen screen.py:245	Sparkline got outdated second 1667663786, oldest in list 1667663839
+2022-11-05 15:59:20,755 [WARNING] yandextank.plugins.Console.screen screen.py:245	Sparkline got outdated second 1667663786, oldest in list 1667663839
+2022-11-05 15:59:20,762 [WARNING] yandextank.plugins.Console.screen screen.py:245	Sparkline got outdated second 1667663786, oldest in list 1667663839
+2022-11-05 15:59:20,766 [WARNING] yandextank.plugins.Console.screen screen.py:245	Sparkline got outdated second 1667663786, oldest in list 1667663839
+2022-11-05 15:59:20,773 [WARNING] yandextank.plugins.Console.screen screen.py:245	Sparkline got outdated second 1667663786, oldest in list 1667663839
+2022-11-05 15:59:20,777 [WARNING] yandextank.plugins.Console.screen screen.py:245	Sparkline got outdated second 1667663786, oldest in list 1667663839
+2022-11-05 15:59:20,785 [WARNING] yandextank.plugins.Console.screen screen.py:245	Sparkline got outdated second 1667663786, oldest in list 1667663839
+2022-11-05 15:59:20,796 [INFO] yandextank.aggregator.tank_aggregator tank_aggregator.py:113	1667663804
+2022-11-05 15:59:20,811 [WARNING] yandextank.plugins.Console.screen screen.py:245	Sparkline got outdated second 1667663804, oldest in list 1667663839
+2022-11-05 15:59:20,815 [WARNING] yandextank.plugins.Console.screen screen.py:245	Sparkline got outdated second 1667663804, oldest in list 1667663839
+2022-11-05 15:59:20,822 [WARNING] yandextank.plugins.Console.screen screen.py:245	Sparkline got outdated second 1667663804, oldest in list 1667663839
+2022-11-05 15:59:20,825 [WARNING] yandextank.plugins.Console.screen screen.py:245	Sparkline got outdated second 1667663804, oldest in list 1667663839
+2022-11-05 15:59:20,833 [WARNING] yandextank.plugins.Console.screen screen.py:245	Sparkline got outdated second 1667663804, oldest in list 1667663839
+2022-11-05 15:59:20,838 [WARNING] yandextank.plugins.Console.screen screen.py:245	Sparkline got outdated second 1667663804, oldest in list 1667663839
+2022-11-05 15:59:20,842 [WARNING] yandextank.plugins.Console.screen screen.py:245	Sparkline got outdated second 1667663804, oldest in list 1667663839
+2022-11-05 15:59:20,846 [WARNING] yandextank.plugins.Console.screen screen.py:245	Sparkline got outdated second 1667663804, oldest in list 1667663839
+2022-11-05 15:59:20,850 [WARNING] yandextank.plugins.Console.screen screen.py:245	Sparkline got outdated second 1667663804, oldest in list 1667663839
+2022-11-05 15:59:20,861 [INFO] yandextank.aggregator.tank_aggregator tank_aggregator.py:113	1667663806
+2022-11-05 15:59:20,864 [WARNING] yandextank.plugins.Console.screen screen.py:245	Sparkline got outdated second 1667663806, oldest in list 1667663839
+2022-11-05 15:59:20,867 [WARNING] yandextank.plugins.Console.screen screen.py:245	Sparkline got outdated second 1667663806, oldest in list 1667663839
+2022-11-05 15:59:20,871 [WARNING] yandextank.plugins.Console.screen screen.py:245	Sparkline got outdated second 1667663806, oldest in list 1667663839
+2022-11-05 15:59:20,876 [WARNING] yandextank.plugins.Console.screen screen.py:245	Sparkline got outdated second 1667663806, oldest in list 1667663839
+2022-11-05 15:59:20,880 [WARNING] yandextank.plugins.Console.screen screen.py:245	Sparkline got outdated second 1667663806, oldest in list 1667663839
+2022-11-05 15:59:20,883 [WARNING] yandextank.plugins.Console.screen screen.py:245	Sparkline got outdated second 1667663806, oldest in list 1667663839
+2022-11-05 15:59:20,889 [WARNING] yandextank.plugins.Console.screen screen.py:245	Sparkline got outdated second 1667663806, oldest in list 1667663839
+2022-11-05 15:59:20,895 [WARNING] yandextank.plugins.Console.screen screen.py:245	Sparkline got outdated second 1667663806, oldest in list 1667663839
+2022-11-05 15:59:20,898 [WARNING] yandextank.plugins.Console.screen screen.py:245	Sparkline got outdated second 1667663806, oldest in list 1667663839
+2022-11-05 15:59:20,908 [INFO] yandextank.aggregator.tank_aggregator tank_aggregator.py:113	1667663819
+2022-11-05 15:59:20,913 [WARNING] yandextank.plugins.Console.screen screen.py:245	Sparkline got outdated second 1667663819, oldest in list 1667663839
+2022-11-05 15:59:20,915 [WARNING] yandextank.plugins.Console.screen screen.py:245	Sparkline got outdated second 1667663819, oldest in list 1667663839
+2022-11-05 15:59:20,920 [WARNING] yandextank.plugins.Console.screen screen.py:245	Sparkline got outdated second 1667663819, oldest in list 1667663839
+2022-11-05 15:59:20,923 [WARNING] yandextank.plugins.Console.screen screen.py:245	Sparkline got outdated second 1667663819, oldest in list 1667663839
+2022-11-05 15:59:20,928 [WARNING] yandextank.plugins.Console.screen screen.py:245	Sparkline got outdated second 1667663819, oldest in list 1667663839
+2022-11-05 15:59:20,931 [WARNING] yandextank.plugins.Console.screen screen.py:245	Sparkline got outdated second 1667663819, oldest in list 1667663839
+2022-11-05 15:59:20,936 [WARNING] yandextank.plugins.Console.screen screen.py:245	Sparkline got outdated second 1667663819, oldest in list 1667663839
+2022-11-05 15:59:20,941 [WARNING] yandextank.plugins.Console.screen screen.py:245	Sparkline got outdated second 1667663819, oldest in list 1667663839
+2022-11-05 15:59:20,944 [WARNING] yandextank.plugins.Console.screen screen.py:245	Sparkline got outdated second 1667663819, oldest in list 1667663839
+2022-11-05 15:59:20,947 [WARNING] yandextank.plugins.Console.screen screen.py:245	Sparkline got outdated second 1667663819, oldest in list 1667663839
+2022-11-05 15:59:20,963 [INFO] yandextank.aggregator.tank_aggregator tank_aggregator.py:113	1667663876
+2022-11-05 15:59:20,983 [INFO] yandextank.aggregator.tank_aggregator tank_aggregator.py:113	1667663888
+2022-11-05 15:59:21,003 [INFO] yandextank.aggregator.tank_aggregator tank_aggregator.py:113	1667663959
+2022-11-05 15:59:21,040 [INFO] yandextank.core.tankcore tankcore.py:338	Stopping monitoring
+2022-11-05 15:59:21,042 [INFO] yandextank.core.tankcore tankcore.py:361	Post-processing test...
+2022-11-05 15:59:21,049 [INFO] yandextank.common.util util.py:816	Trying to clean up
+2022-11-05 15:59:21,055 [INFO] yandextank.core.tankcore tankcore.py:562	Cleaning up plugin plugin_autostop
+2022-11-05 15:59:21,058 [INFO] yandextank.core.tankcore tankcore.py:562	Cleaning up plugin plugin_console
+2022-11-05 15:59:21,064 [INFO] yandextank.core.tankcore tankcore.py:562	Cleaning up plugin plugin_json_report
+2022-11-05 15:59:21,073 [INFO] yandextank.core.tankcore tankcore.py:562	Cleaning up plugin plugin_pandora
+2022-11-05 15:59:21,079 [INFO] yandextank.core.tankcore tankcore.py:562	Cleaning up plugin plugin_rcheck
+2022-11-05 15:59:21,082 [INFO] yandextank.core.tankcore tankcore.py:562	Cleaning up plugin plugin_shellexec
+2022-11-05 15:59:21,085 [INFO] yandextank.core.tankcore tankcore.py:562	Cleaning up plugin plugin_rcassert
+2022-11-05 15:59:21,092 [INFO] yandextank.core.tankcore tankcore.py:562	Cleaning up plugin plugin_opentsdbuploader
+2022-11-05 15:59:21,095 [INFO] yandextank.core.tankcore tankcore.py:630	Releasing lock: /var/lock/lunapark_kacgcagk.lock
+2022-11-05 15:59:21,108 [INFO] yandextank.core.tankcore tankcore.py:405	Artifacts dir: /var/loadtest/logs/2022-11-05_15-53-55.711665
+2022-11-05 15:59:21,113 [INFO] yandextank.core.tankcore tankcore.py:461	File not found to collect: validation_error.yaml
+2022-11-05 15:59:21,120 [INFO] yandextank.core.tankcore tankcore.py:466	File already exists: /var/loadtest/logs/2022-11-05_15-53-55.711665/pandora_config_j1p99k2h.yaml
+2022-11-05 15:59:21,146 [INFO] yandextank.core.tankcore tankcore.py:466	File already exists: /var/loadtest/logs/2022-11-05_15-53-55.711665/pandora_ugcj_egr.log

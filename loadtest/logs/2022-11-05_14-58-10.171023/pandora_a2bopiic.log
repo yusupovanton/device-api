@@ -1,0 +1,40 @@
+2022-11-05T14:58:10.632Z	INFO	cli/cli.go:227	Reading config	{"file": "/var/loadtest/logs/2022-11-05_14-58-10.171023/pandora_config_arybm_nt.yaml"}
+2022-11-05T14:58:10.663Z	INFO	engine/engine.go:140	Pool run started	{"pool": "HTTP pool"}
+2022-11-05T14:58:11.663Z	INFO	cli/expvar.go:40	[ENGINE] 2 resp/s; 2 req/s; 50 users; 0 active
+
+2022-11-05T14:58:12.662Z	INFO	cli/expvar.go:40	[ENGINE] 2 resp/s; 2 req/s; 50 users; 0 active
+
+2022-11-05T14:58:13.662Z	INFO	cli/expvar.go:40	[ENGINE] 2 resp/s; 2 req/s; 50 users; 0 active
+
+2022-11-05T14:58:14.662Z	INFO	cli/expvar.go:40	[ENGINE] 3 resp/s; 3 req/s; 50 users; 0 active
+
+2022-11-05T14:58:15.665Z	INFO	cli/expvar.go:40	[ENGINE] 3 resp/s; 3 req/s; 50 users; 0 active
+
+2022-11-05T14:58:16.662Z	INFO	cli/expvar.go:40	[ENGINE] 4 resp/s; 4 req/s; 50 users; 0 active
+
+2022-11-05T14:58:17.642Z	INFO	cli/expvar.go:40	[ENGINE] 5 resp/s; 5 req/s; 50 users; 0 active
+
+2022-11-05T14:58:18.643Z	INFO	cli/expvar.go:40	[ENGINE] 5 resp/s; 5 req/s; 50 users; 0 active
+
+2022-11-05T14:58:19.642Z	INFO	cli/expvar.go:40	[ENGINE] 5 resp/s; 5 req/s; 50 users; 0 active
+
+2022-11-05T14:58:20.641Z	INFO	cli/expvar.go:40	[ENGINE] 7 resp/s; 7 req/s; 50 users; 0 active
+
+2022-11-05T14:58:21.642Z	INFO	cli/expvar.go:40	[ENGINE] 6 resp/s; 6 req/s; 50 users; 0 active
+
+2022-11-05T14:58:22.436Z	INFO	cli/cli.go:149	SIGINT received. Graceful shutdown.	{"timeout": "30s"}
+2022-11-05T14:58:22.438Z	INFO	engine/engine.go:161	Pool execution canceled	{"pool": "HTTP pool"}
+2022-11-05T14:58:22.439Z	INFO	engine/engine.go:143	Pool run finished	{"pool": "HTTP pool"}
+2022-11-05T14:58:22.443Z	INFO	engine/engine.go:82	Pool run result suppressed	{"pool": "HTTP pool", "id": "HTTP pool", "error": "context canceled"}
+2022-11-05T14:58:22.440Z	INFO	engine/engine.go:102	Engine run canceled
+2022-11-05T14:58:22.441Z	INFO	engine/engine.go:353	All instances runs awaited.	{"pool": "HTTP pool", "awaited": 50}
+2022-11-05T14:58:22.451Z	INFO	engine/engine.go:66	Engine finished
+2022-11-05T14:58:22.456Z	FATAL	cli/cli.go:164	Engine interrupted	{"error": "context canceled"}
+a.yandex-team.ru/load/projects/pandora/cli.awaitPandoraTermination
+	/-S/load/projects/pandora/cli/cli.go:164
+a.yandex-team.ru/load/projects/pandora/cli.Run
+	/-S/load/projects/pandora/cli/cli.go:133
+main.main
+	/-S/load/projects/pandora/main.go:27
+runtime.main
+	/-S/contrib/go/_std_1.18/src/runtime/proc.go:250

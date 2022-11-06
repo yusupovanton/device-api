@@ -1,0 +1,13 @@
+exit_code: 1
+left_time: null
+lunapark_id: null
+lunapark_url: null
+status_code: FINISHED
+tank_msg: "Test interrupted:\n<class 'RuntimeError'>: Unable to start Pandora binary\
+  \ and/or file does not exist: ['/Users/yustas/go/device-api/loadtest/custom_gun/my_custom_gun',\
+  \ '/var/loadtest/logs/2022-11-06_14-24-29.896883/pandora_config_9yicn3l6.yaml']\n\
+  \  File \"/usr/local/lib/python3.8/dist-packages/yandextank/core/tankworker.py\"\
+  , line 78, in run\n    self.core.plugins_start_test()\n\n  File \"/usr/local/lib/python3.8/dist-packages/yandextank/core/tankcore.py\"\
+  , line 284, in plugins_start_test\n    plugin.start_test()\n\n  File \"/usr/local/lib/python3.8/dist-packages/yandextank/plugins/Pandora/plugin.py\"\
+  , line 251, in start_test\n    raise RuntimeError(\n"
+test_id: 2022-11-06_14-24-29.896883

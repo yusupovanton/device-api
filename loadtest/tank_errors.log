@@ -9,3 +9,206 @@
     time.sleep(0.5 - diff)
 
 2022-10-29 09:51:33,506	Terminating worker process with PID 29
+2022-11-05 13:56:06,322	Seems like pandora result file not specified... adding defaults
+2022-11-05 14:37:20,383	Seems like pandora result file not specified... adding defaults
+2022-11-05 14:47:23,565	Seems like pandora result file not specified... adding defaults
+2022-11-05 14:56:53,362	Seems like pandora result file not specified... adding defaults
+2022-11-05 14:56:54,022	Filepath=/var/loadtest/logs/2022-11-05_14-56-53.130959/pandora_3_nhepz_.log, lines_num=20, buf_size=8192, fsize=7036
+2022-11-05 14:57:14,044	Seems like pandora result file not specified... adding defaults
+2022-11-05 14:57:14,696	Filepath=/var/loadtest/logs/2022-11-05_14-57-13.789381/pandora_de4bb21u.log, lines_num=20, buf_size=8192, fsize=7036
+2022-11-05 14:58:10,485	Seems like pandora result file not specified... adding defaults
+2022-11-05 14:58:22,436	Interrupting
+2022-11-05 14:58:22,439	Test interrupted:
+<class 'KeyboardInterrupt'>: 
+  File "/usr/local/lib/python3.8/dist-packages/yandextank/core/tankworker.py", line 79, in run
+    self.retcode = self.core.wait_for_finish()
+
+  File "/usr/local/lib/python3.8/dist-packages/yandextank/core/tankcore.py", line 326, in wait_for_finish
+    time.sleep(0.5 - diff)
+
+2022-11-05 15:00:54,231	Seems like pandora result file not specified... adding defaults
+2022-11-05 15:00:54,882	Filepath=/var/loadtest/logs/2022-11-05_15-00-54.018414/pandora_snv4arjw.log, lines_num=20, buf_size=8192, fsize=7040
+2022-11-05 15:06:07,798	Seems like pandora result file not specified... adding defaults
+2022-11-05 15:15:14,437	Seems like pandora result file not specified... adding defaults
+2022-11-05 15:21:53,572	Seems like pandora result file not specified... adding defaults
+2022-11-05 15:24:28,508	Interrupting
+2022-11-05 15:24:28,509	Test interrupted:
+<class 'KeyboardInterrupt'>: 
+  File "/usr/local/lib/python3.8/dist-packages/yandextank/core/tankworker.py", line 79, in run
+    self.retcode = self.core.wait_for_finish()
+
+  File "/usr/local/lib/python3.8/dist-packages/yandextank/core/tankcore.py", line 326, in wait_for_finish
+    time.sleep(0.5 - diff)
+
+2022-11-05 15:24:28,530	Terminating worker process with PID 29
+2022-11-05 15:24:50,466	Seems like pandora result file not specified... adding defaults
+2022-11-05 15:27:40,063	Seems like pandora result file not specified... adding defaults
+2022-11-05 15:40:19,477	Seems like pandora result file not specified... adding defaults
+2022-11-05 15:44:13,434	Seems like pandora result file not specified... adding defaults
+2022-11-05 15:49:57,238	Seems like pandora result file not specified... adding defaults
+2022-11-05 15:49:57,240	Seems like pandora result file not specified... adding defaults
+2022-11-05 15:53:55,900	Seems like pandora result file not specified... adding defaults
+2022-11-05 15:53:55,903	Seems like pandora result file not specified... adding defaults
+2022-11-05 15:59:20,626	Sparkline got outdated second 1667663672, oldest in list 1667663779
+2022-11-05 15:59:20,634	Sparkline got outdated second 1667663672, oldest in list 1667663839
+2022-11-05 15:59:20,637	Sparkline got outdated second 1667663672, oldest in list 1667663839
+2022-11-05 15:59:20,642	Sparkline got outdated second 1667663672, oldest in list 1667663839
+2022-11-05 15:59:20,645	Sparkline got outdated second 1667663672, oldest in list 1667663839
+2022-11-05 15:59:20,648	Sparkline got outdated second 1667663672, oldest in list 1667663839
+2022-11-05 15:59:20,650	Sparkline got outdated second 1667663672, oldest in list 1667663839
+2022-11-05 15:59:20,701	Sparkline got outdated second 1667663672, oldest in list 1667663839
+2022-11-05 15:59:20,712	Sparkline got outdated second 1667663672, oldest in list 1667663839
+2022-11-05 15:59:20,720	Sparkline got outdated second 1667663672, oldest in list 1667663839
+2022-11-05 15:59:20,746	Sparkline got outdated second 1667663786, oldest in list 1667663839
+2022-11-05 15:59:20,747	Sparkline got outdated second 1667663786, oldest in list 1667663839
+2022-11-05 15:59:20,751	Sparkline got outdated second 1667663786, oldest in list 1667663839
+2022-11-05 15:59:20,755	Sparkline got outdated second 1667663786, oldest in list 1667663839
+2022-11-05 15:59:20,762	Sparkline got outdated second 1667663786, oldest in list 1667663839
+2022-11-05 15:59:20,766	Sparkline got outdated second 1667663786, oldest in list 1667663839
+2022-11-05 15:59:20,773	Sparkline got outdated second 1667663786, oldest in list 1667663839
+2022-11-05 15:59:20,777	Sparkline got outdated second 1667663786, oldest in list 1667663839
+2022-11-05 15:59:20,785	Sparkline got outdated second 1667663786, oldest in list 1667663839
+2022-11-05 15:59:20,811	Sparkline got outdated second 1667663804, oldest in list 1667663839
+2022-11-05 15:59:20,815	Sparkline got outdated second 1667663804, oldest in list 1667663839
+2022-11-05 15:59:20,822	Sparkline got outdated second 1667663804, oldest in list 1667663839
+2022-11-05 15:59:20,825	Sparkline got outdated second 1667663804, oldest in list 1667663839
+2022-11-05 15:59:20,833	Sparkline got outdated second 1667663804, oldest in list 1667663839
+2022-11-05 15:59:20,838	Sparkline got outdated second 1667663804, oldest in list 1667663839
+2022-11-05 15:59:20,842	Sparkline got outdated second 1667663804, oldest in list 1667663839
+2022-11-05 15:59:20,846	Sparkline got outdated second 1667663804, oldest in list 1667663839
+2022-11-05 15:59:20,850	Sparkline got outdated second 1667663804, oldest in list 1667663839
+2022-11-05 15:59:20,864	Sparkline got outdated second 1667663806, oldest in list 1667663839
+2022-11-05 15:59:20,867	Sparkline got outdated second 1667663806, oldest in list 1667663839
+2022-11-05 15:59:20,871	Sparkline got outdated second 1667663806, oldest in list 1667663839
+2022-11-05 15:59:20,876	Sparkline got outdated second 1667663806, oldest in list 1667663839
+2022-11-05 15:59:20,880	Sparkline got outdated second 1667663806, oldest in list 1667663839
+2022-11-05 15:59:20,883	Sparkline got outdated second 1667663806, oldest in list 1667663839
+2022-11-05 15:59:20,889	Sparkline got outdated second 1667663806, oldest in list 1667663839
+2022-11-05 15:59:20,895	Sparkline got outdated second 1667663806, oldest in list 1667663839
+2022-11-05 15:59:20,898	Sparkline got outdated second 1667663806, oldest in list 1667663839
+2022-11-05 15:59:20,913	Sparkline got outdated second 1667663819, oldest in list 1667663839
+2022-11-05 15:59:20,915	Sparkline got outdated second 1667663819, oldest in list 1667663839
+2022-11-05 15:59:20,920	Sparkline got outdated second 1667663819, oldest in list 1667663839
+2022-11-05 15:59:20,923	Sparkline got outdated second 1667663819, oldest in list 1667663839
+2022-11-05 15:59:20,928	Sparkline got outdated second 1667663819, oldest in list 1667663839
+2022-11-05 15:59:20,931	Sparkline got outdated second 1667663819, oldest in list 1667663839
+2022-11-05 15:59:20,936	Sparkline got outdated second 1667663819, oldest in list 1667663839
+2022-11-05 15:59:20,941	Sparkline got outdated second 1667663819, oldest in list 1667663839
+2022-11-05 15:59:20,944	Sparkline got outdated second 1667663819, oldest in list 1667663839
+2022-11-05 15:59:20,947	Sparkline got outdated second 1667663819, oldest in list 1667663839
+2022-11-05 16:26:16,435	Seems like pandora result file not specified... adding defaults
+2022-11-05 16:26:16,443	Seems like pandora result file not specified... adding defaults
+2022-11-05 16:29:43,257	Interrupting
+2022-11-05 16:29:43,257	Test interrupted:
+<class 'KeyboardInterrupt'>: 
+  File "/usr/local/lib/python3.8/dist-packages/yandextank/core/tankworker.py", line 79, in run
+    self.retcode = self.core.wait_for_finish()
+
+  File "/usr/local/lib/python3.8/dist-packages/yandextank/core/tankcore.py", line 326, in wait_for_finish
+    time.sleep(0.5 - diff)
+
+2022-11-05 16:29:43,284	Terminating worker process with PID 28
+2022-11-05 16:32:42,290	Seems like pandora result file not specified... adding defaults
+2022-11-05 16:32:42,293	Seems like pandora result file not specified... adding defaults
+2022-11-05 16:45:33,535	Seems like pandora result file not specified... adding defaults
+2022-11-05 16:45:33,543	Seems like pandora result file not specified... adding defaults
+2022-11-05 16:55:16,807	Seems like pandora result file not specified... adding defaults
+2022-11-05 16:55:16,811	Seems like pandora result file not specified... adding defaults
+2022-11-05 17:02:48,870	Seems like pandora result file not specified... adding defaults
+2022-11-05 17:02:48,874	Seems like pandora result file not specified... adding defaults
+2022-11-05 21:51:39,125	Cannot change permissions to /custom_gun/my_custom_gun
+2022-11-05 21:51:39,129	Seems like pandora result file not specified... adding defaults
+2022-11-05 21:51:39,133	Seems like pandora result file not specified... adding defaults
+2022-11-05 21:51:39,264	Test interrupted:
+<class 'RuntimeError'>: Unable to start Pandora binary and/or file does not exist: ['/custom_gun/my_custom_gun', '/var/loadtest/logs/2022-11-05_21-51-38.940114/pandora_config_eebrhxr4.yaml']
+  File "/usr/local/lib/python3.8/dist-packages/yandextank/core/tankworker.py", line 78, in run
+    self.core.plugins_start_test()
+
+  File "/usr/local/lib/python3.8/dist-packages/yandextank/core/tankcore.py", line 284, in plugins_start_test
+    plugin.start_test()
+
+  File "/usr/local/lib/python3.8/dist-packages/yandextank/plugins/Pandora/plugin.py", line 251, in start_test
+    raise RuntimeError(
+
+2022-11-05 21:57:06,610	Test interrupted:
+<class 'RuntimeError'>: Unable to start Pandora binary and/or file does not exist: ['my_custom_gun', '/var/loadtest/logs/2022-11-05_21-57-06.294874/pandora_config_ygkr1avb.yaml']
+  File "/usr/local/lib/python3.8/dist-packages/yandextank/core/tankworker.py", line 78, in run
+    self.core.plugins_start_test()
+
+  File "/usr/local/lib/python3.8/dist-packages/yandextank/core/tankcore.py", line 284, in plugins_start_test
+    plugin.start_test()
+
+  File "/usr/local/lib/python3.8/dist-packages/yandextank/plugins/Pandora/plugin.py", line 251, in start_test
+    raise RuntimeError(
+
+2022-11-05 21:58:08,930	Test interrupted:
+<class 'RuntimeError'>: Unable to start Pandora binary and/or file does not exist: ['my_custom_gun', '/var/loadtest/logs/2022-11-05_21-58-08.592266/pandora_config_v2td6rw_.yaml']
+  File "/usr/local/lib/python3.8/dist-packages/yandextank/core/tankworker.py", line 78, in run
+    self.core.plugins_start_test()
+
+  File "/usr/local/lib/python3.8/dist-packages/yandextank/core/tankcore.py", line 284, in plugins_start_test
+    plugin.start_test()
+
+  File "/usr/local/lib/python3.8/dist-packages/yandextank/plugins/Pandora/plugin.py", line 251, in start_test
+    raise RuntimeError(
+
+2022-11-05 22:00:11,177	Cannot change permissions to /Users/yustas/go/device-api/loadtest/my_custom_gun
+2022-11-05 22:00:11,302	Test interrupted:
+<class 'RuntimeError'>: Unable to start Pandora binary and/or file does not exist: ['/Users/yustas/go/device-api/loadtest/my_custom_gun', '/var/loadtest/logs/2022-11-05_22-00-11.019749/pandora_config__wc6xmpx.yaml']
+  File "/usr/local/lib/python3.8/dist-packages/yandextank/core/tankworker.py", line 78, in run
+    self.core.plugins_start_test()
+
+  File "/usr/local/lib/python3.8/dist-packages/yandextank/core/tankcore.py", line 284, in plugins_start_test
+    plugin.start_test()
+
+  File "/usr/local/lib/python3.8/dist-packages/yandextank/plugins/Pandora/plugin.py", line 251, in start_test
+    raise RuntimeError(
+
+2022-11-05 22:01:42,089	Cannot change permissions to /usr/local/bin/my_custom_gun
+2022-11-05 22:01:42,265	Test interrupted:
+<class 'RuntimeError'>: Unable to start Pandora binary and/or file does not exist: ['/usr/local/bin/my_custom_gun', '/var/loadtest/logs/2022-11-05_22-01-41.925485/pandora_config_dko81gpz.yaml']
+  File "/usr/local/lib/python3.8/dist-packages/yandextank/core/tankworker.py", line 78, in run
+    self.core.plugins_start_test()
+
+  File "/usr/local/lib/python3.8/dist-packages/yandextank/core/tankcore.py", line 284, in plugins_start_test
+    plugin.start_test()
+
+  File "/usr/local/lib/python3.8/dist-packages/yandextank/plugins/Pandora/plugin.py", line 251, in start_test
+    raise RuntimeError(
+
+2022-11-06 13:40:04,807	Cannot change permissions to /usr/local/bin/my_custom_gun
+2022-11-06 13:40:04,933	Test interrupted:
+<class 'RuntimeError'>: Unable to start Pandora binary and/or file does not exist: ['/usr/local/bin/my_custom_gun', '/var/loadtest/logs/2022-11-06_13-40-04.581602/pandora_config_um2gveos.yaml']
+  File "/usr/local/lib/python3.8/dist-packages/yandextank/core/tankworker.py", line 78, in run
+    self.core.plugins_start_test()
+
+  File "/usr/local/lib/python3.8/dist-packages/yandextank/core/tankcore.py", line 284, in plugins_start_test
+    plugin.start_test()
+
+  File "/usr/local/lib/python3.8/dist-packages/yandextank/plugins/Pandora/plugin.py", line 251, in start_test
+    raise RuntimeError(
+
+2022-11-06 14:24:30,044	Cannot change permissions to /Users/yustas/go/device-api/loadtest/custom_gun/my_custom_gun
+2022-11-06 14:24:30,146	Test interrupted:
+<class 'RuntimeError'>: Unable to start Pandora binary and/or file does not exist: ['/Users/yustas/go/device-api/loadtest/custom_gun/my_custom_gun', '/var/loadtest/logs/2022-11-06_14-24-29.896883/pandora_config_9yicn3l6.yaml']
+  File "/usr/local/lib/python3.8/dist-packages/yandextank/core/tankworker.py", line 78, in run
+    self.core.plugins_start_test()
+
+  File "/usr/local/lib/python3.8/dist-packages/yandextank/core/tankcore.py", line 284, in plugins_start_test
+    plugin.start_test()
+
+  File "/usr/local/lib/python3.8/dist-packages/yandextank/plugins/Pandora/plugin.py", line 251, in start_test
+    raise RuntimeError(
+
+2022-11-06 14:28:55,262	Cannot change permissions to /Users/yustas/go/device-api/loadtest/custom_gun/my_custom_gun
+2022-11-06 14:28:55,373	Test interrupted:
+<class 'RuntimeError'>: Unable to start Pandora binary and/or file does not exist: ['/Users/yustas/go/device-api/loadtest/custom_gun/my_custom_gun', '/var/loadtest/logs/2022-11-06_14-28-55.117917/pandora_config_cjzt6f58.yaml']
+  File "/usr/local/lib/python3.8/dist-packages/yandextank/core/tankworker.py", line 78, in run
+    self.core.plugins_start_test()
+
+  File "/usr/local/lib/python3.8/dist-packages/yandextank/core/tankcore.py", line 284, in plugins_start_test
+    plugin.start_test()
+
+  File "/usr/local/lib/python3.8/dist-packages/yandextank/plugins/Pandora/plugin.py", line 251, in start_test
+    raise RuntimeError(
+

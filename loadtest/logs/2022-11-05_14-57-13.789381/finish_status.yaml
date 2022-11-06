@@ -1,0 +1,45 @@
+exit_code: 1
+left_time: null
+lunapark_id: null
+lunapark_url: null
+status_code: FINISHED
+tank_msg: "plugin_pandora: 2022-11-05T14:57:14.235Z\tERROR\tcli/cli.go:173\tEngine\
+  \ run failed. Awaiting started tasks.\t{\"error\": \"\\\"HTTP pool\\\" pool run\
+  \ failed: provider failed: failed to decode ammo at line: 5; data: \\\"{\\\\\\\"\
+  tag\\\\\\\": \\\\\\\"http_CreateNotif\\\\\\\", \\\\\\\"uri\\\\\\\": \\\\\\\"api/v1/notification\\\
+  \\\\\", \\\\\\\"method\\\\\\\": \\\\\\\"POST\\\\\\\", \\\\\\\"headers\\\\\\\": {\\\
+  \\\\\"Accept\\\\\\\": \\\\\\\"application/json\\\\\\\", \\\\\\\"Content-Type\\\\\
+  \\\": \\\\\\\"application/json\\\\\\\", \\\\\\\"Content-Length\\\\\\\": \\\\\\\"\
+  36\\\\\\\"}, \\\\\\\"body\\\\\\\": {\\\\\\\"notification\\\\\\\": {\\\\\\\"notificationId\\\
+  \\\\\": \\\\\\\"0\\\\\\\", \\\\\\\"deviceId\\\\\\\": \\\\\\\"1\\\\\\\", \\\\\\\"\
+  username\\\\\\\": \\\\\\\"0\\\\\\\", \\\\\\\"message\\\\\\\": \\\\\\\"Hello\\\\\\\
+  \", \\\\\\\"lang\\\\\\\": \\\\\\\"LANG_ENGLISH\\\\\\\", \\\\\\\"notificationStatus\\\
+  \\\\\": \\\\\\\"STATUS_CREATED\\\\\\\"}}, \\\\\\\"host\\\\\\\": \\\\\\\"act-device-api\\\
+  \\\\\"}\\\": ffjson error: (*errors.errorString)cannot unmarshal tok:left_bracket\
+  \ into Go value for string offset=188 line=1 char=188\", \"errorVerbose\": \"ffjson\
+  \ error: (*errors.errorString)cannot unmarshal tok:left_bracket into Go value for\
+  \ string offset=188 line=1 char=188\\na.yandex-team.ru/load/projects/pandora/components/phttp/ammo/simple/jsonline.decodeAmmo\\\
+  n\\t/-S/load/projects/pandora/components/phttp/ammo/simple/jsonline/provider.go:94\\\
+  na.yandex-team.ru/load/projects/pandora/components/phttp/ammo/simple/jsonline.(*Provider).start\\\
+  n\\t/-S/load/projects/pandora/components/phttp/ammo/simple/jsonline/provider.go:61\\\
+  na.yandex-team.ru/load/projects/pandora/components/phttp/ammo/simple.(*Provider).Run\\\
+  n\\t/-S/load/projects/pandora/components/phttp/ammo/simple/provider.go:62\\na.yandex-team.ru/load/projects/pandora/core/engine.(*instancePool).runAsync.func1\\\
+  n\\t/-S/load/projects/pandora/core/engine/engine.go:224\\nruntime.goexit\\n\\t/-S/contrib/go/_std_1.18/src/runtime/asm_amd64.s:1571\\\
+  nfailed to decode ammo at line: 5; data: \\\"{\\\\\\\"tag\\\\\\\": \\\\\\\"http_CreateNotif\\\
+  \\\\\", \\\\\\\"uri\\\\\\\": \\\\\\\"api/v1/notification\\\\\\\", \\\\\\\"method\\\
+  \\\\\": \\\\\\\"POST\\\\\\\", \\\\\\\"headers\\\\\\\": {\\\\\\\"Accept\\\\\\\":\
+  \ \\\\\\\"application/json\\\\\\\", \\\\\\\"Content-Type\\\\\\\": \\\\\\\"application/json\\\
+  \\\\\", \\\\\\\"Content-Length\\\\\\\": \\\\\\\"36\\\\\\\"}, \\\\\\\"body\\\\\\\"\
+  : {\\\\\\\"notification\\\\\\\": {\\\\\\\"notificationId\\\\\\\": \\\\\\\"0\\\\\\\
+  \", \\\\\\\"deviceId\\\\\\\": \\\\\\\"1\\\\\\\", \\\\\\\"username\\\\\\\": \\\\\\\
+  \"0\\\\\\\", \\\\\\\"message\\\\\\\": \\\\\\\"Hello\\\\\\\", \\\\\\\"lang\\\\\\\"\
+  : \\\\\\\"LANG_ENGLISH\\\\\\\", \\\\\\\"notificationStatus\\\\\\\": \\\\\\\"STATUS_CREATED\\\
+  \\\\\"}}, \\\\\\\"host\\\\\\\": \\\\\\\"act-device-api\\\\\\\"}\\\"\\na.yandex-team.ru/load/projects/pandora/components/phttp/ammo/simple/jsonline.(*Provider).start\\\
+  n\\t/-S/load/projects/pandora/components/phttp/ammo/simple/jsonline/provider.go:66\\\
+  na.yandex-team.ru/load/projects/pandora/components/phttp/ammo/simple.(*Provider).Run\\\
+  n\\t/-S/load/projects/pandora/components/phttp/ammo/simple/provider.go:62\\na.yandex-team.ru/load/projects/pandora/core/engine.(*instancePool).runAsync.func1\\\
+  n\\t/-S/load/projects/pandora/core/engine/engine.go:224\\nruntime.goexit\\n\\t/-S/contrib/go/_std_1.18/src/runtime/asm_amd64.s:1571\\\
+  nprovider failed\\n\\\"HTTP pool\\\" pool run failed\", \"timeout\": \"3s\"}\nplugin_pandora:\
+  \ 2022-11-05T14:57:14.239Z\tFATAL\tcli/cli.go:179\tEngine run failed. Pandora graceful\
+  \ shutdown successfully finished"
+test_id: 2022-11-05_14-57-13.789381

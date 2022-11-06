@@ -1,0 +1,3 @@
+{"tag":"http_ListDevices", "uri": "/api/v1/devices?page=1&perPage=100", "method": "GET", "headers": {"Accept": "application/json"},"body": "", "host": "act-device-api"}
+{"tag": "http_CreateDevice", "uri": "/api/v1/devices", "method": "POST", "headers": {"Accept": "application/json", "Content-Type": "application/json", "Content-Length": "36"}, "body": "{\"platform\": \"ios\",  \"userId\": \"222\"}", "host": "act-device-api"}
+{"tag": "http_DescribeDevice", "uri": "/api/v1/devices/2", "method": "GET", "headers": {"Accept": "application/json", "Content-Type": "application/json", "Content-Length": "36"}, "host": "act-device-api"}

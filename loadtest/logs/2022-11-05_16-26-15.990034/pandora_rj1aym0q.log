@@ -1,0 +1,1796 @@
+2022-11-05T16:26:16.682Z	INFO	cli/cli.go:227	Reading config	{"file": "/var/loadtest/logs/2022-11-05_16-26-15.990034/pandora_config_r2n27dth.yaml"}
+2022-11-05T16:26:16.731Z	INFO	engine/engine.go:140	Pool run started	{"pool": "notif pool"}
+2022-11-05T16:26:16.733Z	INFO	engine/engine.go:140	Pool run started	{"pool": "device pool"}
+2022-11-05T16:26:17.730Z	INFO	cli/expvar.go:40	[ENGINE] 10 resp/s; 234 req/s; 3505 users; 224 active
+
+2022-11-05T16:26:19.227Z	WARN	phttp/base.go:143	Request fail	{"pool": "device pool", "instance": 1166, "error": "dial tcp 172.20.0.3:8080: i/o timeout"}
+a.yandex-team.ru/load/projects/pandora/components/phttp.(*BaseGun).Shoot
+	/-S/load/projects/pandora/components/phttp/base.go:143
+a.yandex-team.ru/load/projects/pandora/components/phttp.(*gunWrapper).Shoot
+	/-S/load/projects/pandora/components/phttp/core.go:44
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instance).shoot.func2
+	/-S/load/projects/pandora/core/engine/instance.go:112
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instance).shoot
+	/-S/load/projects/pandora/core/engine/instance.go:118
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instance).Run
+	/-S/load/projects/pandora/core/engine/instance.go:79
+a.yandex-team.ru/load/projects/pandora/core/engine.runNewInstance
+	/-S/load/projects/pandora/core/engine/engine.go:436
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instancePool).startInstances.func2
+	/-S/load/projects/pandora/core/engine/engine.go:395
+2022-11-05T16:26:19.229Z	WARN	phttp/base.go:143	Request fail	{"pool": "notif pool", "instance": 1958, "error": "dial tcp 172.20.0.3:8080: i/o timeout"}
+a.yandex-team.ru/load/projects/pandora/components/phttp.(*BaseGun).Shoot
+	/-S/load/projects/pandora/components/phttp/base.go:143
+a.yandex-team.ru/load/projects/pandora/components/phttp.(*gunWrapper).Shoot
+	/-S/load/projects/pandora/components/phttp/core.go:44
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instance).shoot.func2
+	/-S/load/projects/pandora/core/engine/instance.go:112
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instance).shoot
+	/-S/load/projects/pandora/core/engine/instance.go:118
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instance).Run
+	/-S/load/projects/pandora/core/engine/instance.go:79
+a.yandex-team.ru/load/projects/pandora/core/engine.runNewInstance
+	/-S/load/projects/pandora/core/engine/engine.go:436
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instancePool).startInstances.func2
+	/-S/load/projects/pandora/core/engine/engine.go:395
+2022-11-05T16:26:19.229Z	WARN	phttp/base.go:143	Request fail	{"pool": "notif pool", "instance": 1806, "error": "dial tcp 172.20.0.3:8080: i/o timeout"}
+a.yandex-team.ru/load/projects/pandora/components/phttp.(*BaseGun).Shoot
+	/-S/load/projects/pandora/components/phttp/base.go:143
+a.yandex-team.ru/load/projects/pandora/components/phttp.(*gunWrapper).Shoot
+	/-S/load/projects/pandora/components/phttp/core.go:44
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instance).shoot.func2
+	/-S/load/projects/pandora/core/engine/instance.go:112
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instance).shoot
+	/-S/load/projects/pandora/core/engine/instance.go:118
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instance).Run
+	/-S/load/projects/pandora/core/engine/instance.go:79
+a.yandex-team.ru/load/projects/pandora/core/engine.runNewInstance
+	/-S/load/projects/pandora/core/engine/engine.go:436
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instancePool).startInstances.func2
+	/-S/load/projects/pandora/core/engine/engine.go:395
+2022-11-05T16:26:19.229Z	WARN	phttp/base.go:143	Request fail	{"pool": "device pool", "instance": 1032, "error": "dial tcp 172.20.0.3:8080: i/o timeout"}
+a.yandex-team.ru/load/projects/pandora/components/phttp.(*BaseGun).Shoot
+	/-S/load/projects/pandora/components/phttp/base.go:143
+a.yandex-team.ru/load/projects/pandora/components/phttp.(*gunWrapper).Shoot
+	/-S/load/projects/pandora/components/phttp/core.go:44
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instance).shoot.func2
+	/-S/load/projects/pandora/core/engine/instance.go:112
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instance).shoot
+	/-S/load/projects/pandora/core/engine/instance.go:118
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instance).Run
+	/-S/load/projects/pandora/core/engine/instance.go:79
+a.yandex-team.ru/load/projects/pandora/core/engine.runNewInstance
+	/-S/load/projects/pandora/core/engine/engine.go:436
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instancePool).startInstances.func2
+	/-S/load/projects/pandora/core/engine/engine.go:395
+2022-11-05T16:26:19.230Z	WARN	phttp/base.go:143	Request fail	{"pool": "device pool", "instance": 1034, "error": "dial tcp 172.20.0.3:8080: i/o timeout"}
+a.yandex-team.ru/load/projects/pandora/components/phttp.(*BaseGun).Shoot
+	/-S/load/projects/pandora/components/phttp/base.go:143
+a.yandex-team.ru/load/projects/pandora/components/phttp.(*gunWrapper).Shoot
+	/-S/load/projects/pandora/components/phttp/core.go:44
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instance).shoot.func2
+	/-S/load/projects/pandora/core/engine/instance.go:112
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instance).shoot
+	/-S/load/projects/pandora/core/engine/instance.go:118
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instance).Run
+	/-S/load/projects/pandora/core/engine/instance.go:79
+a.yandex-team.ru/load/projects/pandora/core/engine.runNewInstance
+	/-S/load/projects/pandora/core/engine/engine.go:436
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instancePool).startInstances.func2
+	/-S/load/projects/pandora/core/engine/engine.go:395
+2022-11-05T16:26:19.230Z	WARN	phttp/base.go:143	Request fail	{"pool": "notif pool", "instance": 1807, "error": "dial tcp 172.20.0.3:8080: i/o timeout"}
+a.yandex-team.ru/load/projects/pandora/components/phttp.(*BaseGun).Shoot
+	/-S/load/projects/pandora/components/phttp/base.go:143
+a.yandex-team.ru/load/projects/pandora/components/phttp.(*gunWrapper).Shoot
+	/-S/load/projects/pandora/components/phttp/core.go:44
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instance).shoot.func2
+	/-S/load/projects/pandora/core/engine/instance.go:112
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instance).shoot
+	/-S/load/projects/pandora/core/engine/instance.go:118
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instance).Run
+	/-S/load/projects/pandora/core/engine/instance.go:79
+a.yandex-team.ru/load/projects/pandora/core/engine.runNewInstance
+	/-S/load/projects/pandora/core/engine/engine.go:436
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instancePool).startInstances.func2
+	/-S/load/projects/pandora/core/engine/engine.go:395
+2022-11-05T16:26:19.230Z	WARN	phttp/base.go:143	Request fail	{"pool": "device pool", "instance": 1033, "error": "dial tcp 172.20.0.3:8080: i/o timeout"}
+a.yandex-team.ru/load/projects/pandora/components/phttp.(*BaseGun).Shoot
+	/-S/load/projects/pandora/components/phttp/base.go:143
+a.yandex-team.ru/load/projects/pandora/components/phttp.(*gunWrapper).Shoot
+	/-S/load/projects/pandora/components/phttp/core.go:44
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instance).shoot.func2
+	/-S/load/projects/pandora/core/engine/instance.go:112
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instance).shoot
+	/-S/load/projects/pandora/core/engine/instance.go:118
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instance).Run
+	/-S/load/projects/pandora/core/engine/instance.go:79
+a.yandex-team.ru/load/projects/pandora/core/engine.runNewInstance
+	/-S/load/projects/pandora/core/engine/engine.go:436
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instancePool).startInstances.func2
+	/-S/load/projects/pandora/core/engine/engine.go:395
+2022-11-05T16:26:19.231Z	WARN	phttp/base.go:143	Request fail	{"pool": "device pool", "instance": 1035, "error": "dial tcp 172.20.0.3:8080: i/o timeout"}
+a.yandex-team.ru/load/projects/pandora/components/phttp.(*BaseGun).Shoot
+	/-S/load/projects/pandora/components/phttp/base.go:143
+a.yandex-team.ru/load/projects/pandora/components/phttp.(*gunWrapper).Shoot
+	/-S/load/projects/pandora/components/phttp/core.go:44
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instance).shoot.func2
+	/-S/load/projects/pandora/core/engine/instance.go:112
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instance).shoot
+	/-S/load/projects/pandora/core/engine/instance.go:118
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instance).Run
+	/-S/load/projects/pandora/core/engine/instance.go:79
+a.yandex-team.ru/load/projects/pandora/core/engine.runNewInstance
+	/-S/load/projects/pandora/core/engine/engine.go:436
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instancePool).startInstances.func2
+	/-S/load/projects/pandora/core/engine/engine.go:395
+2022-11-05T16:26:19.232Z	WARN	phttp/base.go:143	Request fail	{"pool": "notif pool", "instance": 1809, "error": "dial tcp 172.20.0.3:8080: i/o timeout"}
+a.yandex-team.ru/load/projects/pandora/components/phttp.(*BaseGun).Shoot
+	/-S/load/projects/pandora/components/phttp/base.go:143
+a.yandex-team.ru/load/projects/pandora/components/phttp.(*gunWrapper).Shoot
+	/-S/load/projects/pandora/components/phttp/core.go:44
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instance).shoot.func2
+	/-S/load/projects/pandora/core/engine/instance.go:112
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instance).shoot
+	/-S/load/projects/pandora/core/engine/instance.go:118
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instance).Run
+	/-S/load/projects/pandora/core/engine/instance.go:79
+a.yandex-team.ru/load/projects/pandora/core/engine.runNewInstance
+	/-S/load/projects/pandora/core/engine/engine.go:436
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instancePool).startInstances.func2
+	/-S/load/projects/pandora/core/engine/engine.go:395
+2022-11-05T16:26:19.232Z	WARN	phttp/base.go:143	Request fail	{"pool": "notif pool", "instance": 1808, "error": "dial tcp 172.20.0.3:8080: i/o timeout"}
+a.yandex-team.ru/load/projects/pandora/components/phttp.(*BaseGun).Shoot
+	/-S/load/projects/pandora/components/phttp/base.go:143
+a.yandex-team.ru/load/projects/pandora/components/phttp.(*gunWrapper).Shoot
+	/-S/load/projects/pandora/components/phttp/core.go:44
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instance).shoot.func2
+	/-S/load/projects/pandora/core/engine/instance.go:112
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instance).shoot
+	/-S/load/projects/pandora/core/engine/instance.go:118
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instance).Run
+	/-S/load/projects/pandora/core/engine/instance.go:79
+a.yandex-team.ru/load/projects/pandora/core/engine.runNewInstance
+	/-S/load/projects/pandora/core/engine/engine.go:436
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instancePool).startInstances.func2
+	/-S/load/projects/pandora/core/engine/engine.go:395
+2022-11-05T16:26:19.232Z	WARN	phttp/base.go:143	Request fail	{"pool": "device pool", "instance": 1036, "error": "dial tcp 172.20.0.3:8080: i/o timeout"}
+a.yandex-team.ru/load/projects/pandora/components/phttp.(*BaseGun).Shoot
+	/-S/load/projects/pandora/components/phttp/base.go:143
+a.yandex-team.ru/load/projects/pandora/components/phttp.(*gunWrapper).Shoot
+	/-S/load/projects/pandora/components/phttp/core.go:44
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instance).shoot.func2
+	/-S/load/projects/pandora/core/engine/instance.go:112
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instance).shoot
+	/-S/load/projects/pandora/core/engine/instance.go:118
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instance).Run
+	/-S/load/projects/pandora/core/engine/instance.go:79
+a.yandex-team.ru/load/projects/pandora/core/engine.runNewInstance
+	/-S/load/projects/pandora/core/engine/engine.go:436
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instancePool).startInstances.func2
+	/-S/load/projects/pandora/core/engine/engine.go:395
+2022-11-05T16:26:19.233Z	WARN	phttp/base.go:143	Request fail	{"pool": "notif pool", "instance": 1810, "error": "dial tcp 172.20.0.3:8080: i/o timeout"}
+a.yandex-team.ru/load/projects/pandora/components/phttp.(*BaseGun).Shoot
+	/-S/load/projects/pandora/components/phttp/base.go:143
+a.yandex-team.ru/load/projects/pandora/components/phttp.(*gunWrapper).Shoot
+	/-S/load/projects/pandora/components/phttp/core.go:44
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instance).shoot.func2
+	/-S/load/projects/pandora/core/engine/instance.go:112
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instance).shoot
+	/-S/load/projects/pandora/core/engine/instance.go:118
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instance).Run
+	/-S/load/projects/pandora/core/engine/instance.go:79
+a.yandex-team.ru/load/projects/pandora/core/engine.runNewInstance
+	/-S/load/projects/pandora/core/engine/engine.go:436
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instancePool).startInstances.func2
+	/-S/load/projects/pandora/core/engine/engine.go:395
+2022-11-05T16:26:19.236Z	WARN	phttp/base.go:143	Request fail	{"pool": "notif pool", "instance": 1805, "error": "dial tcp 172.20.0.3:8080: i/o timeout"}
+a.yandex-team.ru/load/projects/pandora/components/phttp.(*BaseGun).Shoot
+	/-S/load/projects/pandora/components/phttp/base.go:143
+a.yandex-team.ru/load/projects/pandora/components/phttp.(*gunWrapper).Shoot
+	/-S/load/projects/pandora/components/phttp/core.go:44
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instance).shoot.func2
+	/-S/load/projects/pandora/core/engine/instance.go:112
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instance).shoot
+	/-S/load/projects/pandora/core/engine/instance.go:118
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instance).Run
+	/-S/load/projects/pandora/core/engine/instance.go:79
+a.yandex-team.ru/load/projects/pandora/core/engine.runNewInstance
+	/-S/load/projects/pandora/core/engine/engine.go:436
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instancePool).startInstances.func2
+	/-S/load/projects/pandora/core/engine/engine.go:395
+2022-11-05T16:26:19.236Z	WARN	phttp/base.go:143	Request fail	{"pool": "device pool", "instance": 1038, "error": "dial tcp 172.20.0.3:8080: i/o timeout"}
+a.yandex-team.ru/load/projects/pandora/components/phttp.(*BaseGun).Shoot
+	/-S/load/projects/pandora/components/phttp/base.go:143
+a.yandex-team.ru/load/projects/pandora/components/phttp.(*gunWrapper).Shoot
+	/-S/load/projects/pandora/components/phttp/core.go:44
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instance).shoot.func2
+	/-S/load/projects/pandora/core/engine/instance.go:112
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instance).shoot
+	/-S/load/projects/pandora/core/engine/instance.go:118
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instance).Run
+	/-S/load/projects/pandora/core/engine/instance.go:79
+a.yandex-team.ru/load/projects/pandora/core/engine.runNewInstance
+	/-S/load/projects/pandora/core/engine/engine.go:436
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instancePool).startInstances.func2
+	/-S/load/projects/pandora/core/engine/engine.go:395
+2022-11-05T16:26:19.237Z	WARN	phttp/base.go:143	Request fail	{"pool": "device pool", "instance": 1037, "error": "dial tcp 172.20.0.3:8080: i/o timeout"}
+a.yandex-team.ru/load/projects/pandora/components/phttp.(*BaseGun).Shoot
+	/-S/load/projects/pandora/components/phttp/base.go:143
+a.yandex-team.ru/load/projects/pandora/components/phttp.(*gunWrapper).Shoot
+	/-S/load/projects/pandora/components/phttp/core.go:44
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instance).shoot.func2
+	/-S/load/projects/pandora/core/engine/instance.go:112
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instance).shoot
+	/-S/load/projects/pandora/core/engine/instance.go:118
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instance).Run
+	/-S/load/projects/pandora/core/engine/instance.go:79
+a.yandex-team.ru/load/projects/pandora/core/engine.runNewInstance
+	/-S/load/projects/pandora/core/engine/engine.go:436
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instancePool).startInstances.func2
+	/-S/load/projects/pandora/core/engine/engine.go:395
+2022-11-05T16:26:19.238Z	WARN	phttp/base.go:143	Request fail	{"pool": "device pool", "instance": 1031, "error": "dial tcp 172.20.0.3:8080: i/o timeout"}
+a.yandex-team.ru/load/projects/pandora/components/phttp.(*BaseGun).Shoot
+	/-S/load/projects/pandora/components/phttp/base.go:143
+a.yandex-team.ru/load/projects/pandora/components/phttp.(*gunWrapper).Shoot
+	/-S/load/projects/pandora/components/phttp/core.go:44
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instance).shoot.func2
+	/-S/load/projects/pandora/core/engine/instance.go:112
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instance).shoot
+	/-S/load/projects/pandora/core/engine/instance.go:118
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instance).Run
+	/-S/load/projects/pandora/core/engine/instance.go:79
+a.yandex-team.ru/load/projects/pandora/core/engine.runNewInstance
+	/-S/load/projects/pandora/core/engine/engine.go:436
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instancePool).startInstances.func2
+	/-S/load/projects/pandora/core/engine/engine.go:395
+2022-11-05T16:26:19.238Z	WARN	phttp/base.go:143	Request fail	{"pool": "notif pool", "instance": 1811, "error": "dial tcp 172.20.0.3:8080: i/o timeout"}
+a.yandex-team.ru/load/projects/pandora/components/phttp.(*BaseGun).Shoot
+	/-S/load/projects/pandora/components/phttp/base.go:143
+a.yandex-team.ru/load/projects/pandora/components/phttp.(*gunWrapper).Shoot
+	/-S/load/projects/pandora/components/phttp/core.go:44
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instance).shoot.func2
+	/-S/load/projects/pandora/core/engine/instance.go:112
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instance).shoot
+	/-S/load/projects/pandora/core/engine/instance.go:118
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instance).Run
+	/-S/load/projects/pandora/core/engine/instance.go:79
+a.yandex-team.ru/load/projects/pandora/core/engine.runNewInstance
+	/-S/load/projects/pandora/core/engine/engine.go:436
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instancePool).startInstances.func2
+	/-S/load/projects/pandora/core/engine/engine.go:395
+2022-11-05T16:26:19.239Z	WARN	phttp/base.go:143	Request fail	{"pool": "notif pool", "instance": 1813, "error": "dial tcp 172.20.0.3:8080: i/o timeout"}
+a.yandex-team.ru/load/projects/pandora/components/phttp.(*BaseGun).Shoot
+	/-S/load/projects/pandora/components/phttp/base.go:143
+a.yandex-team.ru/load/projects/pandora/components/phttp.(*gunWrapper).Shoot
+	/-S/load/projects/pandora/components/phttp/core.go:44
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instance).shoot.func2
+	/-S/load/projects/pandora/core/engine/instance.go:112
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instance).shoot
+	/-S/load/projects/pandora/core/engine/instance.go:118
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instance).Run
+	/-S/load/projects/pandora/core/engine/instance.go:79
+a.yandex-team.ru/load/projects/pandora/core/engine.runNewInstance
+	/-S/load/projects/pandora/core/engine/engine.go:436
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instancePool).startInstances.func2
+	/-S/load/projects/pandora/core/engine/engine.go:395
+2022-11-05T16:26:19.239Z	WARN	phttp/base.go:143	Request fail	{"pool": "device pool", "instance": 1039, "error": "dial tcp 172.20.0.3:8080: i/o timeout"}
+a.yandex-team.ru/load/projects/pandora/components/phttp.(*BaseGun).Shoot
+	/-S/load/projects/pandora/components/phttp/base.go:143
+a.yandex-team.ru/load/projects/pandora/components/phttp.(*gunWrapper).Shoot
+	/-S/load/projects/pandora/components/phttp/core.go:44
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instance).shoot.func2
+	/-S/load/projects/pandora/core/engine/instance.go:112
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instance).shoot
+	/-S/load/projects/pandora/core/engine/instance.go:118
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instance).Run
+	/-S/load/projects/pandora/core/engine/instance.go:79
+a.yandex-team.ru/load/projects/pandora/core/engine.runNewInstance
+	/-S/load/projects/pandora/core/engine/engine.go:436
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instancePool).startInstances.func2
+	/-S/load/projects/pandora/core/engine/engine.go:395
+2022-11-05T16:26:19.240Z	WARN	phttp/base.go:143	Request fail	{"pool": "notif pool", "instance": 1814, "error": "dial tcp 172.20.0.3:8080: i/o timeout"}
+a.yandex-team.ru/load/projects/pandora/components/phttp.(*BaseGun).Shoot
+	/-S/load/projects/pandora/components/phttp/base.go:143
+a.yandex-team.ru/load/projects/pandora/components/phttp.(*gunWrapper).Shoot
+	/-S/load/projects/pandora/components/phttp/core.go:44
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instance).shoot.func2
+	/-S/load/projects/pandora/core/engine/instance.go:112
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instance).shoot
+	/-S/load/projects/pandora/core/engine/instance.go:118
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instance).Run
+	/-S/load/projects/pandora/core/engine/instance.go:79
+a.yandex-team.ru/load/projects/pandora/core/engine.runNewInstance
+	/-S/load/projects/pandora/core/engine/engine.go:436
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instancePool).startInstances.func2
+	/-S/load/projects/pandora/core/engine/engine.go:395
+2022-11-05T16:26:19.240Z	WARN	phttp/base.go:143	Request fail	{"pool": "device pool", "instance": 1040, "error": "dial tcp 172.20.0.3:8080: i/o timeout"}
+a.yandex-team.ru/load/projects/pandora/components/phttp.(*BaseGun).Shoot
+	/-S/load/projects/pandora/components/phttp/base.go:143
+a.yandex-team.ru/load/projects/pandora/components/phttp.(*gunWrapper).Shoot
+	/-S/load/projects/pandora/components/phttp/core.go:44
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instance).shoot.func2
+	/-S/load/projects/pandora/core/engine/instance.go:112
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instance).shoot
+	/-S/load/projects/pandora/core/engine/instance.go:118
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instance).Run
+	/-S/load/projects/pandora/core/engine/instance.go:79
+a.yandex-team.ru/load/projects/pandora/core/engine.runNewInstance
+	/-S/load/projects/pandora/core/engine/engine.go:436
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instancePool).startInstances.func2
+	/-S/load/projects/pandora/core/engine/engine.go:395
+2022-11-05T16:26:19.241Z	WARN	phttp/base.go:143	Request fail	{"pool": "device pool", "instance": 1041, "error": "dial tcp 172.20.0.3:8080: i/o timeout"}
+a.yandex-team.ru/load/projects/pandora/components/phttp.(*BaseGun).Shoot
+	/-S/load/projects/pandora/components/phttp/base.go:143
+a.yandex-team.ru/load/projects/pandora/components/phttp.(*gunWrapper).Shoot
+	/-S/load/projects/pandora/components/phttp/core.go:44
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instance).shoot.func2
+	/-S/load/projects/pandora/core/engine/instance.go:112
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instance).shoot
+	/-S/load/projects/pandora/core/engine/instance.go:118
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instance).Run
+	/-S/load/projects/pandora/core/engine/instance.go:79
+a.yandex-team.ru/load/projects/pandora/core/engine.runNewInstance
+	/-S/load/projects/pandora/core/engine/engine.go:436
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instancePool).startInstances.func2
+	/-S/load/projects/pandora/core/engine/engine.go:395
+2022-11-05T16:26:19.243Z	WARN	phttp/base.go:143	Request fail	{"pool": "device pool", "instance": 1043, "error": "dial tcp 172.20.0.3:8080: i/o timeout"}
+a.yandex-team.ru/load/projects/pandora/components/phttp.(*BaseGun).Shoot
+	/-S/load/projects/pandora/components/phttp/base.go:143
+a.yandex-team.ru/load/projects/pandora/components/phttp.(*gunWrapper).Shoot
+	/-S/load/projects/pandora/components/phttp/core.go:44
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instance).shoot.func2
+	/-S/load/projects/pandora/core/engine/instance.go:112
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instance).shoot
+	/-S/load/projects/pandora/core/engine/instance.go:118
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instance).Run
+	/-S/load/projects/pandora/core/engine/instance.go:79
+a.yandex-team.ru/load/projects/pandora/core/engine.runNewInstance
+	/-S/load/projects/pandora/core/engine/engine.go:436
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instancePool).startInstances.func2
+	/-S/load/projects/pandora/core/engine/engine.go:395
+2022-11-05T16:26:19.243Z	WARN	phttp/base.go:143	Request fail	{"pool": "notif pool", "instance": 1815, "error": "dial tcp 172.20.0.3:8080: i/o timeout"}
+a.yandex-team.ru/load/projects/pandora/components/phttp.(*BaseGun).Shoot
+	/-S/load/projects/pandora/components/phttp/base.go:143
+a.yandex-team.ru/load/projects/pandora/components/phttp.(*gunWrapper).Shoot
+	/-S/load/projects/pandora/components/phttp/core.go:44
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instance).shoot.func2
+	/-S/load/projects/pandora/core/engine/instance.go:112
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instance).shoot
+	/-S/load/projects/pandora/core/engine/instance.go:118
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instance).Run
+	/-S/load/projects/pandora/core/engine/instance.go:79
+a.yandex-team.ru/load/projects/pandora/core/engine.runNewInstance
+	/-S/load/projects/pandora/core/engine/engine.go:436
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instancePool).startInstances.func2
+	/-S/load/projects/pandora/core/engine/engine.go:395
+2022-11-05T16:26:19.246Z	WARN	phttp/base.go:143	Request fail	{"pool": "notif pool", "instance": 1816, "error": "dial tcp 172.20.0.3:8080: i/o timeout"}
+a.yandex-team.ru/load/projects/pandora/components/phttp.(*BaseGun).Shoot
+	/-S/load/projects/pandora/components/phttp/base.go:143
+a.yandex-team.ru/load/projects/pandora/components/phttp.(*gunWrapper).Shoot
+	/-S/load/projects/pandora/components/phttp/core.go:44
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instance).shoot.func2
+	/-S/load/projects/pandora/core/engine/instance.go:112
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instance).shoot
+	/-S/load/projects/pandora/core/engine/instance.go:118
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instance).Run
+	/-S/load/projects/pandora/core/engine/instance.go:79
+a.yandex-team.ru/load/projects/pandora/core/engine.runNewInstance
+	/-S/load/projects/pandora/core/engine/engine.go:436
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instancePool).startInstances.func2
+	/-S/load/projects/pandora/core/engine/engine.go:395
+2022-11-05T16:26:19.246Z	WARN	phttp/base.go:143	Request fail	{"pool": "device pool", "instance": 1042, "error": "dial tcp 172.20.0.3:8080: i/o timeout"}
+a.yandex-team.ru/load/projects/pandora/components/phttp.(*BaseGun).Shoot
+	/-S/load/projects/pandora/components/phttp/base.go:143
+a.yandex-team.ru/load/projects/pandora/components/phttp.(*gunWrapper).Shoot
+	/-S/load/projects/pandora/components/phttp/core.go:44
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instance).shoot.func2
+	/-S/load/projects/pandora/core/engine/instance.go:112
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instance).shoot
+	/-S/load/projects/pandora/core/engine/instance.go:118
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instance).Run
+	/-S/load/projects/pandora/core/engine/instance.go:79
+a.yandex-team.ru/load/projects/pandora/core/engine.runNewInstance
+	/-S/load/projects/pandora/core/engine/engine.go:436
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instancePool).startInstances.func2
+	/-S/load/projects/pandora/core/engine/engine.go:395
+2022-11-05T16:26:20.965Z	INFO	cli/expvar.go:40	[ENGINE] 5 resp/s; 242 req/s; 5577 users; 461 active
+
+2022-11-05T16:26:20.975Z	INFO	cli/expvar.go:40	[ENGINE] 113 resp/s; 580 req/s; 9664 users; 928 active
+
+2022-11-05T16:26:21.052Z	WARN	phttp/base.go:143	Request fail	{"pool": "device pool", "instance": 1139, "error": "dial tcp 172.20.0.3:8080: i/o timeout"}
+a.yandex-team.ru/load/projects/pandora/components/phttp.(*BaseGun).Shoot
+	/-S/load/projects/pandora/components/phttp/base.go:143
+a.yandex-team.ru/load/projects/pandora/components/phttp.(*gunWrapper).Shoot
+	/-S/load/projects/pandora/components/phttp/core.go:44
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instance).shoot.func2
+	/-S/load/projects/pandora/core/engine/instance.go:112
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instance).shoot
+	/-S/load/projects/pandora/core/engine/instance.go:118
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instance).Run
+	/-S/load/projects/pandora/core/engine/instance.go:79
+a.yandex-team.ru/load/projects/pandora/core/engine.runNewInstance
+	/-S/load/projects/pandora/core/engine/engine.go:436
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instancePool).startInstances.func2
+	/-S/load/projects/pandora/core/engine/engine.go:395
+2022-11-05T16:26:21.268Z	WARN	phttp/base.go:143	Request fail	{"pool": "notif pool", "instance": 29, "error": "dial tcp 172.20.0.3:8080: i/o timeout"}
+a.yandex-team.ru/load/projects/pandora/components/phttp.(*BaseGun).Shoot
+	/-S/load/projects/pandora/components/phttp/base.go:143
+a.yandex-team.ru/load/projects/pandora/components/phttp.(*gunWrapper).Shoot
+	/-S/load/projects/pandora/components/phttp/core.go:44
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instance).shoot.func2
+	/-S/load/projects/pandora/core/engine/instance.go:112
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instance).shoot
+	/-S/load/projects/pandora/core/engine/instance.go:118
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instance).Run
+	/-S/load/projects/pandora/core/engine/instance.go:79
+a.yandex-team.ru/load/projects/pandora/core/engine.runNewInstance
+	/-S/load/projects/pandora/core/engine/engine.go:436
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instancePool).startInstances.func2
+	/-S/load/projects/pandora/core/engine/engine.go:395
+2022-11-05T16:26:21.307Z	WARN	phttp/base.go:143	Request fail	{"pool": "notif pool", "instance": 1929, "error": "dial tcp 172.20.0.3:8080: i/o timeout"}
+a.yandex-team.ru/load/projects/pandora/components/phttp.(*BaseGun).Shoot
+	/-S/load/projects/pandora/components/phttp/base.go:143
+a.yandex-team.ru/load/projects/pandora/components/phttp.(*gunWrapper).Shoot
+	/-S/load/projects/pandora/components/phttp/core.go:44
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instance).shoot.func2
+	/-S/load/projects/pandora/core/engine/instance.go:112
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instance).shoot
+	/-S/load/projects/pandora/core/engine/instance.go:118
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instance).Run
+	/-S/load/projects/pandora/core/engine/instance.go:79
+a.yandex-team.ru/load/projects/pandora/core/engine.runNewInstance
+	/-S/load/projects/pandora/core/engine/engine.go:436
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instancePool).startInstances.func2
+	/-S/load/projects/pandora/core/engine/engine.go:395
+2022-11-05T16:26:21.135Z	WARN	phttp/base.go:143	Request fail	{"pool": "device pool", "instance": 1143, "error": "dial tcp 172.20.0.3:8080: i/o timeout"}
+a.yandex-team.ru/load/projects/pandora/components/phttp.(*BaseGun).Shoot
+	/-S/load/projects/pandora/components/phttp/base.go:143
+a.yandex-team.ru/load/projects/pandora/components/phttp.(*gunWrapper).Shoot
+	/-S/load/projects/pandora/components/phttp/core.go:44
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instance).shoot.func2
+	/-S/load/projects/pandora/core/engine/instance.go:112
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instance).shoot
+	/-S/load/projects/pandora/core/engine/instance.go:118
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instance).Run
+	/-S/load/projects/pandora/core/engine/instance.go:79
+a.yandex-team.ru/load/projects/pandora/core/engine.runNewInstance
+	/-S/load/projects/pandora/core/engine/engine.go:436
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instancePool).startInstances.func2
+	/-S/load/projects/pandora/core/engine/engine.go:395
+2022-11-05T16:26:21.135Z	WARN	phttp/base.go:143	Request fail	{"pool": "notif pool", "instance": 1912, "error": "dial tcp 172.20.0.3:8080: i/o timeout"}
+a.yandex-team.ru/load/projects/pandora/components/phttp.(*BaseGun).Shoot
+	/-S/load/projects/pandora/components/phttp/base.go:143
+a.yandex-team.ru/load/projects/pandora/components/phttp.(*gunWrapper).Shoot
+	/-S/load/projects/pandora/components/phttp/core.go:44
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instance).shoot.func2
+	/-S/load/projects/pandora/core/engine/instance.go:112
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instance).shoot
+	/-S/load/projects/pandora/core/engine/instance.go:118
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instance).Run
+	/-S/load/projects/pandora/core/engine/instance.go:79
+a.yandex-team.ru/load/projects/pandora/core/engine.runNewInstance
+	/-S/load/projects/pandora/core/engine/engine.go:436
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instancePool).startInstances.func2
+	/-S/load/projects/pandora/core/engine/engine.go:395
+2022-11-05T16:26:21.135Z	WARN	phttp/base.go:143	Request fail	{"pool": "device pool", "instance": 1145, "error": "dial tcp 172.20.0.3:8080: i/o timeout"}
+a.yandex-team.ru/load/projects/pandora/components/phttp.(*BaseGun).Shoot
+	/-S/load/projects/pandora/components/phttp/base.go:143
+a.yandex-team.ru/load/projects/pandora/components/phttp.(*gunWrapper).Shoot
+	/-S/load/projects/pandora/components/phttp/core.go:44
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instance).shoot.func2
+	/-S/load/projects/pandora/core/engine/instance.go:112
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instance).shoot
+	/-S/load/projects/pandora/core/engine/instance.go:118
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instance).Run
+	/-S/load/projects/pandora/core/engine/instance.go:79
+a.yandex-team.ru/load/projects/pandora/core/engine.runNewInstance
+	/-S/load/projects/pandora/core/engine/engine.go:436
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instancePool).startInstances.func2
+	/-S/load/projects/pandora/core/engine/engine.go:395
+2022-11-05T16:26:21.138Z	WARN	phttp/base.go:143	Request fail	{"pool": "notif pool", "instance": 1917, "error": "dial tcp 172.20.0.3:8080: i/o timeout"}
+a.yandex-team.ru/load/projects/pandora/components/phttp.(*BaseGun).Shoot
+	/-S/load/projects/pandora/components/phttp/base.go:143
+a.yandex-team.ru/load/projects/pandora/components/phttp.(*gunWrapper).Shoot
+	/-S/load/projects/pandora/components/phttp/core.go:44
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instance).shoot.func2
+	/-S/load/projects/pandora/core/engine/instance.go:112
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instance).shoot
+	/-S/load/projects/pandora/core/engine/instance.go:118
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instance).Run
+	/-S/load/projects/pandora/core/engine/instance.go:79
+a.yandex-team.ru/load/projects/pandora/core/engine.runNewInstance
+	/-S/load/projects/pandora/core/engine/engine.go:436
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instancePool).startInstances.func2
+	/-S/load/projects/pandora/core/engine/engine.go:395
+2022-11-05T16:26:21.139Z	WARN	phttp/base.go:143	Request fail	{"pool": "notif pool", "instance": 1918, "error": "dial tcp 172.20.0.3:8080: i/o timeout"}
+a.yandex-team.ru/load/projects/pandora/components/phttp.(*BaseGun).Shoot
+	/-S/load/projects/pandora/components/phttp/base.go:143
+a.yandex-team.ru/load/projects/pandora/components/phttp.(*gunWrapper).Shoot
+	/-S/load/projects/pandora/components/phttp/core.go:44
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instance).shoot.func2
+	/-S/load/projects/pandora/core/engine/instance.go:112
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instance).shoot
+	/-S/load/projects/pandora/core/engine/instance.go:118
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instance).Run
+	/-S/load/projects/pandora/core/engine/instance.go:79
+a.yandex-team.ru/load/projects/pandora/core/engine.runNewInstance
+	/-S/load/projects/pandora/core/engine/engine.go:436
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instancePool).startInstances.func2
+	/-S/load/projects/pandora/core/engine/engine.go:395
+2022-11-05T16:26:21.141Z	WARN	phttp/base.go:143	Request fail	{"pool": "notif pool", "instance": 1916, "error": "dial tcp 172.20.0.3:8080: i/o timeout"}
+a.yandex-team.ru/load/projects/pandora/components/phttp.(*BaseGun).Shoot
+	/-S/load/projects/pandora/components/phttp/base.go:143
+a.yandex-team.ru/load/projects/pandora/components/phttp.(*gunWrapper).Shoot
+	/-S/load/projects/pandora/components/phttp/core.go:44
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instance).shoot.func2
+	/-S/load/projects/pandora/core/engine/instance.go:112
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instance).shoot
+	/-S/load/projects/pandora/core/engine/instance.go:118
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instance).Run
+	/-S/load/projects/pandora/core/engine/instance.go:79
+a.yandex-team.ru/load/projects/pandora/core/engine.runNewInstance
+	/-S/load/projects/pandora/core/engine/engine.go:436
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instancePool).startInstances.func2
+	/-S/load/projects/pandora/core/engine/engine.go:395
+2022-11-05T16:26:21.140Z	WARN	phttp/base.go:143	Request fail	{"pool": "device pool", "instance": 1147, "error": "dial tcp 172.20.0.3:8080: i/o timeout"}
+a.yandex-team.ru/load/projects/pandora/components/phttp.(*BaseGun).Shoot
+	/-S/load/projects/pandora/components/phttp/base.go:143
+a.yandex-team.ru/load/projects/pandora/components/phttp.(*gunWrapper).Shoot
+	/-S/load/projects/pandora/components/phttp/core.go:44
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instance).shoot.func2
+	/-S/load/projects/pandora/core/engine/instance.go:112
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instance).shoot
+	/-S/load/projects/pandora/core/engine/instance.go:118
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instance).Run
+	/-S/load/projects/pandora/core/engine/instance.go:79
+a.yandex-team.ru/load/projects/pandora/core/engine.runNewInstance
+	/-S/load/projects/pandora/core/engine/engine.go:436
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instancePool).startInstances.func2
+	/-S/load/projects/pandora/core/engine/engine.go:395
+2022-11-05T16:26:21.146Z	WARN	phttp/base.go:143	Request fail	{"pool": "notif pool", "instance": 1920, "error": "dial tcp 172.20.0.3:8080: i/o timeout"}
+a.yandex-team.ru/load/projects/pandora/components/phttp.(*BaseGun).Shoot
+	/-S/load/projects/pandora/components/phttp/base.go:143
+a.yandex-team.ru/load/projects/pandora/components/phttp.(*gunWrapper).Shoot
+	/-S/load/projects/pandora/components/phttp/core.go:44
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instance).shoot.func2
+	/-S/load/projects/pandora/core/engine/instance.go:112
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instance).shoot
+	/-S/load/projects/pandora/core/engine/instance.go:118
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instance).Run
+	/-S/load/projects/pandora/core/engine/instance.go:79
+a.yandex-team.ru/load/projects/pandora/core/engine.runNewInstance
+	/-S/load/projects/pandora/core/engine/engine.go:436
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instancePool).startInstances.func2
+	/-S/load/projects/pandora/core/engine/engine.go:395
+2022-11-05T16:26:21.146Z	WARN	phttp/base.go:143	Request fail	{"pool": "notif pool", "instance": 1919, "error": "dial tcp 172.20.0.3:8080: i/o timeout"}
+a.yandex-team.ru/load/projects/pandora/components/phttp.(*BaseGun).Shoot
+	/-S/load/projects/pandora/components/phttp/base.go:143
+a.yandex-team.ru/load/projects/pandora/components/phttp.(*gunWrapper).Shoot
+	/-S/load/projects/pandora/components/phttp/core.go:44
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instance).shoot.func2
+	/-S/load/projects/pandora/core/engine/instance.go:112
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instance).shoot
+	/-S/load/projects/pandora/core/engine/instance.go:118
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instance).Run
+	/-S/load/projects/pandora/core/engine/instance.go:79
+a.yandex-team.ru/load/projects/pandora/core/engine.runNewInstance
+	/-S/load/projects/pandora/core/engine/engine.go:436
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instancePool).startInstances.func2
+	/-S/load/projects/pandora/core/engine/engine.go:395
+2022-11-05T16:26:21.146Z	WARN	phttp/base.go:143	Request fail	{"pool": "notif pool", "instance": 1913, "error": "dial tcp 172.20.0.3:8080: i/o timeout"}
+a.yandex-team.ru/load/projects/pandora/components/phttp.(*BaseGun).Shoot
+	/-S/load/projects/pandora/components/phttp/base.go:143
+a.yandex-team.ru/load/projects/pandora/components/phttp.(*gunWrapper).Shoot
+	/-S/load/projects/pandora/components/phttp/core.go:44
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instance).shoot.func2
+	/-S/load/projects/pandora/core/engine/instance.go:112
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instance).shoot
+	/-S/load/projects/pandora/core/engine/instance.go:118
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instance).Run
+	/-S/load/projects/pandora/core/engine/instance.go:79
+a.yandex-team.ru/load/projects/pandora/core/engine.runNewInstance
+	/-S/load/projects/pandora/core/engine/engine.go:436
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instancePool).startInstances.func2
+	/-S/load/projects/pandora/core/engine/engine.go:395
+2022-11-05T16:26:21.146Z	WARN	phttp/base.go:143	Request fail	{"pool": "device pool", "instance": 1155, "error": "dial tcp 172.20.0.3:8080: i/o timeout"}
+a.yandex-team.ru/load/projects/pandora/components/phttp.(*BaseGun).Shoot
+	/-S/load/projects/pandora/components/phttp/base.go:143
+a.yandex-team.ru/load/projects/pandora/components/phttp.(*gunWrapper).Shoot
+	/-S/load/projects/pandora/components/phttp/core.go:44
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instance).shoot.func2
+	/-S/load/projects/pandora/core/engine/instance.go:112
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instance).shoot
+	/-S/load/projects/pandora/core/engine/instance.go:118
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instance).Run
+	/-S/load/projects/pandora/core/engine/instance.go:79
+a.yandex-team.ru/load/projects/pandora/core/engine.runNewInstance
+	/-S/load/projects/pandora/core/engine/engine.go:436
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instancePool).startInstances.func2
+	/-S/load/projects/pandora/core/engine/engine.go:395
+2022-11-05T16:26:21.146Z	WARN	phttp/base.go:143	Request fail	{"pool": "notif pool", "instance": 1910, "error": "dial tcp 172.20.0.3:8080: i/o timeout"}
+a.yandex-team.ru/load/projects/pandora/components/phttp.(*BaseGun).Shoot
+	/-S/load/projects/pandora/components/phttp/base.go:143
+a.yandex-team.ru/load/projects/pandora/components/phttp.(*gunWrapper).Shoot
+	/-S/load/projects/pandora/components/phttp/core.go:44
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instance).shoot.func2
+	/-S/load/projects/pandora/core/engine/instance.go:112
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instance).shoot
+	/-S/load/projects/pandora/core/engine/instance.go:118
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instance).Run
+	/-S/load/projects/pandora/core/engine/instance.go:79
+a.yandex-team.ru/load/projects/pandora/core/engine.runNewInstance
+	/-S/load/projects/pandora/core/engine/engine.go:436
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instancePool).startInstances.func2
+	/-S/load/projects/pandora/core/engine/engine.go:395
+2022-11-05T16:26:21.146Z	WARN	phttp/base.go:143	Request fail	{"pool": "notif pool", "instance": 1924, "error": "dial tcp 172.20.0.3:8080: i/o timeout"}
+a.yandex-team.ru/load/projects/pandora/components/phttp.(*BaseGun).Shoot
+	/-S/load/projects/pandora/components/phttp/base.go:143
+a.yandex-team.ru/load/projects/pandora/components/phttp.(*gunWrapper).Shoot
+	/-S/load/projects/pandora/components/phttp/core.go:44
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instance).shoot.func2
+	/-S/load/projects/pandora/core/engine/instance.go:112
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instance).shoot
+	/-S/load/projects/pandora/core/engine/instance.go:118
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instance).Run
+	/-S/load/projects/pandora/core/engine/instance.go:79
+a.yandex-team.ru/load/projects/pandora/core/engine.runNewInstance
+	/-S/load/projects/pandora/core/engine/engine.go:436
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instancePool).startInstances.func2
+	/-S/load/projects/pandora/core/engine/engine.go:395
+2022-11-05T16:26:21.146Z	WARN	phttp/base.go:143	Request fail	{"pool": "notif pool", "instance": 1921, "error": "dial tcp 172.20.0.3:8080: i/o timeout"}
+a.yandex-team.ru/load/projects/pandora/components/phttp.(*BaseGun).Shoot
+	/-S/load/projects/pandora/components/phttp/base.go:143
+a.yandex-team.ru/load/projects/pandora/components/phttp.(*gunWrapper).Shoot
+	/-S/load/projects/pandora/components/phttp/core.go:44
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instance).shoot.func2
+	/-S/load/projects/pandora/core/engine/instance.go:112
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instance).shoot
+	/-S/load/projects/pandora/core/engine/instance.go:118
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instance).Run
+	/-S/load/projects/pandora/core/engine/instance.go:79
+a.yandex-team.ru/load/projects/pandora/core/engine.runNewInstance
+	/-S/load/projects/pandora/core/engine/engine.go:436
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instancePool).startInstances.func2
+	/-S/load/projects/pandora/core/engine/engine.go:395
+2022-11-05T16:26:21.146Z	WARN	phttp/base.go:143	Request fail	{"pool": "device pool", "instance": 1154, "error": "dial tcp 172.20.0.3:8080: i/o timeout"}
+a.yandex-team.ru/load/projects/pandora/components/phttp.(*BaseGun).Shoot
+	/-S/load/projects/pandora/components/phttp/base.go:143
+a.yandex-team.ru/load/projects/pandora/components/phttp.(*gunWrapper).Shoot
+	/-S/load/projects/pandora/components/phttp/core.go:44
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instance).shoot.func2
+	/-S/load/projects/pandora/core/engine/instance.go:112
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instance).shoot
+	/-S/load/projects/pandora/core/engine/instance.go:118
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instance).Run
+	/-S/load/projects/pandora/core/engine/instance.go:79
+a.yandex-team.ru/load/projects/pandora/core/engine.runNewInstance
+	/-S/load/projects/pandora/core/engine/engine.go:436
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instancePool).startInstances.func2
+	/-S/load/projects/pandora/core/engine/engine.go:395
+2022-11-05T16:26:21.146Z	WARN	phttp/base.go:143	Request fail	{"pool": "device pool", "instance": 1151, "error": "dial tcp 172.20.0.3:8080: i/o timeout"}
+a.yandex-team.ru/load/projects/pandora/components/phttp.(*BaseGun).Shoot
+	/-S/load/projects/pandora/components/phttp/base.go:143
+a.yandex-team.ru/load/projects/pandora/components/phttp.(*gunWrapper).Shoot
+	/-S/load/projects/pandora/components/phttp/core.go:44
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instance).shoot.func2
+	/-S/load/projects/pandora/core/engine/instance.go:112
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instance).shoot
+	/-S/load/projects/pandora/core/engine/instance.go:118
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instance).Run
+	/-S/load/projects/pandora/core/engine/instance.go:79
+a.yandex-team.ru/load/projects/pandora/core/engine.runNewInstance
+	/-S/load/projects/pandora/core/engine/engine.go:436
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instancePool).startInstances.func2
+	/-S/load/projects/pandora/core/engine/engine.go:395
+2022-11-05T16:26:21.146Z	WARN	phttp/base.go:143	Request fail	{"pool": "device pool", "instance": 1150, "error": "dial tcp 172.20.0.3:8080: i/o timeout"}
+a.yandex-team.ru/load/projects/pandora/components/phttp.(*BaseGun).Shoot
+	/-S/load/projects/pandora/components/phttp/base.go:143
+a.yandex-team.ru/load/projects/pandora/components/phttp.(*gunWrapper).Shoot
+	/-S/load/projects/pandora/components/phttp/core.go:44
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instance).shoot.func2
+	/-S/load/projects/pandora/core/engine/instance.go:112
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instance).shoot
+	/-S/load/projects/pandora/core/engine/instance.go:118
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instance).Run
+	/-S/load/projects/pandora/core/engine/instance.go:79
+a.yandex-team.ru/load/projects/pandora/core/engine.runNewInstance
+	/-S/load/projects/pandora/core/engine/engine.go:436
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instancePool).startInstances.func2
+	/-S/load/projects/pandora/core/engine/engine.go:395
+2022-11-05T16:26:21.147Z	WARN	phttp/base.go:143	Request fail	{"pool": "notif pool", "instance": 1923, "error": "dial tcp 172.20.0.3:8080: i/o timeout"}
+a.yandex-team.ru/load/projects/pandora/components/phttp.(*BaseGun).Shoot
+	/-S/load/projects/pandora/components/phttp/base.go:143
+a.yandex-team.ru/load/projects/pandora/components/phttp.(*gunWrapper).Shoot
+	/-S/load/projects/pandora/components/phttp/core.go:44
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instance).shoot.func2
+	/-S/load/projects/pandora/core/engine/instance.go:112
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instance).shoot
+	/-S/load/projects/pandora/core/engine/instance.go:118
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instance).Run
+	/-S/load/projects/pandora/core/engine/instance.go:79
+a.yandex-team.ru/load/projects/pandora/core/engine.runNewInstance
+	/-S/load/projects/pandora/core/engine/engine.go:436
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instancePool).startInstances.func2
+	/-S/load/projects/pandora/core/engine/engine.go:395
+2022-11-05T16:26:21.147Z	WARN	phttp/base.go:143	Request fail	{"pool": "notif pool", "instance": 1922, "error": "dial tcp 172.20.0.3:8080: i/o timeout"}
+a.yandex-team.ru/load/projects/pandora/components/phttp.(*BaseGun).Shoot
+	/-S/load/projects/pandora/components/phttp/base.go:143
+a.yandex-team.ru/load/projects/pandora/components/phttp.(*gunWrapper).Shoot
+	/-S/load/projects/pandora/components/phttp/core.go:44
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instance).shoot.func2
+	/-S/load/projects/pandora/core/engine/instance.go:112
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instance).shoot
+	/-S/load/projects/pandora/core/engine/instance.go:118
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instance).Run
+	/-S/load/projects/pandora/core/engine/instance.go:79
+a.yandex-team.ru/load/projects/pandora/core/engine.runNewInstance
+	/-S/load/projects/pandora/core/engine/engine.go:436
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instancePool).startInstances.func2
+	/-S/load/projects/pandora/core/engine/engine.go:395
+2022-11-05T16:26:21.147Z	WARN	phttp/base.go:143	Request fail	{"pool": "notif pool", "instance": 1927, "error": "dial tcp 172.20.0.3:8080: i/o timeout"}
+a.yandex-team.ru/load/projects/pandora/components/phttp.(*BaseGun).Shoot
+	/-S/load/projects/pandora/components/phttp/base.go:143
+a.yandex-team.ru/load/projects/pandora/components/phttp.(*gunWrapper).Shoot
+	/-S/load/projects/pandora/components/phttp/core.go:44
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instance).shoot.func2
+	/-S/load/projects/pandora/core/engine/instance.go:112
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instance).shoot
+	/-S/load/projects/pandora/core/engine/instance.go:118
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instance).Run
+	/-S/load/projects/pandora/core/engine/instance.go:79
+a.yandex-team.ru/load/projects/pandora/core/engine.runNewInstance
+	/-S/load/projects/pandora/core/engine/engine.go:436
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instancePool).startInstances.func2
+	/-S/load/projects/pandora/core/engine/engine.go:395
+2022-11-05T16:26:21.147Z	WARN	phttp/base.go:143	Request fail	{"pool": "notif pool", "instance": 1928, "error": "dial tcp 172.20.0.3:8080: i/o timeout"}
+a.yandex-team.ru/load/projects/pandora/components/phttp.(*BaseGun).Shoot
+	/-S/load/projects/pandora/components/phttp/base.go:143
+a.yandex-team.ru/load/projects/pandora/components/phttp.(*gunWrapper).Shoot
+	/-S/load/projects/pandora/components/phttp/core.go:44
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instance).shoot.func2
+	/-S/load/projects/pandora/core/engine/instance.go:112
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instance).shoot
+	/-S/load/projects/pandora/core/engine/instance.go:118
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instance).Run
+	/-S/load/projects/pandora/core/engine/instance.go:79
+a.yandex-team.ru/load/projects/pandora/core/engine.runNewInstance
+	/-S/load/projects/pandora/core/engine/engine.go:436
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instancePool).startInstances.func2
+	/-S/load/projects/pandora/core/engine/engine.go:395
+2022-11-05T16:26:21.147Z	WARN	phttp/base.go:143	Request fail	{"pool": "device pool", "instance": 1158, "error": "dial tcp 172.20.0.3:8080: i/o timeout"}
+a.yandex-team.ru/load/projects/pandora/components/phttp.(*BaseGun).Shoot
+	/-S/load/projects/pandora/components/phttp/base.go:143
+a.yandex-team.ru/load/projects/pandora/components/phttp.(*gunWrapper).Shoot
+	/-S/load/projects/pandora/components/phttp/core.go:44
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instance).shoot.func2
+	/-S/load/projects/pandora/core/engine/instance.go:112
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instance).shoot
+	/-S/load/projects/pandora/core/engine/instance.go:118
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instance).Run
+	/-S/load/projects/pandora/core/engine/instance.go:79
+a.yandex-team.ru/load/projects/pandora/core/engine.runNewInstance
+	/-S/load/projects/pandora/core/engine/engine.go:436
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instancePool).startInstances.func2
+	/-S/load/projects/pandora/core/engine/engine.go:395
+2022-11-05T16:26:21.147Z	WARN	phttp/base.go:143	Request fail	{"pool": "notif pool", "instance": 1925, "error": "dial tcp 172.20.0.3:8080: i/o timeout"}
+a.yandex-team.ru/load/projects/pandora/components/phttp.(*BaseGun).Shoot
+	/-S/load/projects/pandora/components/phttp/base.go:143
+a.yandex-team.ru/load/projects/pandora/components/phttp.(*gunWrapper).Shoot
+	/-S/load/projects/pandora/components/phttp/core.go:44
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instance).shoot.func2
+	/-S/load/projects/pandora/core/engine/instance.go:112
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instance).shoot
+	/-S/load/projects/pandora/core/engine/instance.go:118
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instance).Run
+	/-S/load/projects/pandora/core/engine/instance.go:79
+a.yandex-team.ru/load/projects/pandora/core/engine.runNewInstance
+	/-S/load/projects/pandora/core/engine/engine.go:436
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instancePool).startInstances.func2
+	/-S/load/projects/pandora/core/engine/engine.go:395
+2022-11-05T16:26:21.147Z	WARN	phttp/base.go:143	Request fail	{"pool": "device pool", "instance": 1157, "error": "dial tcp 172.20.0.3:8080: i/o timeout"}
+a.yandex-team.ru/load/projects/pandora/components/phttp.(*BaseGun).Shoot
+	/-S/load/projects/pandora/components/phttp/base.go:143
+a.yandex-team.ru/load/projects/pandora/components/phttp.(*gunWrapper).Shoot
+	/-S/load/projects/pandora/components/phttp/core.go:44
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instance).shoot.func2
+	/-S/load/projects/pandora/core/engine/instance.go:112
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instance).shoot
+	/-S/load/projects/pandora/core/engine/instance.go:118
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instance).Run
+	/-S/load/projects/pandora/core/engine/instance.go:79
+a.yandex-team.ru/load/projects/pandora/core/engine.runNewInstance
+	/-S/load/projects/pandora/core/engine/engine.go:436
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instancePool).startInstances.func2
+	/-S/load/projects/pandora/core/engine/engine.go:395
+2022-11-05T16:26:21.147Z	WARN	phttp/base.go:143	Request fail	{"pool": "device pool", "instance": 1153, "error": "dial tcp 172.20.0.3:8080: i/o timeout"}
+a.yandex-team.ru/load/projects/pandora/components/phttp.(*BaseGun).Shoot
+	/-S/load/projects/pandora/components/phttp/base.go:143
+a.yandex-team.ru/load/projects/pandora/components/phttp.(*gunWrapper).Shoot
+	/-S/load/projects/pandora/components/phttp/core.go:44
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instance).shoot.func2
+	/-S/load/projects/pandora/core/engine/instance.go:112
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instance).shoot
+	/-S/load/projects/pandora/core/engine/instance.go:118
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instance).Run
+	/-S/load/projects/pandora/core/engine/instance.go:79
+a.yandex-team.ru/load/projects/pandora/core/engine.runNewInstance
+	/-S/load/projects/pandora/core/engine/engine.go:436
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instancePool).startInstances.func2
+	/-S/load/projects/pandora/core/engine/engine.go:395
+2022-11-05T16:26:21.147Z	WARN	phttp/base.go:143	Request fail	{"pool": "device pool", "instance": 1152, "error": "dial tcp 172.20.0.3:8080: i/o timeout"}
+a.yandex-team.ru/load/projects/pandora/components/phttp.(*BaseGun).Shoot
+	/-S/load/projects/pandora/components/phttp/base.go:143
+a.yandex-team.ru/load/projects/pandora/components/phttp.(*gunWrapper).Shoot
+	/-S/load/projects/pandora/components/phttp/core.go:44
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instance).shoot.func2
+	/-S/load/projects/pandora/core/engine/instance.go:112
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instance).shoot
+	/-S/load/projects/pandora/core/engine/instance.go:118
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instance).Run
+	/-S/load/projects/pandora/core/engine/instance.go:79
+a.yandex-team.ru/load/projects/pandora/core/engine.runNewInstance
+	/-S/load/projects/pandora/core/engine/engine.go:436
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instancePool).startInstances.func2
+	/-S/load/projects/pandora/core/engine/engine.go:395
+2022-11-05T16:26:21.149Z	WARN	phttp/base.go:143	Request fail	{"pool": "notif pool", "instance": 27, "error": "dial tcp 172.20.0.3:8080: i/o timeout"}
+a.yandex-team.ru/load/projects/pandora/components/phttp.(*BaseGun).Shoot
+	/-S/load/projects/pandora/components/phttp/base.go:143
+a.yandex-team.ru/load/projects/pandora/components/phttp.(*gunWrapper).Shoot
+	/-S/load/projects/pandora/components/phttp/core.go:44
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instance).shoot.func2
+	/-S/load/projects/pandora/core/engine/instance.go:112
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instance).shoot
+	/-S/load/projects/pandora/core/engine/instance.go:118
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instance).Run
+	/-S/load/projects/pandora/core/engine/instance.go:79
+a.yandex-team.ru/load/projects/pandora/core/engine.runNewInstance
+	/-S/load/projects/pandora/core/engine/engine.go:436
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instancePool).startInstances.func2
+	/-S/load/projects/pandora/core/engine/engine.go:395
+2022-11-05T16:26:21.149Z	WARN	phttp/base.go:143	Request fail	{"pool": "device pool", "instance": 1160, "error": "dial tcp 172.20.0.3:8080: i/o timeout"}
+a.yandex-team.ru/load/projects/pandora/components/phttp.(*BaseGun).Shoot
+	/-S/load/projects/pandora/components/phttp/base.go:143
+a.yandex-team.ru/load/projects/pandora/components/phttp.(*gunWrapper).Shoot
+	/-S/load/projects/pandora/components/phttp/core.go:44
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instance).shoot.func2
+	/-S/load/projects/pandora/core/engine/instance.go:112
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instance).shoot
+	/-S/load/projects/pandora/core/engine/instance.go:118
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instance).Run
+	/-S/load/projects/pandora/core/engine/instance.go:79
+a.yandex-team.ru/load/projects/pandora/core/engine.runNewInstance
+	/-S/load/projects/pandora/core/engine/engine.go:436
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instancePool).startInstances.func2
+	/-S/load/projects/pandora/core/engine/engine.go:395
+2022-11-05T16:26:21.149Z	WARN	phttp/base.go:143	Request fail	{"pool": "notif pool", "instance": 28, "error": "dial tcp 172.20.0.3:8080: i/o timeout"}
+a.yandex-team.ru/load/projects/pandora/components/phttp.(*BaseGun).Shoot
+	/-S/load/projects/pandora/components/phttp/base.go:143
+a.yandex-team.ru/load/projects/pandora/components/phttp.(*gunWrapper).Shoot
+	/-S/load/projects/pandora/components/phttp/core.go:44
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instance).shoot.func2
+	/-S/load/projects/pandora/core/engine/instance.go:112
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instance).shoot
+	/-S/load/projects/pandora/core/engine/instance.go:118
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instance).Run
+	/-S/load/projects/pandora/core/engine/instance.go:79
+a.yandex-team.ru/load/projects/pandora/core/engine.runNewInstance
+	/-S/load/projects/pandora/core/engine/engine.go:436
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instancePool).startInstances.func2
+	/-S/load/projects/pandora/core/engine/engine.go:395
+2022-11-05T16:26:21.150Z	WARN	phttp/base.go:143	Request fail	{"pool": "device pool", "instance": 1161, "error": "dial tcp 172.20.0.3:8080: i/o timeout"}
+a.yandex-team.ru/load/projects/pandora/components/phttp.(*BaseGun).Shoot
+	/-S/load/projects/pandora/components/phttp/base.go:143
+a.yandex-team.ru/load/projects/pandora/components/phttp.(*gunWrapper).Shoot
+	/-S/load/projects/pandora/components/phttp/core.go:44
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instance).shoot.func2
+	/-S/load/projects/pandora/core/engine/instance.go:112
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instance).shoot
+	/-S/load/projects/pandora/core/engine/instance.go:118
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instance).Run
+	/-S/load/projects/pandora/core/engine/instance.go:79
+a.yandex-team.ru/load/projects/pandora/core/engine.runNewInstance
+	/-S/load/projects/pandora/core/engine/engine.go:436
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instancePool).startInstances.func2
+	/-S/load/projects/pandora/core/engine/engine.go:395
+2022-11-05T16:26:21.150Z	WARN	phttp/base.go:143	Request fail	{"pool": "notif pool", "instance": 26, "error": "dial tcp 172.20.0.3:8080: i/o timeout"}
+a.yandex-team.ru/load/projects/pandora/components/phttp.(*BaseGun).Shoot
+	/-S/load/projects/pandora/components/phttp/base.go:143
+a.yandex-team.ru/load/projects/pandora/components/phttp.(*gunWrapper).Shoot
+	/-S/load/projects/pandora/components/phttp/core.go:44
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instance).shoot.func2
+	/-S/load/projects/pandora/core/engine/instance.go:112
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instance).shoot
+	/-S/load/projects/pandora/core/engine/instance.go:118
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instance).Run
+	/-S/load/projects/pandora/core/engine/instance.go:79
+a.yandex-team.ru/load/projects/pandora/core/engine.runNewInstance
+	/-S/load/projects/pandora/core/engine/engine.go:436
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instancePool).startInstances.func2
+	/-S/load/projects/pandora/core/engine/engine.go:395
+2022-11-05T16:26:21.154Z	WARN	phttp/base.go:143	Request fail	{"pool": "device pool", "instance": 1165, "error": "dial tcp 172.20.0.3:8080: i/o timeout"}
+a.yandex-team.ru/load/projects/pandora/components/phttp.(*BaseGun).Shoot
+	/-S/load/projects/pandora/components/phttp/base.go:143
+a.yandex-team.ru/load/projects/pandora/components/phttp.(*gunWrapper).Shoot
+	/-S/load/projects/pandora/components/phttp/core.go:44
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instance).shoot.func2
+	/-S/load/projects/pandora/core/engine/instance.go:112
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instance).shoot
+	/-S/load/projects/pandora/core/engine/instance.go:118
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instance).Run
+	/-S/load/projects/pandora/core/engine/instance.go:79
+a.yandex-team.ru/load/projects/pandora/core/engine.runNewInstance
+	/-S/load/projects/pandora/core/engine/engine.go:436
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instancePool).startInstances.func2
+	/-S/load/projects/pandora/core/engine/engine.go:395
+2022-11-05T16:26:21.166Z	WARN	phttp/base.go:143	Request fail	{"pool": "device pool", "instance": 1156, "error": "dial tcp 172.20.0.3:8080: i/o timeout"}
+a.yandex-team.ru/load/projects/pandora/components/phttp.(*BaseGun).Shoot
+	/-S/load/projects/pandora/components/phttp/base.go:143
+a.yandex-team.ru/load/projects/pandora/components/phttp.(*gunWrapper).Shoot
+	/-S/load/projects/pandora/components/phttp/core.go:44
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instance).shoot.func2
+	/-S/load/projects/pandora/core/engine/instance.go:112
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instance).shoot
+	/-S/load/projects/pandora/core/engine/instance.go:118
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instance).Run
+	/-S/load/projects/pandora/core/engine/instance.go:79
+a.yandex-team.ru/load/projects/pandora/core/engine.runNewInstance
+	/-S/load/projects/pandora/core/engine/engine.go:436
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instancePool).startInstances.func2
+	/-S/load/projects/pandora/core/engine/engine.go:395
+2022-11-05T16:26:21.204Z	WARN	phttp/base.go:143	Request fail	{"pool": "device pool", "instance": 24, "error": "dial tcp 172.20.0.3:8080: i/o timeout"}
+a.yandex-team.ru/load/projects/pandora/components/phttp.(*BaseGun).Shoot
+	/-S/load/projects/pandora/components/phttp/base.go:143
+a.yandex-team.ru/load/projects/pandora/components/phttp.(*gunWrapper).Shoot
+	/-S/load/projects/pandora/components/phttp/core.go:44
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instance).shoot.func2
+	/-S/load/projects/pandora/core/engine/instance.go:112
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instance).shoot
+	/-S/load/projects/pandora/core/engine/instance.go:118
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instance).Run
+	/-S/load/projects/pandora/core/engine/instance.go:79
+a.yandex-team.ru/load/projects/pandora/core/engine.runNewInstance
+	/-S/load/projects/pandora/core/engine/engine.go:436
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instancePool).startInstances.func2
+	/-S/load/projects/pandora/core/engine/engine.go:395
+2022-11-05T16:26:21.206Z	WARN	phttp/base.go:143	Request fail	{"pool": "notif pool", "instance": 30, "error": "dial tcp 172.20.0.3:8080: i/o timeout"}
+a.yandex-team.ru/load/projects/pandora/components/phttp.(*BaseGun).Shoot
+	/-S/load/projects/pandora/components/phttp/base.go:143
+a.yandex-team.ru/load/projects/pandora/components/phttp.(*gunWrapper).Shoot
+	/-S/load/projects/pandora/components/phttp/core.go:44
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instance).shoot.func2
+	/-S/load/projects/pandora/core/engine/instance.go:112
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instance).shoot
+	/-S/load/projects/pandora/core/engine/instance.go:118
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instance).Run
+	/-S/load/projects/pandora/core/engine/instance.go:79
+a.yandex-team.ru/load/projects/pandora/core/engine.runNewInstance
+	/-S/load/projects/pandora/core/engine/engine.go:436
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instancePool).startInstances.func2
+	/-S/load/projects/pandora/core/engine/engine.go:395
+2022-11-05T16:26:21.207Z	WARN	phttp/base.go:143	Request fail	{"pool": "notif pool", "instance": 33, "error": "dial tcp 172.20.0.3:8080: i/o timeout"}
+a.yandex-team.ru/load/projects/pandora/components/phttp.(*BaseGun).Shoot
+	/-S/load/projects/pandora/components/phttp/base.go:143
+a.yandex-team.ru/load/projects/pandora/components/phttp.(*gunWrapper).Shoot
+	/-S/load/projects/pandora/components/phttp/core.go:44
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instance).shoot.func2
+	/-S/load/projects/pandora/core/engine/instance.go:112
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instance).shoot
+	/-S/load/projects/pandora/core/engine/instance.go:118
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instance).Run
+	/-S/load/projects/pandora/core/engine/instance.go:79
+a.yandex-team.ru/load/projects/pandora/core/engine.runNewInstance
+	/-S/load/projects/pandora/core/engine/engine.go:436
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instancePool).startInstances.func2
+	/-S/load/projects/pandora/core/engine/engine.go:395
+2022-11-05T16:26:21.209Z	WARN	phttp/base.go:143	Request fail	{"pool": "notif pool", "instance": 32, "error": "dial tcp 172.20.0.3:8080: i/o timeout"}
+a.yandex-team.ru/load/projects/pandora/components/phttp.(*BaseGun).Shoot
+	/-S/load/projects/pandora/components/phttp/base.go:143
+a.yandex-team.ru/load/projects/pandora/components/phttp.(*gunWrapper).Shoot
+	/-S/load/projects/pandora/components/phttp/core.go:44
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instance).shoot.func2
+	/-S/load/projects/pandora/core/engine/instance.go:112
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instance).shoot
+	/-S/load/projects/pandora/core/engine/instance.go:118
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instance).Run
+	/-S/load/projects/pandora/core/engine/instance.go:79
+a.yandex-team.ru/load/projects/pandora/core/engine.runNewInstance
+	/-S/load/projects/pandora/core/engine/engine.go:436
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instancePool).startInstances.func2
+	/-S/load/projects/pandora/core/engine/engine.go:395
+2022-11-05T16:26:21.209Z	WARN	phttp/base.go:143	Request fail	{"pool": "notif pool", "instance": 34, "error": "dial tcp 172.20.0.3:8080: i/o timeout"}
+a.yandex-team.ru/load/projects/pandora/components/phttp.(*BaseGun).Shoot
+	/-S/load/projects/pandora/components/phttp/base.go:143
+a.yandex-team.ru/load/projects/pandora/components/phttp.(*gunWrapper).Shoot
+	/-S/load/projects/pandora/components/phttp/core.go:44
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instance).shoot.func2
+	/-S/load/projects/pandora/core/engine/instance.go:112
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instance).shoot
+	/-S/load/projects/pandora/core/engine/instance.go:118
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instance).Run
+	/-S/load/projects/pandora/core/engine/instance.go:79
+a.yandex-team.ru/load/projects/pandora/core/engine.runNewInstance
+	/-S/load/projects/pandora/core/engine/engine.go:436
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instancePool).startInstances.func2
+	/-S/load/projects/pandora/core/engine/engine.go:395
+2022-11-05T16:26:21.210Z	WARN	phttp/base.go:143	Request fail	{"pool": "device pool", "instance": 26, "error": "dial tcp 172.20.0.3:8080: i/o timeout"}
+a.yandex-team.ru/load/projects/pandora/components/phttp.(*BaseGun).Shoot
+	/-S/load/projects/pandora/components/phttp/base.go:143
+a.yandex-team.ru/load/projects/pandora/components/phttp.(*gunWrapper).Shoot
+	/-S/load/projects/pandora/components/phttp/core.go:44
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instance).shoot.func2
+	/-S/load/projects/pandora/core/engine/instance.go:112
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instance).shoot
+	/-S/load/projects/pandora/core/engine/instance.go:118
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instance).Run
+	/-S/load/projects/pandora/core/engine/instance.go:79
+a.yandex-team.ru/load/projects/pandora/core/engine.runNewInstance
+	/-S/load/projects/pandora/core/engine/engine.go:436
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instancePool).startInstances.func2
+	/-S/load/projects/pandora/core/engine/engine.go:395
+2022-11-05T16:26:21.210Z	WARN	phttp/base.go:143	Request fail	{"pool": "device pool", "instance": 25, "error": "dial tcp 172.20.0.3:8080: i/o timeout"}
+a.yandex-team.ru/load/projects/pandora/components/phttp.(*BaseGun).Shoot
+	/-S/load/projects/pandora/components/phttp/base.go:143
+a.yandex-team.ru/load/projects/pandora/components/phttp.(*gunWrapper).Shoot
+	/-S/load/projects/pandora/components/phttp/core.go:44
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instance).shoot.func2
+	/-S/load/projects/pandora/core/engine/instance.go:112
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instance).shoot
+	/-S/load/projects/pandora/core/engine/instance.go:118
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instance).Run
+	/-S/load/projects/pandora/core/engine/instance.go:79
+a.yandex-team.ru/load/projects/pandora/core/engine.runNewInstance
+	/-S/load/projects/pandora/core/engine/engine.go:436
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instancePool).startInstances.func2
+	/-S/load/projects/pandora/core/engine/engine.go:395
+2022-11-05T16:26:21.210Z	WARN	phttp/base.go:143	Request fail	{"pool": "notif pool", "instance": 31, "error": "dial tcp 172.20.0.3:8080: i/o timeout"}
+a.yandex-team.ru/load/projects/pandora/components/phttp.(*BaseGun).Shoot
+	/-S/load/projects/pandora/components/phttp/base.go:143
+a.yandex-team.ru/load/projects/pandora/components/phttp.(*gunWrapper).Shoot
+	/-S/load/projects/pandora/components/phttp/core.go:44
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instance).shoot.func2
+	/-S/load/projects/pandora/core/engine/instance.go:112
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instance).shoot
+	/-S/load/projects/pandora/core/engine/instance.go:118
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instance).Run
+	/-S/load/projects/pandora/core/engine/instance.go:79
+a.yandex-team.ru/load/projects/pandora/core/engine.runNewInstance
+	/-S/load/projects/pandora/core/engine/engine.go:436
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instancePool).startInstances.func2
+	/-S/load/projects/pandora/core/engine/engine.go:395
+2022-11-05T16:26:21.210Z	WARN	phttp/base.go:143	Request fail	{"pool": "notif pool", "instance": 35, "error": "dial tcp 172.20.0.3:8080: i/o timeout"}
+a.yandex-team.ru/load/projects/pandora/components/phttp.(*BaseGun).Shoot
+	/-S/load/projects/pandora/components/phttp/base.go:143
+a.yandex-team.ru/load/projects/pandora/components/phttp.(*gunWrapper).Shoot
+	/-S/load/projects/pandora/components/phttp/core.go:44
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instance).shoot.func2
+	/-S/load/projects/pandora/core/engine/instance.go:112
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instance).shoot
+	/-S/load/projects/pandora/core/engine/instance.go:118
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instance).Run
+	/-S/load/projects/pandora/core/engine/instance.go:79
+a.yandex-team.ru/load/projects/pandora/core/engine.runNewInstance
+	/-S/load/projects/pandora/core/engine/engine.go:436
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instancePool).startInstances.func2
+	/-S/load/projects/pandora/core/engine/engine.go:395
+2022-11-05T16:26:21.211Z	WARN	phttp/base.go:143	Request fail	{"pool": "device pool", "instance": 1162, "error": "dial tcp 172.20.0.3:8080: i/o timeout"}
+a.yandex-team.ru/load/projects/pandora/components/phttp.(*BaseGun).Shoot
+	/-S/load/projects/pandora/components/phttp/base.go:143
+a.yandex-team.ru/load/projects/pandora/components/phttp.(*gunWrapper).Shoot
+	/-S/load/projects/pandora/components/phttp/core.go:44
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instance).shoot.func2
+	/-S/load/projects/pandora/core/engine/instance.go:112
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instance).shoot
+	/-S/load/projects/pandora/core/engine/instance.go:118
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instance).Run
+	/-S/load/projects/pandora/core/engine/instance.go:79
+a.yandex-team.ru/load/projects/pandora/core/engine.runNewInstance
+	/-S/load/projects/pandora/core/engine/engine.go:436
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instancePool).startInstances.func2
+	/-S/load/projects/pandora/core/engine/engine.go:395
+2022-11-05T16:26:21.211Z	WARN	phttp/base.go:143	Request fail	{"pool": "device pool", "instance": 1164, "error": "dial tcp 172.20.0.3:8080: i/o timeout"}
+a.yandex-team.ru/load/projects/pandora/components/phttp.(*BaseGun).Shoot
+	/-S/load/projects/pandora/components/phttp/base.go:143
+a.yandex-team.ru/load/projects/pandora/components/phttp.(*gunWrapper).Shoot
+	/-S/load/projects/pandora/components/phttp/core.go:44
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instance).shoot.func2
+	/-S/load/projects/pandora/core/engine/instance.go:112
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instance).shoot
+	/-S/load/projects/pandora/core/engine/instance.go:118
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instance).Run
+	/-S/load/projects/pandora/core/engine/instance.go:79
+a.yandex-team.ru/load/projects/pandora/core/engine.runNewInstance
+	/-S/load/projects/pandora/core/engine/engine.go:436
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instancePool).startInstances.func2
+	/-S/load/projects/pandora/core/engine/engine.go:395
+2022-11-05T16:26:21.211Z	WARN	phttp/base.go:143	Request fail	{"pool": "device pool", "instance": 27, "error": "dial tcp 172.20.0.3:8080: i/o timeout"}
+a.yandex-team.ru/load/projects/pandora/components/phttp.(*BaseGun).Shoot
+	/-S/load/projects/pandora/components/phttp/base.go:143
+a.yandex-team.ru/load/projects/pandora/components/phttp.(*gunWrapper).Shoot
+	/-S/load/projects/pandora/components/phttp/core.go:44
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instance).shoot.func2
+	/-S/load/projects/pandora/core/engine/instance.go:112
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instance).shoot
+	/-S/load/projects/pandora/core/engine/instance.go:118
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instance).Run
+	/-S/load/projects/pandora/core/engine/instance.go:79
+a.yandex-team.ru/load/projects/pandora/core/engine.runNewInstance
+	/-S/load/projects/pandora/core/engine/engine.go:436
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instancePool).startInstances.func2
+	/-S/load/projects/pandora/core/engine/engine.go:395
+2022-11-05T16:26:21.211Z	WARN	phttp/base.go:143	Request fail	{"pool": "device pool", "instance": 1163, "error": "dial tcp 172.20.0.3:8080: i/o timeout"}
+a.yandex-team.ru/load/projects/pandora/components/phttp.(*BaseGun).Shoot
+	/-S/load/projects/pandora/components/phttp/base.go:143
+a.yandex-team.ru/load/projects/pandora/components/phttp.(*gunWrapper).Shoot
+	/-S/load/projects/pandora/components/phttp/core.go:44
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instance).shoot.func2
+	/-S/load/projects/pandora/core/engine/instance.go:112
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instance).shoot
+	/-S/load/projects/pandora/core/engine/instance.go:118
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instance).Run
+	/-S/load/projects/pandora/core/engine/instance.go:79
+a.yandex-team.ru/load/projects/pandora/core/engine.runNewInstance
+	/-S/load/projects/pandora/core/engine/engine.go:436
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instancePool).startInstances.func2
+	/-S/load/projects/pandora/core/engine/engine.go:395
+2022-11-05T16:26:21.211Z	WARN	phttp/base.go:143	Request fail	{"pool": "notif pool", "instance": 36, "error": "dial tcp 172.20.0.3:8080: i/o timeout"}
+a.yandex-team.ru/load/projects/pandora/components/phttp.(*BaseGun).Shoot
+	/-S/load/projects/pandora/components/phttp/base.go:143
+a.yandex-team.ru/load/projects/pandora/components/phttp.(*gunWrapper).Shoot
+	/-S/load/projects/pandora/components/phttp/core.go:44
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instance).shoot.func2
+	/-S/load/projects/pandora/core/engine/instance.go:112
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instance).shoot
+	/-S/load/projects/pandora/core/engine/instance.go:118
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instance).Run
+	/-S/load/projects/pandora/core/engine/instance.go:79
+a.yandex-team.ru/load/projects/pandora/core/engine.runNewInstance
+	/-S/load/projects/pandora/core/engine/engine.go:436
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instancePool).startInstances.func2
+	/-S/load/projects/pandora/core/engine/engine.go:395
+2022-11-05T16:26:21.212Z	WARN	phttp/base.go:143	Request fail	{"pool": "device pool", "instance": 28, "error": "dial tcp 172.20.0.3:8080: i/o timeout"}
+a.yandex-team.ru/load/projects/pandora/components/phttp.(*BaseGun).Shoot
+	/-S/load/projects/pandora/components/phttp/base.go:143
+a.yandex-team.ru/load/projects/pandora/components/phttp.(*gunWrapper).Shoot
+	/-S/load/projects/pandora/components/phttp/core.go:44
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instance).shoot.func2
+	/-S/load/projects/pandora/core/engine/instance.go:112
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instance).shoot
+	/-S/load/projects/pandora/core/engine/instance.go:118
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instance).Run
+	/-S/load/projects/pandora/core/engine/instance.go:79
+a.yandex-team.ru/load/projects/pandora/core/engine.runNewInstance
+	/-S/load/projects/pandora/core/engine/engine.go:436
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instancePool).startInstances.func2
+	/-S/load/projects/pandora/core/engine/engine.go:395
+2022-11-05T16:26:21.212Z	WARN	phttp/base.go:143	Request fail	{"pool": "device pool", "instance": 32, "error": "dial tcp 172.20.0.3:8080: i/o timeout"}
+a.yandex-team.ru/load/projects/pandora/components/phttp.(*BaseGun).Shoot
+	/-S/load/projects/pandora/components/phttp/base.go:143
+a.yandex-team.ru/load/projects/pandora/components/phttp.(*gunWrapper).Shoot
+	/-S/load/projects/pandora/components/phttp/core.go:44
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instance).shoot.func2
+	/-S/load/projects/pandora/core/engine/instance.go:112
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instance).shoot
+	/-S/load/projects/pandora/core/engine/instance.go:118
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instance).Run
+	/-S/load/projects/pandora/core/engine/instance.go:79
+a.yandex-team.ru/load/projects/pandora/core/engine.runNewInstance
+	/-S/load/projects/pandora/core/engine/engine.go:436
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instancePool).startInstances.func2
+	/-S/load/projects/pandora/core/engine/engine.go:395
+2022-11-05T16:26:21.212Z	WARN	phttp/base.go:143	Request fail	{"pool": "device pool", "instance": 31, "error": "dial tcp 172.20.0.3:8080: i/o timeout"}
+a.yandex-team.ru/load/projects/pandora/components/phttp.(*BaseGun).Shoot
+	/-S/load/projects/pandora/components/phttp/base.go:143
+a.yandex-team.ru/load/projects/pandora/components/phttp.(*gunWrapper).Shoot
+	/-S/load/projects/pandora/components/phttp/core.go:44
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instance).shoot.func2
+	/-S/load/projects/pandora/core/engine/instance.go:112
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instance).shoot
+	/-S/load/projects/pandora/core/engine/instance.go:118
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instance).Run
+	/-S/load/projects/pandora/core/engine/instance.go:79
+a.yandex-team.ru/load/projects/pandora/core/engine.runNewInstance
+	/-S/load/projects/pandora/core/engine/engine.go:436
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instancePool).startInstances.func2
+	/-S/load/projects/pandora/core/engine/engine.go:395
+2022-11-05T16:26:21.212Z	WARN	phttp/base.go:143	Request fail	{"pool": "notif pool", "instance": 24, "error": "dial tcp 172.20.0.3:8080: i/o timeout"}
+a.yandex-team.ru/load/projects/pandora/components/phttp.(*BaseGun).Shoot
+	/-S/load/projects/pandora/components/phttp/base.go:143
+a.yandex-team.ru/load/projects/pandora/components/phttp.(*gunWrapper).Shoot
+	/-S/load/projects/pandora/components/phttp/core.go:44
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instance).shoot.func2
+	/-S/load/projects/pandora/core/engine/instance.go:112
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instance).shoot
+	/-S/load/projects/pandora/core/engine/instance.go:118
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instance).Run
+	/-S/load/projects/pandora/core/engine/instance.go:79
+a.yandex-team.ru/load/projects/pandora/core/engine.runNewInstance
+	/-S/load/projects/pandora/core/engine/engine.go:436
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instancePool).startInstances.func2
+	/-S/load/projects/pandora/core/engine/engine.go:395
+2022-11-05T16:26:21.212Z	WARN	phttp/base.go:143	Request fail	{"pool": "notif pool", "instance": 37, "error": "dial tcp 172.20.0.3:8080: i/o timeout"}
+a.yandex-team.ru/load/projects/pandora/components/phttp.(*BaseGun).Shoot
+	/-S/load/projects/pandora/components/phttp/base.go:143
+a.yandex-team.ru/load/projects/pandora/components/phttp.(*gunWrapper).Shoot
+	/-S/load/projects/pandora/components/phttp/core.go:44
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instance).shoot.func2
+	/-S/load/projects/pandora/core/engine/instance.go:112
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instance).shoot
+	/-S/load/projects/pandora/core/engine/instance.go:118
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instance).Run
+	/-S/load/projects/pandora/core/engine/instance.go:79
+a.yandex-team.ru/load/projects/pandora/core/engine.runNewInstance
+	/-S/load/projects/pandora/core/engine/engine.go:436
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instancePool).startInstances.func2
+	/-S/load/projects/pandora/core/engine/engine.go:395
+2022-11-05T16:26:21.212Z	WARN	phttp/base.go:143	Request fail	{"pool": "device pool", "instance": 36, "error": "dial tcp 172.20.0.3:8080: i/o timeout"}
+a.yandex-team.ru/load/projects/pandora/components/phttp.(*BaseGun).Shoot
+	/-S/load/projects/pandora/components/phttp/base.go:143
+a.yandex-team.ru/load/projects/pandora/components/phttp.(*gunWrapper).Shoot
+	/-S/load/projects/pandora/components/phttp/core.go:44
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instance).shoot.func2
+	/-S/load/projects/pandora/core/engine/instance.go:112
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instance).shoot
+	/-S/load/projects/pandora/core/engine/instance.go:118
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instance).Run
+	/-S/load/projects/pandora/core/engine/instance.go:79
+a.yandex-team.ru/load/projects/pandora/core/engine.runNewInstance
+	/-S/load/projects/pandora/core/engine/engine.go:436
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instancePool).startInstances.func2
+	/-S/load/projects/pandora/core/engine/engine.go:395
+2022-11-05T16:26:21.212Z	WARN	phttp/base.go:143	Request fail	{"pool": "device pool", "instance": 35, "error": "dial tcp 172.20.0.3:8080: i/o timeout"}
+a.yandex-team.ru/load/projects/pandora/components/phttp.(*BaseGun).Shoot
+	/-S/load/projects/pandora/components/phttp/base.go:143
+a.yandex-team.ru/load/projects/pandora/components/phttp.(*gunWrapper).Shoot
+	/-S/load/projects/pandora/components/phttp/core.go:44
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instance).shoot.func2
+	/-S/load/projects/pandora/core/engine/instance.go:112
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instance).shoot
+	/-S/load/projects/pandora/core/engine/instance.go:118
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instance).Run
+	/-S/load/projects/pandora/core/engine/instance.go:79
+a.yandex-team.ru/load/projects/pandora/core/engine.runNewInstance
+	/-S/load/projects/pandora/core/engine/engine.go:436
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instancePool).startInstances.func2
+	/-S/load/projects/pandora/core/engine/engine.go:395
+2022-11-05T16:26:21.222Z	WARN	phttp/base.go:143	Request fail	{"pool": "notif pool", "instance": 1930, "error": "dial tcp 172.20.0.3:8080: i/o timeout"}
+a.yandex-team.ru/load/projects/pandora/components/phttp.(*BaseGun).Shoot
+	/-S/load/projects/pandora/components/phttp/base.go:143
+a.yandex-team.ru/load/projects/pandora/components/phttp.(*gunWrapper).Shoot
+	/-S/load/projects/pandora/components/phttp/core.go:44
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instance).shoot.func2
+	/-S/load/projects/pandora/core/engine/instance.go:112
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instance).shoot
+	/-S/load/projects/pandora/core/engine/instance.go:118
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instance).Run
+	/-S/load/projects/pandora/core/engine/instance.go:79
+a.yandex-team.ru/load/projects/pandora/core/engine.runNewInstance
+	/-S/load/projects/pandora/core/engine/engine.go:436
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instancePool).startInstances.func2
+	/-S/load/projects/pandora/core/engine/engine.go:395
+2022-11-05T16:26:21.222Z	WARN	phttp/base.go:143	Request fail	{"pool": "device pool", "instance": 37, "error": "dial tcp 172.20.0.3:8080: i/o timeout"}
+a.yandex-team.ru/load/projects/pandora/components/phttp.(*BaseGun).Shoot
+	/-S/load/projects/pandora/components/phttp/base.go:143
+a.yandex-team.ru/load/projects/pandora/components/phttp.(*gunWrapper).Shoot
+	/-S/load/projects/pandora/components/phttp/core.go:44
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instance).shoot.func2
+	/-S/load/projects/pandora/core/engine/instance.go:112
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instance).shoot
+	/-S/load/projects/pandora/core/engine/instance.go:118
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instance).Run
+	/-S/load/projects/pandora/core/engine/instance.go:79
+a.yandex-team.ru/load/projects/pandora/core/engine.runNewInstance
+	/-S/load/projects/pandora/core/engine/engine.go:436
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instancePool).startInstances.func2
+	/-S/load/projects/pandora/core/engine/engine.go:395
+2022-11-05T16:26:21.222Z	WARN	phttp/base.go:143	Request fail	{"pool": "notif pool", "instance": 43, "error": "dial tcp 172.20.0.3:8080: i/o timeout"}
+a.yandex-team.ru/load/projects/pandora/components/phttp.(*BaseGun).Shoot
+	/-S/load/projects/pandora/components/phttp/base.go:143
+a.yandex-team.ru/load/projects/pandora/components/phttp.(*gunWrapper).Shoot
+	/-S/load/projects/pandora/components/phttp/core.go:44
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instance).shoot.func2
+	/-S/load/projects/pandora/core/engine/instance.go:112
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instance).shoot
+	/-S/load/projects/pandora/core/engine/instance.go:118
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instance).Run
+	/-S/load/projects/pandora/core/engine/instance.go:79
+a.yandex-team.ru/load/projects/pandora/core/engine.runNewInstance
+	/-S/load/projects/pandora/core/engine/engine.go:436
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instancePool).startInstances.func2
+	/-S/load/projects/pandora/core/engine/engine.go:395
+2022-11-05T16:26:21.222Z	WARN	phttp/base.go:143	Request fail	{"pool": "device pool", "instance": 39, "error": "dial tcp 172.20.0.3:8080: i/o timeout"}
+a.yandex-team.ru/load/projects/pandora/components/phttp.(*BaseGun).Shoot
+	/-S/load/projects/pandora/components/phttp/base.go:143
+a.yandex-team.ru/load/projects/pandora/components/phttp.(*gunWrapper).Shoot
+	/-S/load/projects/pandora/components/phttp/core.go:44
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instance).shoot.func2
+	/-S/load/projects/pandora/core/engine/instance.go:112
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instance).shoot
+	/-S/load/projects/pandora/core/engine/instance.go:118
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instance).Run
+	/-S/load/projects/pandora/core/engine/instance.go:79
+a.yandex-team.ru/load/projects/pandora/core/engine.runNewInstance
+	/-S/load/projects/pandora/core/engine/engine.go:436
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instancePool).startInstances.func2
+	/-S/load/projects/pandora/core/engine/engine.go:395
+2022-11-05T16:26:21.222Z	WARN	phttp/base.go:143	Request fail	{"pool": "notif pool", "instance": 4, "error": "dial tcp 172.20.0.3:8080: i/o timeout"}
+a.yandex-team.ru/load/projects/pandora/components/phttp.(*BaseGun).Shoot
+	/-S/load/projects/pandora/components/phttp/base.go:143
+a.yandex-team.ru/load/projects/pandora/components/phttp.(*gunWrapper).Shoot
+	/-S/load/projects/pandora/components/phttp/core.go:44
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instance).shoot.func2
+	/-S/load/projects/pandora/core/engine/instance.go:112
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instance).shoot
+	/-S/load/projects/pandora/core/engine/instance.go:118
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instance).Run
+	/-S/load/projects/pandora/core/engine/instance.go:79
+a.yandex-team.ru/load/projects/pandora/core/engine.runNewInstance
+	/-S/load/projects/pandora/core/engine/engine.go:436
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instancePool).startInstances.func2
+	/-S/load/projects/pandora/core/engine/engine.go:395
+2022-11-05T16:26:21.222Z	WARN	phttp/base.go:143	Request fail	{"pool": "device pool", "instance": 38, "error": "dial tcp 172.20.0.3:8080: i/o timeout"}
+a.yandex-team.ru/load/projects/pandora/components/phttp.(*BaseGun).Shoot
+	/-S/load/projects/pandora/components/phttp/base.go:143
+a.yandex-team.ru/load/projects/pandora/components/phttp.(*gunWrapper).Shoot
+	/-S/load/projects/pandora/components/phttp/core.go:44
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instance).shoot.func2
+	/-S/load/projects/pandora/core/engine/instance.go:112
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instance).shoot
+	/-S/load/projects/pandora/core/engine/instance.go:118
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instance).Run
+	/-S/load/projects/pandora/core/engine/instance.go:79
+a.yandex-team.ru/load/projects/pandora/core/engine.runNewInstance
+	/-S/load/projects/pandora/core/engine/engine.go:436
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instancePool).startInstances.func2
+	/-S/load/projects/pandora/core/engine/engine.go:395
+2022-11-05T16:26:21.100Z	WARN	phttp/base.go:143	Request fail	{"pool": "device pool", "instance": 1146, "error": "dial tcp 172.20.0.3:8080: i/o timeout"}
+a.yandex-team.ru/load/projects/pandora/components/phttp.(*BaseGun).Shoot
+	/-S/load/projects/pandora/components/phttp/base.go:143
+a.yandex-team.ru/load/projects/pandora/components/phttp.(*gunWrapper).Shoot
+	/-S/load/projects/pandora/components/phttp/core.go:44
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instance).shoot.func2
+	/-S/load/projects/pandora/core/engine/instance.go:112
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instance).shoot
+	/-S/load/projects/pandora/core/engine/instance.go:118
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instance).Run
+	/-S/load/projects/pandora/core/engine/instance.go:79
+a.yandex-team.ru/load/projects/pandora/core/engine.runNewInstance
+	/-S/load/projects/pandora/core/engine/engine.go:436
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instancePool).startInstances.func2
+	/-S/load/projects/pandora/core/engine/engine.go:395
+2022-11-05T16:26:21.055Z	WARN	phttp/base.go:143	Request fail	{"pool": "notif pool", "instance": 1909, "error": "dial tcp 172.20.0.3:8080: i/o timeout"}
+a.yandex-team.ru/load/projects/pandora/components/phttp.(*BaseGun).Shoot
+	/-S/load/projects/pandora/components/phttp/base.go:143
+a.yandex-team.ru/load/projects/pandora/components/phttp.(*gunWrapper).Shoot
+	/-S/load/projects/pandora/components/phttp/core.go:44
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instance).shoot.func2
+	/-S/load/projects/pandora/core/engine/instance.go:112
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instance).shoot
+	/-S/load/projects/pandora/core/engine/instance.go:118
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instance).Run
+	/-S/load/projects/pandora/core/engine/instance.go:79
+a.yandex-team.ru/load/projects/pandora/core/engine.runNewInstance
+	/-S/load/projects/pandora/core/engine/engine.go:436
+a.yandex-team.ru/load/projects/pandora/core/engine.(*instancePool).startInstances.func2
+	/-S/load/projects/pandora/core/engine/engine.go:395
+2022-11-05T16:26:21.730Z	INFO	cli/expvar.go:40	[ENGINE] 73 resp/s; 192 req/s; 10000 users; 1047 active
+
+2022-11-05T16:26:22.732Z	INFO	cli/expvar.go:40	[ENGINE] 202 resp/s; 252 req/s; 10000 users; 1097 active
+
+2022-11-05T16:26:23.767Z	INFO	cli/expvar.go:40	[ENGINE] 74 resp/s; 260 req/s; 10000 users; 1283 active
+
+2022-11-05T16:26:24.732Z	INFO	cli/expvar.go:40	[ENGINE] 15 resp/s; 248 req/s; 10000 users; 1516 active
+
+2022-11-05T16:26:25.730Z	INFO	cli/expvar.go:40	[ENGINE] 39 resp/s; 252 req/s; 10000 users; 1729 active
+
+2022-11-05T16:26:26.730Z	INFO	cli/expvar.go:40	[ENGINE] 249 resp/s; 252 req/s; 10000 users; 1732 active
+
+2022-11-05T16:26:27.730Z	INFO	cli/expvar.go:40	[ENGINE] 191 resp/s; 256 req/s; 10000 users; 1797 active
+
+2022-11-05T16:26:28.730Z	INFO	cli/expvar.go:40	[ENGINE] 244 resp/s; 252 req/s; 10000 users; 1805 active
+
+2022-11-05T16:26:29.731Z	INFO	cli/expvar.go:40	[ENGINE] 239 resp/s; 256 req/s; 10000 users; 1822 active
+
+2022-11-05T16:26:30.730Z	INFO	cli/expvar.go:40	[ENGINE] 260 resp/s; 258 req/s; 10000 users; 1820 active
+
+2022-11-05T16:26:31.730Z	INFO	cli/expvar.go:40	[ENGINE] 194 resp/s; 256 req/s; 10000 users; 1882 active
+
+2022-11-05T16:26:32.733Z	INFO	cli/expvar.go:40	[ENGINE] 248 resp/s; 257 req/s; 10000 users; 1891 active
+
+2022-11-05T16:26:33.731Z	INFO	cli/expvar.go:40	[ENGINE] 148 resp/s; 257 req/s; 10000 users; 2000 active
+
+2022-11-05T16:26:34.731Z	INFO	cli/expvar.go:40	[ENGINE] 248 resp/s; 258 req/s; 10000 users; 2010 active
+
+2022-11-05T16:26:35.737Z	INFO	cli/expvar.go:40	[ENGINE] 151 resp/s; 257 req/s; 10000 users; 2116 active
+
+2022-11-05T16:26:36.730Z	INFO	cli/expvar.go:40	[ENGINE] 85 resp/s; 257 req/s; 10000 users; 2288 active
+
+2022-11-05T16:26:37.730Z	INFO	cli/expvar.go:40	[ENGINE] 242 resp/s; 260 req/s; 10000 users; 2306 active
+
+2022-11-05T16:26:38.730Z	INFO	cli/expvar.go:40	[ENGINE] 94 resp/s; 258 req/s; 10000 users; 2470 active
+
+2022-11-05T16:26:39.947Z	INFO	cli/expvar.go:40	[ENGINE] 53 resp/s; 264 req/s; 10000 users; 2681 active
+
+2022-11-05T16:26:40.730Z	INFO	cli/expvar.go:40	[ENGINE] 0 resp/s; 256 req/s; 10000 users; 2937 active
+
+2022-11-05T16:26:41.768Z	INFO	cli/expvar.go:40	[ENGINE] 17 resp/s; 263 req/s; 10000 users; 3183 active
+
+2022-11-05T16:26:42.730Z	INFO	cli/expvar.go:40	[ENGINE] 102 resp/s; 173 req/s; 10000 users; 3254 active
+
+2022-11-05T16:26:43.743Z	INFO	cli/expvar.go:40	[ENGINE] 72 resp/s; 235 req/s; 10000 users; 3417 active
+
+2022-11-05T16:26:44.713Z	INFO	cli/expvar.go:40	[ENGINE] 229 resp/s; 284 req/s; 10000 users; 3472 active
+
+2022-11-05T16:26:45.744Z	INFO	cli/expvar.go:40	[ENGINE] 108 resp/s; 356 req/s; 10000 users; 3720 active
+
+2022-11-05T16:26:46.714Z	INFO	cli/expvar.go:40	[ENGINE] 27 resp/s; 254 req/s; 10000 users; 3947 active
+
+2022-11-05T16:26:47.715Z	INFO	cli/expvar.go:40	[ENGINE] 92 resp/s; 265 req/s; 10000 users; 4120 active
+
+2022-11-05T16:26:48.712Z	INFO	cli/expvar.go:40	[ENGINE] 76 resp/s; 262 req/s; 10000 users; 4306 active
+
+2022-11-05T16:26:49.712Z	INFO	cli/expvar.go:40	[ENGINE] 114 resp/s; 264 req/s; 10000 users; 4456 active
+
+2022-11-05T16:26:50.713Z	INFO	cli/expvar.go:40	[ENGINE] 182 resp/s; 264 req/s; 10000 users; 4538 active
+
+2022-11-05T16:26:51.714Z	INFO	cli/expvar.go:40	[ENGINE] 251 resp/s; 264 req/s; 10000 users; 4551 active
+
+2022-11-05T16:26:52.712Z	INFO	cli/expvar.go:40	[ENGINE] 241 resp/s; 266 req/s; 10000 users; 4576 active
+
+2022-11-05T16:26:53.713Z	INFO	cli/expvar.go:40	[ENGINE] 151 resp/s; 264 req/s; 10000 users; 4689 active
+
+2022-11-05T16:26:54.713Z	INFO	cli/expvar.go:40	[ENGINE] 174 resp/s; 266 req/s; 10000 users; 4781 active
+
+2022-11-05T16:26:55.712Z	INFO	cli/expvar.go:40	[ENGINE] 249 resp/s; 266 req/s; 10000 users; 4798 active
+
+2022-11-05T16:26:56.714Z	INFO	cli/expvar.go:40	[ENGINE] 194 resp/s; 266 req/s; 10000 users; 4870 active
+
+2022-11-05T16:26:57.712Z	INFO	cli/expvar.go:40	[ENGINE] 259 resp/s; 268 req/s; 10000 users; 4879 active
+
+2022-11-05T16:26:58.713Z	INFO	cli/expvar.go:40	[ENGINE] 223 resp/s; 266 req/s; 10000 users; 4922 active
+
+2022-11-05T16:26:59.712Z	INFO	cli/expvar.go:40	[ENGINE] 144 resp/s; 268 req/s; 10000 users; 5046 active
+
+2022-11-05T16:27:00.713Z	INFO	cli/expvar.go:40	[ENGINE] 28 resp/s; 268 req/s; 10000 users; 5286 active
+
+2022-11-05T16:27:01.722Z	INFO	cli/expvar.go:40	[ENGINE] 11 resp/s; 224 req/s; 10000 users; 5499 active
+
+2022-11-05T16:27:02.712Z	INFO	cli/expvar.go:40	[ENGINE] 17 resp/s; 314 req/s; 10000 users; 5796 active
+
+2022-11-05T16:27:03.713Z	INFO	cli/expvar.go:40	[ENGINE] 61 resp/s; 270 req/s; 10000 users; 6005 active
+
+2022-11-05T16:27:04.712Z	INFO	cli/expvar.go:40	[ENGINE] 34 resp/s; 270 req/s; 10000 users; 6241 active
+
+2022-11-05T16:27:05.713Z	INFO	cli/expvar.go:40	[ENGINE] 400 resp/s; 270 req/s; 10000 users; 6111 active
+
+2022-11-05T16:27:06.712Z	INFO	cli/expvar.go:40	[ENGINE] 159 resp/s; 270 req/s; 10000 users; 6222 active
+
+2022-11-05T16:27:07.713Z	INFO	cli/expvar.go:40	[ENGINE] 293 resp/s; 272 req/s; 10000 users; 6201 active
+
+2022-11-05T16:27:08.713Z	INFO	cli/expvar.go:40	[ENGINE] 151 resp/s; 270 req/s; 10000 users; 6320 active
+
+2022-11-05T16:27:09.714Z	INFO	cli/expvar.go:40	[ENGINE] 134 resp/s; 272 req/s; 10000 users; 6458 active
+
+2022-11-05T16:27:10.712Z	INFO	cli/expvar.go:40	[ENGINE] 185 resp/s; 272 req/s; 10000 users; 6545 active
+
+2022-11-05T16:27:11.713Z	INFO	cli/expvar.go:40	[ENGINE] 200 resp/s; 273 req/s; 10000 users; 6618 active
+
+2022-11-05T16:27:12.712Z	INFO	cli/expvar.go:40	[ENGINE] 67 resp/s; 273 req/s; 10000 users; 6824 active
+
+2022-11-05T16:27:13.716Z	INFO	cli/expvar.go:40	[ENGINE] 126 resp/s; 274 req/s; 10000 users; 6972 active
+
+2022-11-05T16:27:14.684Z	INFO	cli/expvar.go:40	[ENGINE] 95 resp/s; 274 req/s; 10000 users; 7151 active
+
+2022-11-05T16:27:15.684Z	INFO	cli/expvar.go:40	[ENGINE] 180 resp/s; 274 req/s; 10000 users; 7245 active
+
+2022-11-05T16:27:16.688Z	INFO	cli/expvar.go:40	[ENGINE] 97 resp/s; 276 req/s; 10000 users; 7424 active
+
+2022-11-05T16:27:17.685Z	INFO	cli/expvar.go:40	[ENGINE] 144 resp/s; 274 req/s; 10000 users; 7554 active
+
+2022-11-05T16:27:18.686Z	INFO	cli/expvar.go:40	[ENGINE] 43 resp/s; 275 req/s; 10000 users; 7786 active
+
+2022-11-05T16:27:19.685Z	INFO	cli/expvar.go:40	[ENGINE] 74 resp/s; 277 req/s; 10000 users; 7989 active
+
+2022-11-05T16:27:20.685Z	INFO	cli/expvar.go:40	[ENGINE] 105 resp/s; 276 req/s; 10000 users; 8160 active
+
+2022-11-05T16:27:21.685Z	INFO	cli/expvar.go:40	[ENGINE] 170 resp/s; 276 req/s; 10000 users; 8266 active
+
+2022-11-05T16:27:22.685Z	INFO	cli/expvar.go:40	[ENGINE] 176 resp/s; 278 req/s; 10000 users; 8368 active
+
+2022-11-05T16:27:23.684Z	INFO	cli/expvar.go:40	[ENGINE] 210 resp/s; 278 req/s; 10000 users; 8436 active
+
+2022-11-05T16:27:24.685Z	INFO	cli/expvar.go:40	[ENGINE] 307 resp/s; 278 req/s; 10000 users; 8407 active
+
+2022-11-05T16:27:25.684Z	INFO	cli/expvar.go:40	[ENGINE] 183 resp/s; 278 req/s; 10000 users; 8502 active
+
+2022-11-05T16:27:26.684Z	INFO	cli/expvar.go:40	[ENGINE] 140 resp/s; 279 req/s; 10000 users; 8641 active
+
+2022-11-05T16:27:27.689Z	INFO	cli/expvar.go:40	[ENGINE] 102 resp/s; 280 req/s; 10000 users; 8819 active
+
+2022-11-05T16:27:28.687Z	INFO	cli/expvar.go:40	[ENGINE] 118 resp/s; 279 req/s; 10000 users; 8980 active
+
+2022-11-05T16:27:29.698Z	INFO	cli/expvar.go:40	[ENGINE] 210 resp/s; 281 req/s; 10000 users; 9051 active
+
+2022-11-05T16:27:30.685Z	INFO	cli/expvar.go:40	[ENGINE] 253 resp/s; 281 req/s; 10000 users; 9079 active
+
+2022-11-05T16:27:31.685Z	INFO	cli/expvar.go:40	[ENGINE] 73 resp/s; 280 req/s; 10000 users; 9286 active
+
+2022-11-05T16:27:32.685Z	INFO	cli/expvar.go:40	[ENGINE] 263 resp/s; 282 req/s; 10000 users; 9305 active
+
+2022-11-05T16:27:33.685Z	INFO	cli/expvar.go:40	[ENGINE] 208 resp/s; 282 req/s; 10000 users; 9379 active
+
+2022-11-05T16:27:34.685Z	INFO	cli/expvar.go:40	[ENGINE] 206 resp/s; 282 req/s; 10000 users; 9455 active
+
+2022-11-05T16:27:35.685Z	INFO	cli/expvar.go:40	[ENGINE] 253 resp/s; 282 req/s; 10000 users; 9484 active
+
+2022-11-05T16:27:36.685Z	INFO	cli/expvar.go:40	[ENGINE] 132 resp/s; 283 req/s; 10000 users; 9635 active
+
+2022-11-05T16:27:37.684Z	INFO	cli/expvar.go:40	[ENGINE] 226 resp/s; 247 req/s; 10000 users; 9656 active
+
+2022-11-05T16:27:38.685Z	INFO	cli/expvar.go:40	[ENGINE] 248 resp/s; 258 req/s; 10000 users; 9666 active
+
+2022-11-05T16:27:39.685Z	INFO	cli/expvar.go:40	[ENGINE] 245 resp/s; 255 req/s; 10000 users; 9676 active
+
+2022-11-05T16:27:40.685Z	INFO	cli/expvar.go:40	[ENGINE] 216 resp/s; 239 req/s; 10000 users; 9699 active
+
+2022-11-05T16:27:41.685Z	INFO	cli/expvar.go:40	[ENGINE] 228 resp/s; 248 req/s; 10000 users; 9719 active
+
+2022-11-05T16:27:42.684Z	INFO	cli/expvar.go:40	[ENGINE] 272 resp/s; 263 req/s; 10000 users; 9710 active
+
+2022-11-05T16:27:43.686Z	INFO	cli/expvar.go:40	[ENGINE] 200 resp/s; 219 req/s; 10000 users; 9729 active
+
+2022-11-05T16:27:44.670Z	INFO	cli/expvar.go:40	[ENGINE] 155 resp/s; 211 req/s; 10000 users; 9785 active
+
+2022-11-05T16:27:45.668Z	INFO	cli/expvar.go:40	[ENGINE] 38 resp/s; 155 req/s; 10000 users; 9902 active
+
+2022-11-05T16:27:46.668Z	INFO	cli/expvar.go:40	[ENGINE] 102 resp/s; 178 req/s; 10000 users; 9978 active
+
+2022-11-05T16:27:47.669Z	INFO	cli/expvar.go:40	[ENGINE] 238 resp/s; 232 req/s; 10000 users; 9972 active
+
+2022-11-05T16:27:48.668Z	INFO	cli/expvar.go:40	[ENGINE] 111 resp/s; 139 req/s; 10000 users; 10000 active
+
+2022-11-05T16:27:49.669Z	INFO	cli/expvar.go:40	[ENGINE] 94 resp/s; 94 req/s; 10000 users; 10000 active
+
+2022-11-05T16:27:50.671Z	INFO	cli/expvar.go:40	[ENGINE] 132 resp/s; 132 req/s; 10000 users; 10000 active
+
+2022-11-05T16:27:51.668Z	INFO	cli/expvar.go:40	[ENGINE] 147 resp/s; 147 req/s; 10000 users; 10000 active
+
+2022-11-05T16:27:52.668Z	INFO	cli/expvar.go:40	[ENGINE] 179 resp/s; 179 req/s; 10000 users; 10000 active
+
+2022-11-05T16:27:53.668Z	INFO	cli/expvar.go:40	[ENGINE] 186 resp/s; 186 req/s; 10000 users; 10000 active
+
+2022-11-05T16:27:54.668Z	INFO	cli/expvar.go:40	[ENGINE] 135 resp/s; 135 req/s; 10000 users; 10000 active
+
+2022-11-05T16:27:55.669Z	INFO	cli/expvar.go:40	[ENGINE] 136 resp/s; 136 req/s; 10000 users; 10000 active
+
+2022-11-05T16:27:56.668Z	INFO	cli/expvar.go:40	[ENGINE] 147 resp/s; 147 req/s; 10000 users; 10000 active
+
+2022-11-05T16:27:57.669Z	INFO	cli/expvar.go:40	[ENGINE] 155 resp/s; 155 req/s; 10000 users; 10000 active
+
+2022-11-05T16:27:58.669Z	INFO	cli/expvar.go:40	[ENGINE] 243 resp/s; 243 req/s; 10000 users; 10000 active
+
+2022-11-05T16:27:59.668Z	INFO	cli/expvar.go:40	[ENGINE] 214 resp/s; 214 req/s; 10000 users; 10000 active
+
+2022-11-05T16:28:00.668Z	INFO	cli/expvar.go:40	[ENGINE] 276 resp/s; 276 req/s; 10000 users; 10000 active
+
+2022-11-05T16:28:01.669Z	INFO	cli/expvar.go:40	[ENGINE] 253 resp/s; 253 req/s; 10000 users; 10000 active
+
+2022-11-05T16:28:02.668Z	INFO	cli/expvar.go:40	[ENGINE] 321 resp/s; 321 req/s; 10000 users; 10000 active
+
+2022-11-05T16:28:03.668Z	INFO	cli/expvar.go:40	[ENGINE] 316 resp/s; 316 req/s; 10000 users; 10000 active
+
+2022-11-05T16:28:04.669Z	INFO	cli/expvar.go:40	[ENGINE] 319 resp/s; 319 req/s; 10000 users; 10000 active
+
+2022-11-05T16:28:05.668Z	INFO	cli/expvar.go:40	[ENGINE] 366 resp/s; 366 req/s; 10000 users; 10000 active
+
+2022-11-05T16:28:06.668Z	INFO	cli/expvar.go:40	[ENGINE] 217 resp/s; 217 req/s; 10000 users; 10000 active
+
+2022-11-05T16:28:07.668Z	INFO	cli/expvar.go:40	[ENGINE] 187 resp/s; 187 req/s; 10000 users; 10000 active
+
+2022-11-05T16:28:08.795Z	INFO	cli/expvar.go:40	[ENGINE] 69 resp/s; 69 req/s; 10000 users; 10000 active
+
+2022-11-05T16:28:09.668Z	INFO	cli/expvar.go:40	[ENGINE] 163 resp/s; 163 req/s; 10000 users; 10000 active
+
+2022-11-05T16:28:10.670Z	INFO	cli/expvar.go:40	[ENGINE] 201 resp/s; 201 req/s; 10000 users; 10000 active
+
+2022-11-05T16:28:11.692Z	INFO	cli/expvar.go:40	[ENGINE] 77 resp/s; 77 req/s; 10000 users; 10000 active
+
+2022-11-05T16:28:12.669Z	INFO	cli/expvar.go:40	[ENGINE] 222 resp/s; 222 req/s; 10000 users; 10000 active
+
+2022-11-05T16:28:13.668Z	INFO	cli/expvar.go:40	[ENGINE] 218 resp/s; 218 req/s; 10000 users; 10000 active
+
+2022-11-05T16:28:14.647Z	INFO	cli/expvar.go:40	[ENGINE] 225 resp/s; 225 req/s; 10000 users; 10000 active
+
+2022-11-05T16:28:15.647Z	INFO	cli/expvar.go:40	[ENGINE] 292 resp/s; 292 req/s; 10000 users; 10000 active
+
+2022-11-05T16:28:16.649Z	INFO	cli/expvar.go:40	[ENGINE] 272 resp/s; 272 req/s; 10000 users; 10000 active
+
+2022-11-05T16:28:17.648Z	INFO	cli/expvar.go:40	[ENGINE] 266 resp/s; 266 req/s; 10000 users; 10000 active
+
+2022-11-05T16:28:18.648Z	INFO	cli/expvar.go:40	[ENGINE] 281 resp/s; 281 req/s; 10000 users; 10000 active
+
+2022-11-05T16:28:19.457Z	INFO	engine/engine.go:420	RPS schedule has been finished. Canceling instance start.	{"pool": "notif pool"}
+2022-11-05T16:28:19.647Z	INFO	cli/expvar.go:40	[ENGINE] 314 resp/s; 308 req/s; 9994 users; 9994 active
+
+2022-11-05T16:28:20.647Z	INFO	cli/expvar.go:40	[ENGINE] 203 resp/s; 181 req/s; 9972 users; 9972 active
+
+2022-11-05T16:28:21.651Z	INFO	cli/expvar.go:40	[ENGINE] 166 resp/s; 142 req/s; 9948 users; 9948 active
+
+2022-11-05T16:28:22.647Z	INFO	cli/expvar.go:40	[ENGINE] 160 resp/s; 134 req/s; 9922 users; 9922 active
+
+2022-11-05T16:28:23.653Z	INFO	cli/expvar.go:40	[ENGINE] 198 resp/s; 147 req/s; 9871 users; 9871 active
+
+2022-11-05T16:28:24.647Z	INFO	cli/expvar.go:40	[ENGINE] 226 resp/s; 201 req/s; 9846 users; 9846 active
+
+2022-11-05T16:28:25.647Z	INFO	cli/expvar.go:40	[ENGINE] 219 resp/s; 204 req/s; 9831 users; 9831 active
+
+2022-11-05T16:28:26.648Z	INFO	cli/expvar.go:40	[ENGINE] 144 resp/s; 127 req/s; 9814 users; 9814 active
+
+2022-11-05T16:28:27.649Z	INFO	cli/expvar.go:40	[ENGINE] 139 resp/s; 115 req/s; 9790 users; 9790 active
+
+2022-11-05T16:28:28.647Z	INFO	cli/expvar.go:40	[ENGINE] 140 resp/s; 118 req/s; 9768 users; 9768 active
+
+2022-11-05T16:28:29.647Z	INFO	cli/expvar.go:40	[ENGINE] 192 resp/s; 151 req/s; 9727 users; 9727 active
+
+2022-11-05T16:28:30.647Z	INFO	cli/expvar.go:40	[ENGINE] 225 resp/s; 216 req/s; 9718 users; 9718 active
+
+2022-11-05T16:28:31.647Z	INFO	cli/expvar.go:40	[ENGINE] 380 resp/s; 249 req/s; 9587 users; 9587 active
+
+2022-11-05T16:28:32.647Z	INFO	cli/expvar.go:40	[ENGINE] 282 resp/s; 211 req/s; 9516 users; 9516 active
+
+2022-11-05T16:28:33.647Z	INFO	cli/expvar.go:40	[ENGINE] 201 resp/s; 193 req/s; 9508 users; 9508 active
+
+2022-11-05T16:28:33.811Z	INFO	engine/engine.go:420	RPS schedule has been finished. Canceling instance start.	{"pool": "device pool"}
+2022-11-05T16:28:34.648Z	INFO	cli/expvar.go:40	[ENGINE] 172 resp/s; 25 req/s; 9361 users; 9361 active
+
+2022-11-05T16:28:35.647Z	INFO	cli/expvar.go:40	[ENGINE] 618 resp/s; 0 req/s; 8743 users; 8743 active
+
+2022-11-05T16:28:36.661Z	INFO	cli/expvar.go:40	[ENGINE] 118 resp/s; 0 req/s; 8625 users; 8625 active
+
+2022-11-05T16:28:37.648Z	INFO	cli/expvar.go:40	[ENGINE] 23 resp/s; 0 req/s; 8602 users; 8602 active
+
+2022-11-05T16:28:38.648Z	INFO	cli/expvar.go:40	[ENGINE] 26 resp/s; 0 req/s; 8576 users; 8576 active
+
+2022-11-05T16:28:39.649Z	INFO	cli/expvar.go:40	[ENGINE] 239 resp/s; 0 req/s; 8337 users; 8337 active
+
+2022-11-05T16:28:40.647Z	INFO	cli/expvar.go:40	[ENGINE] 108 resp/s; 0 req/s; 8229 users; 8229 active
+
+2022-11-05T16:28:41.714Z	INFO	cli/expvar.go:40	[ENGINE] 25 resp/s; 0 req/s; 8204 users; 8204 active
+
+2022-11-05T16:28:42.650Z	INFO	cli/expvar.go:40	[ENGINE] 6 resp/s; 0 req/s; 8198 users; 8198 active
+
+2022-11-05T16:28:43.798Z	INFO	cli/expvar.go:40	[ENGINE] 7 resp/s; 0 req/s; 8191 users; 8191 active
+
+2022-11-05T16:28:44.621Z	INFO	cli/expvar.go:40	[ENGINE] 26 resp/s; 0 req/s; 8165 users; 8165 active
+
+2022-11-05T16:28:45.635Z	INFO	cli/expvar.go:40	[ENGINE] 292 resp/s; 0 req/s; 7873 users; 7873 active
+
+2022-11-05T16:28:46.698Z	INFO	cli/expvar.go:40	[ENGINE] 132 resp/s; 0 req/s; 7741 users; 7741 active
+
+2022-11-05T16:28:47.698Z	INFO	cli/expvar.go:40	[ENGINE] 4 resp/s; 0 req/s; 7737 users; 7737 active
+
+2022-11-05T16:28:48.653Z	INFO	cli/expvar.go:40	[ENGINE] 0 resp/s; 0 req/s; 7737 users; 7737 active
+
+2022-11-05T16:28:49.879Z	INFO	cli/expvar.go:40	[ENGINE] 1 resp/s; 0 req/s; 7736 users; 7736 active
+
+2022-11-05T16:28:50.636Z	INFO	cli/expvar.go:40	[ENGINE] 0 resp/s; 0 req/s; 7736 users; 7736 active
+
+2022-11-05T16:28:51.601Z	INFO	cli/expvar.go:40	[ENGINE] 0 resp/s; 0 req/s; 7736 users; 7736 active
+
+2022-11-05T16:28:52.596Z	INFO	cli/expvar.go:40	[ENGINE] 9 resp/s; 0 req/s; 7727 users; 7727 active
+
+2022-11-05T16:28:53.617Z	INFO	cli/expvar.go:40	[ENGINE] 211 resp/s; 0 req/s; 7516 users; 7516 active
+
+2022-11-05T16:28:54.666Z	INFO	cli/expvar.go:40	[ENGINE] 383 resp/s; 0 req/s; 7133 users; 7133 active
+
+2022-11-05T16:28:55.599Z	INFO	cli/expvar.go:40	[ENGINE] 257 resp/s; 0 req/s; 6876 users; 6876 active
+
+2022-11-05T16:28:56.594Z	INFO	cli/expvar.go:40	[ENGINE] 672 resp/s; 0 req/s; 6204 users; 6204 active
+
+2022-11-05T16:28:57.594Z	INFO	cli/expvar.go:40	[ENGINE] 156 resp/s; 0 req/s; 6048 users; 6048 active
+
+2022-11-05T16:28:58.594Z	INFO	cli/expvar.go:40	[ENGINE] 63 resp/s; 0 req/s; 5985 users; 5985 active
+
+2022-11-05T16:28:59.594Z	INFO	cli/expvar.go:40	[ENGINE] 28 resp/s; 0 req/s; 5957 users; 5957 active
+
+2022-11-05T16:29:00.594Z	INFO	cli/expvar.go:40	[ENGINE] 712 resp/s; 0 req/s; 5245 users; 5245 active
+
+2022-11-05T16:29:01.595Z	INFO	cli/expvar.go:40	[ENGINE] 16 resp/s; 0 req/s; 5229 users; 5229 active
+
+2022-11-05T16:29:02.594Z	INFO	cli/expvar.go:40	[ENGINE] 18 resp/s; 0 req/s; 5211 users; 5211 active
+
+2022-11-05T16:29:03.594Z	INFO	cli/expvar.go:40	[ENGINE] 4 resp/s; 0 req/s; 5207 users; 5207 active
+
+2022-11-05T16:29:04.595Z	INFO	cli/expvar.go:40	[ENGINE] 527 resp/s; 0 req/s; 4680 users; 4680 active
+
+2022-11-05T16:29:05.594Z	INFO	cli/expvar.go:40	[ENGINE] 26 resp/s; 0 req/s; 4654 users; 4654 active
+
+2022-11-05T16:29:06.601Z	INFO	cli/expvar.go:40	[ENGINE] 13 resp/s; 0 req/s; 4641 users; 4641 active
+
+2022-11-05T16:29:07.594Z	INFO	cli/expvar.go:40	[ENGINE] 78 resp/s; 0 req/s; 4563 users; 4563 active
+
+2022-11-05T16:29:08.594Z	INFO	cli/expvar.go:40	[ENGINE] 334 resp/s; 0 req/s; 4229 users; 4229 active
+
+2022-11-05T16:29:09.595Z	INFO	cli/expvar.go:40	[ENGINE] 12 resp/s; 0 req/s; 4217 users; 4217 active
+
+2022-11-05T16:29:10.597Z	INFO	cli/expvar.go:40	[ENGINE] 4 resp/s; 0 req/s; 4213 users; 4213 active
+
+2022-11-05T16:29:11.596Z	INFO	cli/expvar.go:40	[ENGINE] 24 resp/s; 0 req/s; 4189 users; 4189 active
+
+2022-11-05T16:29:12.595Z	INFO	cli/expvar.go:40	[ENGINE] 169 resp/s; 0 req/s; 4020 users; 4020 active
+
+2022-11-05T16:29:13.594Z	INFO	cli/expvar.go:40	[ENGINE] 3 resp/s; 0 req/s; 4017 users; 4017 active
+
+2022-11-05T16:29:14.594Z	INFO	cli/expvar.go:40	[ENGINE] 4 resp/s; 0 req/s; 4013 users; 4013 active
+
+2022-11-05T16:29:15.605Z	INFO	cli/expvar.go:40	[ENGINE] 28 resp/s; 0 req/s; 3985 users; 3985 active
+
+2022-11-05T16:29:16.606Z	INFO	cli/expvar.go:40	[ENGINE] 779 resp/s; 0 req/s; 3206 users; 3206 active
+
+2022-11-05T16:29:17.605Z	INFO	cli/expvar.go:40	[ENGINE] 0 resp/s; 0 req/s; 3206 users; 3206 active
+
+2022-11-05T16:29:18.606Z	INFO	cli/expvar.go:40	[ENGINE] 21 resp/s; 0 req/s; 3185 users; 3185 active
+
+2022-11-05T16:29:19.618Z	INFO	cli/expvar.go:40	[ENGINE] 4 resp/s; 0 req/s; 3181 users; 3181 active
+
+2022-11-05T16:29:20.607Z	INFO	cli/expvar.go:40	[ENGINE] 327 resp/s; 0 req/s; 2854 users; 2854 active
+
+2022-11-05T16:29:21.606Z	INFO	cli/expvar.go:40	[ENGINE] 23 resp/s; 0 req/s; 2831 users; 2831 active
+
+2022-11-05T16:29:22.606Z	INFO	cli/expvar.go:40	[ENGINE] 0 resp/s; 0 req/s; 2831 users; 2831 active
+
+2022-11-05T16:29:23.607Z	INFO	cli/expvar.go:40	[ENGINE] 80 resp/s; 0 req/s; 2751 users; 2751 active
+
+2022-11-05T16:29:24.606Z	INFO	cli/expvar.go:40	[ENGINE] 567 resp/s; 0 req/s; 2184 users; 2184 active
+
+2022-11-05T16:29:25.606Z	INFO	cli/expvar.go:40	[ENGINE] 0 resp/s; 0 req/s; 2184 users; 2184 active
+
+2022-11-05T16:29:26.607Z	INFO	cli/expvar.go:40	[ENGINE] 0 resp/s; 0 req/s; 2184 users; 2184 active
+
+2022-11-05T16:29:27.606Z	INFO	cli/expvar.go:40	[ENGINE] 1 resp/s; 0 req/s; 2183 users; 2183 active
+
+2022-11-05T16:29:28.606Z	INFO	cli/expvar.go:40	[ENGINE] 389 resp/s; 0 req/s; 1794 users; 1794 active
+
+2022-11-05T16:29:29.605Z	INFO	cli/expvar.go:40	[ENGINE] 129 resp/s; 0 req/s; 1665 users; 1665 active
+
+2022-11-05T16:29:30.605Z	INFO	cli/expvar.go:40	[ENGINE] 40 resp/s; 0 req/s; 1625 users; 1625 active
+
+2022-11-05T16:29:31.605Z	INFO	cli/expvar.go:40	[ENGINE] 0 resp/s; 0 req/s; 1625 users; 1625 active
+
+2022-11-05T16:29:32.605Z	INFO	cli/expvar.go:40	[ENGINE] 633 resp/s; 0 req/s; 992 users; 992 active
+
+2022-11-05T16:29:33.632Z	INFO	cli/expvar.go:40	[ENGINE] 56 resp/s; 0 req/s; 936 users; 936 active
+
+2022-11-05T16:29:34.606Z	INFO	cli/expvar.go:40	[ENGINE] 0 resp/s; 0 req/s; 936 users; 936 active
+
+2022-11-05T16:29:35.605Z	INFO	cli/expvar.go:40	[ENGINE] 0 resp/s; 0 req/s; 936 users; 936 active
+
+2022-11-05T16:29:36.606Z	INFO	cli/expvar.go:40	[ENGINE] 92 resp/s; 0 req/s; 844 users; 844 active
+
+2022-11-05T16:29:37.605Z	INFO	cli/expvar.go:40	[ENGINE] 0 resp/s; 0 req/s; 844 users; 844 active
+
+2022-11-05T16:29:38.607Z	INFO	cli/expvar.go:40	[ENGINE] 0 resp/s; 0 req/s; 844 users; 844 active
+
+2022-11-05T16:29:39.605Z	INFO	cli/expvar.go:40	[ENGINE] 0 resp/s; 0 req/s; 844 users; 844 active
+
+2022-11-05T16:29:40.606Z	INFO	cli/expvar.go:40	[ENGINE] 188 resp/s; 0 req/s; 656 users; 656 active
+
+2022-11-05T16:29:41.650Z	INFO	cli/expvar.go:40	[ENGINE] 0 resp/s; 0 req/s; 656 users; 656 active
+
+2022-11-05T16:29:42.606Z	INFO	cli/expvar.go:40	[ENGINE] 0 resp/s; 0 req/s; 656 users; 656 active
+
+2022-11-05T16:29:43.257Z	INFO	cli/cli.go:149	SIGINT received. Graceful shutdown.	{"timeout": "30s"}
+2022-11-05T16:29:43.259Z	INFO	engine/engine.go:161	Pool execution canceled	{"pool": "device pool"}
+2022-11-05T16:29:43.261Z	INFO	engine/engine.go:143	Pool run finished	{"pool": "device pool"}
+2022-11-05T16:29:43.259Z	INFO	engine/engine.go:161	Pool execution canceled	{"pool": "notif pool"}
+2022-11-05T16:29:43.259Z	INFO	engine/engine.go:102	Engine run canceled
+2022-11-05T16:29:43.268Z	INFO	engine/engine.go:66	Engine finished
+2022-11-05T16:29:43.267Z	INFO	engine/engine.go:143	Pool run finished	{"pool": "notif pool"}
+2022-11-05T16:29:43.270Z	FATAL	cli/cli.go:164	Engine interrupted	{"error": "context canceled"}
+a.yandex-team.ru/load/projects/pandora/cli.awaitPandoraTermination
+	/-S/load/projects/pandora/cli/cli.go:164
+a.yandex-team.ru/load/projects/pandora/cli.Run
+	/-S/load/projects/pandora/cli/cli.go:133
+main.main
+	/-S/load/projects/pandora/main.go:27
+runtime.main
+	/-S/contrib/go/_std_1.18/src/runtime/proc.go:250

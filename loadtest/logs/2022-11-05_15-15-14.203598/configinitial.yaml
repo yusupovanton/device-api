@@ -1,0 +1,88 @@
+autostop:
+  enabled: true
+  package: yandextank.plugins.Autostop
+bfg:
+  enabled: false
+  package: yandextank.plugins.Bfg
+console:
+  enabled: true
+  package: yandextank.plugins.Console
+core: {}
+influx:
+  enabled: false
+  package: yandextank.plugins.InfluxUploader
+jmeter:
+  enabled: false
+  package: yandextank.plugins.JMeter
+json_report:
+  enabled: true
+  package: yandextank.plugins.JsonReport
+metaconf:
+  enabled: false
+  package: yandextank.plugins.MetaConf
+offline_report:
+  enabled: false
+  package: yandextank.plugins.OfflineReport
+opentsdb:
+  enabled: false
+  package: yandextank.plugins.OpenTSDBUploader
+opentsdbuploader:
+  address: victoria-metrics
+  custom_tags: null
+  enabled: true
+  histograms: true
+  labeled: true
+  package: yandextank.plugins.OpenTSDBUploader
+  password: ''
+  port: 4242
+  ssl: false
+  tank_tag: local
+  username: ''
+  verify_ssl: false
+overload:
+  enabled: false
+  package: yandextank.plugins.DataUploader
+pandora:
+  config_content:
+    pools:
+    - ammo:
+        file: device-api-jsonline.ammo
+        type: http/json
+      gun:
+        dial:
+          timeout: 2s
+        ssl: false
+        target: act-device-api:8080
+        type: http
+      id: HTTP pool
+      rps:
+      - duration: 1m30s
+        from: 1
+        to: 100
+        type: line
+      - duration: 2m
+        ops: 50
+        type: const
+      startup:
+        times: 100
+        type: once
+  enabled: true
+  package: yandextank.plugins.Pandora
+  pandora_cmd: /usr/local/bin/pandora
+phantom:
+  ammofile: load.yaml
+  enabled: false
+  package: yandextank.plugins.Phantom
+  use_caching: false
+rcassert:
+  enabled: true
+  package: yandextank.plugins.RCAssert
+rcheck:
+  enabled: true
+  package: yandextank.plugins.ResourceCheck
+shellexec:
+  enabled: true
+  package: yandextank.plugins.ShellExec
+telegraf:
+  enabled: false
+  package: yandextank.plugins.Telegraf

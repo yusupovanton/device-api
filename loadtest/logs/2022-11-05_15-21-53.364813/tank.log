@@ -1,0 +1,74 @@
+2022-11-05 15:21:53,430 [INFO] root tankworker.py:153	Log file created
+2022-11-05 15:21:53,431 [INFO] root tankworker.py:157	Logging handler <FileHandler /var/loadtest/tank_errors.log (WARNING)> added
+2022-11-05 15:21:53,432 [INFO] root tankworker.py:157	Logging handler <StreamHandler <stdout> (INFO)> added
+2022-11-05 15:21:53,434 [INFO] root tankworker.py:157	Logging handler <StreamHandler <stderr> (NOTSET)> added
+2022-11-05 15:21:53,459 [INFO] root tankworker.py:69	Created a folder for the test. /var/loadtest/logs/2022-11-05_15-21-53.364813
+2022-11-05 15:21:53,464 [INFO] yandextank.core.tankcore tankcore.py:254	Configuring plugins...
+2022-11-05 15:21:53,466 [INFO] yandextank.core.tankcore tankcore.py:205	Loading plugins...
+2022-11-05 15:21:53,468 [INFO] yandextank.core.tankcore tankcore.py:215	Trying to import module: autostop
+2022-11-05 15:21:53,469 [INFO] yandextank.core.tankcore tankcore.py:216	Path: yandextank.plugins.Autostop
+2022-11-05 15:21:53,471 [INFO] yandextank.core.tankcore tankcore.py:215	Trying to import module: console
+2022-11-05 15:21:53,472 [INFO] yandextank.core.tankcore tankcore.py:216	Path: yandextank.plugins.Console
+2022-11-05 15:21:53,474 [INFO] yandextank.core.tankcore tankcore.py:215	Trying to import module: json_report
+2022-11-05 15:21:53,475 [INFO] yandextank.core.tankcore tankcore.py:216	Path: yandextank.plugins.JsonReport
+2022-11-05 15:21:53,486 [INFO] yandextank.core.tankcore tankcore.py:215	Trying to import module: pandora
+2022-11-05 15:21:53,488 [INFO] yandextank.core.tankcore tankcore.py:216	Path: yandextank.plugins.Pandora
+2022-11-05 15:21:53,490 [INFO] yandextank.core.tankcore tankcore.py:215	Trying to import module: rcheck
+2022-11-05 15:21:53,491 [INFO] yandextank.core.tankcore tankcore.py:216	Path: yandextank.plugins.ResourceCheck
+2022-11-05 15:21:53,493 [INFO] yandextank.core.tankcore tankcore.py:215	Trying to import module: shellexec
+2022-11-05 15:21:53,496 [INFO] yandextank.core.tankcore tankcore.py:216	Path: yandextank.plugins.ShellExec
+2022-11-05 15:21:53,498 [INFO] yandextank.core.tankcore tankcore.py:215	Trying to import module: rcassert
+2022-11-05 15:21:53,500 [INFO] yandextank.core.tankcore tankcore.py:216	Path: yandextank.plugins.RCAssert
+2022-11-05 15:21:53,502 [INFO] yandextank.core.tankcore tankcore.py:215	Trying to import module: opentsdbuploader
+2022-11-05 15:21:53,504 [INFO] yandextank.core.tankcore tankcore.py:216	Path: yandextank.plugins.OpenTSDBUploader
+2022-11-05 15:21:53,570 [INFO] yandextank.plugins.Pandora.plugin plugin.py:79	Found config_content option configuration
+2022-11-05 15:21:53,572 [WARNING] yandextank.plugins.Pandora.plugin plugin.py:142	Seems like pandora result file not specified... adding defaults
+2022-11-05 15:21:53,591 [INFO] yandextank.core.tankcore tankcore.py:268	Preparing test...
+2022-11-05 15:21:53,596 [INFO] yandextank.common.interfaces plugin.py:38	Checking tank resources...
+2022-11-05 15:21:53,620 [INFO] yandextank.core.tankcore tankcore.py:278	Starting test...
+2022-11-05 15:21:53,625 [INFO] yandextank.aggregator.tank_aggregator tank_aggregator.py:65	using verbose histogram
+2022-11-05 15:21:53,631 [INFO] yandextank.core.tankcore tankcore.py:285	Plugin plugin_autostop required 0.000008 seconds to start
+2022-11-05 15:21:53,635 [INFO] yandextank.core.tankcore tankcore.py:285	Plugin plugin_console required 0.000005 seconds to start
+2022-11-05 15:21:53,642 [INFO] yandextank.core.tankcore tankcore.py:285	Plugin plugin_json_report required 0.000012 seconds to start
+2022-11-05 15:21:53,645 [INFO] yandextank.plugins.Pandora.plugin plugin.py:237	Starting: ['/usr/local/bin/pandora', '/var/loadtest/logs/2022-11-05_15-21-53.364813/pandora_config_cwr3e9nz.yaml']
+2022-11-05 15:21:53,677 [INFO] yandextank.core.tankcore tankcore.py:285	Plugin plugin_pandora required 0.032718 seconds to start
+2022-11-05 15:21:53,684 [INFO] yandextank.core.tankcore tankcore.py:285	Plugin plugin_rcheck required 0.000024 seconds to start
+2022-11-05 15:21:53,688 [INFO] yandextank.core.tankcore tankcore.py:285	Plugin plugin_shellexec required 0.000120 seconds to start
+2022-11-05 15:21:53,694 [INFO] yandextank.core.tankcore tankcore.py:285	Plugin plugin_rcassert required 0.000008 seconds to start
+2022-11-05 15:21:53,703 [INFO] yandextank.core.tankcore tankcore.py:285	Plugin plugin_opentsdbuploader required 0.000133 seconds to start
+2022-11-05 15:21:53,710 [INFO] yandextank.core.tankcore tankcore.py:294	Waiting for test to finish...
+2022-11-05 15:21:53,711 [INFO] yandextank.core.tankcore tankcore.py:295	Artifacts dir: /var/loadtest/logs/2022-11-05_15-21-53.364813
+2022-11-05 15:24:28,508 [WARNING] root tankworker.py:118	Interrupting
+2022-11-05 15:24:28,509 [ERROR] yandextank.common.util util.py:846	Test interrupted:
+<class 'KeyboardInterrupt'>: 
+  File "/usr/local/lib/python3.8/dist-packages/yandextank/core/tankworker.py", line 79, in run
+    self.retcode = self.core.wait_for_finish()
+
+  File "/usr/local/lib/python3.8/dist-packages/yandextank/core/tankcore.py", line 326, in wait_for_finish
+    time.sleep(0.5 - diff)
+
+2022-11-05 15:24:28,524 [INFO] yandextank.core.tankcore tankcore.py:331	Finishing test...
+2022-11-05 15:24:28,528 [INFO] yandextank.core.tankcore tankcore.py:334	Stopping load generator and aggregator
+2022-11-05 15:24:28,530 [WARNING] yandextank.plugins.Pandora.plugin plugin.py:281	Terminating worker process with PID 29
+2022-11-05 15:24:28,536 [INFO] yandextank.aggregator.tank_aggregator tank_aggregator.py:126	Closing stats reader
+2022-11-05 15:24:28,710 [INFO] yandextank.aggregator.tank_aggregator tank_aggregator.py:129	Waiting for gun drain to finish
+2022-11-05 15:24:29,134 [INFO] yandextank.aggregator.tank_aggregator tank_aggregator.py:131	Waiting for stats drain to finish
+2022-11-05 15:24:29,138 [INFO] yandextank.aggregator.tank_aggregator tank_aggregator.py:133	Collecting remaining data
+2022-11-05 15:24:29,175 [INFO] yandextank.aggregator.tank_aggregator tank_aggregator.py:111	Timestamps without stats:
+2022-11-05 15:24:29,179 [INFO] yandextank.aggregator.tank_aggregator tank_aggregator.py:113	1667661868
+2022-11-05 15:24:29,209 [INFO] yandextank.core.tankcore tankcore.py:338	Stopping monitoring
+2022-11-05 15:24:29,210 [INFO] yandextank.core.tankcore tankcore.py:361	Post-processing test...
+2022-11-05 15:24:29,226 [INFO] yandextank.common.util util.py:816	Trying to clean up
+2022-11-05 15:24:29,230 [INFO] yandextank.core.tankcore tankcore.py:562	Cleaning up plugin plugin_autostop
+2022-11-05 15:24:29,234 [INFO] yandextank.core.tankcore tankcore.py:562	Cleaning up plugin plugin_console
+2022-11-05 15:24:29,247 [INFO] yandextank.core.tankcore tankcore.py:562	Cleaning up plugin plugin_json_report
+2022-11-05 15:24:29,259 [INFO] yandextank.core.tankcore tankcore.py:562	Cleaning up plugin plugin_pandora
+2022-11-05 15:24:29,261 [INFO] yandextank.core.tankcore tankcore.py:562	Cleaning up plugin plugin_rcheck
+2022-11-05 15:24:29,264 [INFO] yandextank.core.tankcore tankcore.py:562	Cleaning up plugin plugin_shellexec
+2022-11-05 15:24:29,280 [INFO] yandextank.core.tankcore tankcore.py:562	Cleaning up plugin plugin_rcassert
+2022-11-05 15:24:29,287 [INFO] yandextank.core.tankcore tankcore.py:562	Cleaning up plugin plugin_opentsdbuploader
+2022-11-05 15:24:29,292 [INFO] yandextank.core.tankcore tankcore.py:630	Releasing lock: /var/lock/lunapark_hjhbe_ht.lock
+2022-11-05 15:24:29,331 [INFO] yandextank.core.tankcore tankcore.py:405	Artifacts dir: /var/loadtest/logs/2022-11-05_15-21-53.364813
+2022-11-05 15:24:29,339 [INFO] yandextank.core.tankcore tankcore.py:461	File not found to collect: validation_error.yaml
+2022-11-05 15:24:29,343 [INFO] yandextank.core.tankcore tankcore.py:466	File already exists: /var/loadtest/logs/2022-11-05_15-21-53.364813/pandora_config_cwr3e9nz.yaml
+2022-11-05 15:24:29,377 [INFO] yandextank.core.tankcore tankcore.py:466	File already exists: /var/loadtest/logs/2022-11-05_15-21-53.364813/pandora_7pgaid_f.log
